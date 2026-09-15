@@ -6,6 +6,7 @@ service fails at boot instead of silently running with insecure defaults.
 """
 from pathlib import Path
 from typing import List
+from urllib.parse import urlsplit
 
 from pydantic import field_validator, model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
@@ -84,15 +85,55 @@ class Settings(BaseSettings):
 
     @model_validator(mode="after")
     def validate_production_values(self):
+        cloudinary_values = (
+            self.CLOUDINARY_CLOUD_NAME,
+            self.CLOUDINARY_API_KEY,
+            self.CLOUDINARY_API_SECRET,
+        )
+        if any(cloudinary_values) and not all(cloudinary_values):
+            raise ValueError("Cloudinary credentials must be configured together")
+
         if self.APP_ENV in {"production", "prod"}:
             if len(self.JWT_SECRET_KEY) < 32 or self.JWT_SECRET_KEY in {"development-only-change-me", "replace-with-a-long-random-secret"}:
                 raise ValueError("JWT_SECRET_KEY must be at least 32 random characters in production")
             if self.ADMIN_PASSWORD in {"change-this-password", "replace-with-a-strong-password"} or len(self.ADMIN_PASSWORD) < 12:
                 raise ValueError("ADMIN_PASSWORD must be at least 12 characters in production")
+            if self.ADMIN_EMAIL.strip().lower() == "admin@example.com":
+                raise ValueError("ADMIN_EMAIL must not use the example address in production")
             if not self.COOKIE_SECURE:
                 raise ValueError("COOKIE_SECURE must be true in production")
             if not self.CORS_ORIGINS and not self.CORS_ORIGIN:
                 raise ValueError("At least one CORS origin is required in production")
+            for origin in self.cors_origins:
+                parsed_origin = urlsplit(origin)
+                if (
+                    parsed_origin.scheme != "https"
+                    or not parsed_origin.hostname
+                    or parsed_origin.hostname.lower() in {"localhost", "127.0.0.1", "::1"}
+                    or origin == "*"
+                ):
+                    raise ValueError("Production CORS origins must be explicit HTTPS origins")
+
+            mongo = urlsplit(self.MONGODB_URL)
+            if (
+                mongo.scheme not in {"mongodb", "mongodb+srv"}
+                or not mongo.hostname
+                or mongo.hostname.lower() in {"localhost", "127.0.0.1", "::1"}
+            ):
+                raise ValueError("MONGODB_URL must reference a remote MongoDB service in production")
+
+            hosts = self.trusted_hosts
+            if not hosts or any(
+                host == "*"
+                or host.lower().split(":", 1)[0] in {"localhost", "127.0.0.1", "::1"}
+                or "://" in host
+                for host in hosts
+            ):
+                raise ValueError("TRUSTED_HOSTS must contain explicit production hostnames")
+            if self.EXPOSE_DEV_CODES:
+                raise ValueError("EXPOSE_DEV_CODES must be false in production")
+            if self.MONGODB_TLS_ALLOW_INVALID_CERTIFICATES:
+                raise ValueError("Invalid MongoDB TLS certificates cannot be allowed in production")
         return self
 
     @property

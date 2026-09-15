@@ -12,10 +12,16 @@ def test_demo_seed_script_bootstraps_backend_import_path():
     environment = {
         **os.environ,
         "APP_ENV": "production",
+        "MONGODB_URL": "mongodb+srv://cluster.speakeasy.example/speakeasy",
         "JWT_SECRET_KEY": "a-production-test-secret-with-32-chars",
+        "ADMIN_EMAIL": "admin@speakeasy-asd.org",
         "ADMIN_PASSWORD": "production-test-password",
         "COOKIE_SECURE": "true",
+        "CORS_ORIGIN": "",
         "CORS_ORIGINS": "https://example.test",
+        "TRUSTED_HOSTS": "api.speakeasy-asd.org",
+        "EXPOSE_DEV_CODES": "false",
+        "MONGODB_TLS_ALLOW_INVALID_CERTIFICATES": "false",
     }
 
     result = subprocess.run(

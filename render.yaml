@@ -15,6 +15,14 @@ services:
         value: "true"
       - key: COOKIE_SAMESITE
         value: none
+      - key: EXPOSE_DEV_CODES
+        value: "false"
+      - key: MONGODB_TLS_ALLOW_INVALID_CERTIFICATES
+        value: "false"
+      - key: INDICCONFORMER_ENABLED
+        value: "false"
+      - key: WEB_CONCURRENCY
+        value: "1"
       - key: TRUSTED_HOSTS
         value: speakeasy-asd-api.onrender.com
       - key: CORS_ORIGINS

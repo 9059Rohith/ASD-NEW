@@ -23,6 +23,15 @@ The Docker image also copies the vowel and diphthong classifier artifacts from `
 6. Confirm `https://speakeasy-asd-api.onrender.com/health/ready` returns
    `{"status":"ready","database":"ok"}`.
 
+Production startup now fails fast if the database is local, the admin address is
+the example value, CORS is wildcard/non-HTTPS, trusted hosts are wildcard/local,
+development codes are exposed, MongoDB certificate validation is disabled, or
+only part of the Cloudinary credential set is supplied. The Blueprint disables
+the optional IndicConformer experiment because that checkpoint/runtime is not
+part of the production image; the bundled ONNX phoneme engine and vowel models
+remain enabled. A `404` from the documented Render hostname means the Blueprint
+has not been provisioned yet, not that the API health route is ready.
+
 ## Vercel
 
 1. Import the repository and set the project root to `frontend`.
@@ -30,6 +39,12 @@ The Docker image also copies the vowel and diphthong classifier artifacts from `
 3. Set `VITE_API_BASE_URL=/api` for Production, Preview, and Development.
 4. Deploy. `frontend/vercel.json` supplies the SPA fallback, API rewrite, and
    browser security headers.
+
+The checked-in rewrite targets the Blueprint service name
+`speakeasy-asd-api.onrender.com`. If Render assigns a different hostname, update
+both `frontend/vercel.json` and the Android release `backendUrl`, then redeploy.
+A `404` from the documented Vercel hostname means that the Vercel project has
+not been imported or assigned that domain yet.
 
 ## Android release
 
