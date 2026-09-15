@@ -1,0 +1,3888 @@
+{
+  "model_version": "tamil-mendeley-v1.1-2026-09-06",
+  "source": "https://doi.org/10.17632/2dnxmvm22k.1",
+  "license": "CC BY 4.0",
+  "split_seed": 260906,
+  "speaker_splits": {
+    "train": [
+      "F943",
+      "F711",
+      "F643",
+      "F513",
+      "F813",
+      "F29",
+      "M912",
+      "M660",
+      "M1010",
+      "M721",
+      "M221",
+      "M821"
+    ],
+    "validation": [
+      "F320",
+      "F462",
+      "M413",
+      "M13"
+    ],
+    "test": [
+      "F1047",
+      "F147",
+      "M522",
+      "M327"
+    ]
+  },
+  "source_label_mapping": {
+    "a": "a",
+    "aa": "aa",
+    "e": "i",
+    "ee": "ii",
+    "eh": "e",
+    "ehh": "ee",
+    "o": "o",
+    "oo": "oo",
+    "u": "u",
+    "uu": "uu"
+  },
+  "software_versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.0",
+    "scikit_learn": "1.4.2",
+    "joblib": "1.5.3"
+  },
+  "candidate_validation_identity_accuracy": {
+    "extra_trees": 0.8546824542518837,
+    "svm": 0.8408683171869393
+  },
+  "inventory": [
+    {
+      "path": "a\\F1047Ta.wav",
+      "speaker": "F1047",
+      "target": "a",
+      "source_seconds": 87.139,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "19e993f16a693a1378c379aac5d60a2d33ffa79b2558a9360e11b038a2d7780e"
+    },
+    {
+      "path": "a\\F147Ta.wav",
+      "speaker": "F147",
+      "target": "a",
+      "source_seconds": 103.688,
+      "segments": {
+        "ok": 103,
+        "multiple_vowels": 16,
+        "no_speech": 1,
+        "noisy_audio": 2
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "7889b22df30973bfe92c18bc304f9fa9a9052e3f8492a99259d71fa24d5b7a4f"
+    },
+    {
+      "path": "a\\F29Ta.wav",
+      "speaker": "F29",
+      "target": "a",
+      "source_seconds": 120.64,
+      "segments": {
+        "ok": 123,
+        "no_speech": 6,
+        "multiple_vowels": 11
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "1502bd615175494ddcd2894c3e9b54c3caeeac52431dc8b0c2d9b6d259c44dda"
+    },
+    {
+      "path": "a\\F320Ta.wav",
+      "speaker": "F320",
+      "target": "a",
+      "source_seconds": 97.643,
+      "segments": {
+        "ok": 74,
+        "multiple_vowels": 25,
+        "no_speech": 4,
+        "noisy_audio": 1
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "9441b4ab2fcbc713facd0b5005c9d4cc94ef6f5cdab3598f4d28fb44ee99f2ce"
+    },
+    {
+      "path": "a\\F462Ta.wav",
+      "speaker": "F462",
+      "target": "a",
+      "source_seconds": 137.553,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "c3d30df362f72cb54b563719d6fcc386d51cb1e4eeff7d93c9db75d349f10978"
+    },
+    {
+      "path": "a\\F513Ta.wav",
+      "speaker": "F513",
+      "target": "a",
+      "source_seconds": 75.244,
+      "segments": {
+        "ok": 131,
+        "no_speech": 2
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "9522673f2086304b76a795c4115b225bccef1933874f063a3a789d4ed1feab3c"
+    },
+    {
+      "path": "a\\F643Ta.wav",
+      "speaker": "F643",
+      "target": "a",
+      "source_seconds": 154.128,
+      "segments": {
+        "ok": 173
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "a4e466a90e40bd2891fef9dcdd7003f04c54a500f400f6c898d0bfe6117fb5b9"
+    },
+    {
+      "path": "a\\F711Ta.wav",
+      "speaker": "F711",
+      "target": "a",
+      "source_seconds": 111.566,
+      "segments": {
+        "ok": 177
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "534a236c6a1e35419cd07ffd673bbab88c5cfddf44ebc3ef560506e57465cc46"
+    },
+    {
+      "path": "a\\F813Ta.wav",
+      "speaker": "F813",
+      "target": "a",
+      "source_seconds": 156.403,
+      "segments": {
+        "ok": 146
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "eb036ba5cb14be3c0833c4e1f9cbb2cb538e7813708d0d3cbc3a5194c00495fc"
+    },
+    {
+      "path": "a\\F943Ta.wav",
+      "speaker": "F943",
+      "target": "a",
+      "source_seconds": 131.417,
+      "segments": {
+        "ok": 153
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "056a95cccff559bbbe1b9faac724deb954d8a281847de8f84bfaea9cd18f3c4b"
+    },
+    {
+      "path": "a\\M1010Ta.wav",
+      "speaker": "M1010",
+      "target": "a",
+      "source_seconds": 127.543,
+      "segments": {
+        "ok": 151
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "86dfe8b24b245d631f5d3117c29bbc891fba1cfb30db745365fff8dd676c2358"
+    },
+    {
+      "path": "a\\M13Ta.wav",
+      "speaker": "M13",
+      "target": "a",
+      "source_seconds": 162.266,
+      "segments": {
+        "ok": 124,
+        "no_speech": 6,
+        "multiple_vowels": 16,
+        "noisy_audio": 1
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "a99475ccf7f4f2aca3501bbb428d544b6519322cd17af640628073dbd4d7659f"
+    },
+    {
+      "path": "a\\M221Ta.wav",
+      "speaker": "M221",
+      "target": "a",
+      "source_seconds": 174.551,
+      "segments": {
+        "ok": 166,
+        "noisy_audio": 1
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "0238e2ba9fbc58699bfd1ba91185f05706c682fab642d57bcfc516d0fa1bd754"
+    },
+    {
+      "path": "a\\M327Ta.wav",
+      "speaker": "M327",
+      "target": "a",
+      "source_seconds": 88.153,
+      "segments": {
+        "no_speech": 1,
+        "ok": 189
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "b8272e447bf7829235cc81165d4d8c5f7d690a74a924f53de0e8e5c057b96c43"
+    },
+    {
+      "path": "a\\M413Ta.wav",
+      "speaker": "M413",
+      "target": "a",
+      "source_seconds": 103.493,
+      "segments": {
+        "ok": 171
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "d1e11d5bc81f8317678bc6f117774f657fbb72491043aaf176859618dc06b5bc"
+    },
+    {
+      "path": "a\\M522Ta.wav",
+      "speaker": "M522",
+      "target": "a",
+      "source_seconds": 121.602,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "832005a07fc890209d0bb6f11764501d2542afb2f465250664df41e5c883004a"
+    },
+    {
+      "path": "a\\M660Ta.wav",
+      "speaker": "M660",
+      "target": "a",
+      "source_seconds": 164.086,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "84436c976848a5c47e52094acb35c564ffa636e6b70aab789d730c1897a4c102"
+    },
+    {
+      "path": "a\\M721Ta.wav",
+      "speaker": "M721",
+      "target": "a",
+      "source_seconds": 133.068,
+      "segments": {
+        "ok": 148,
+        "multiple_vowels": 3
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "13f856ba3a9cb8587229c048cda0b2161759d64a9a6d63fb6f06bf3cfa492c3a"
+    },
+    {
+      "path": "a\\M821Ta.wav",
+      "speaker": "M821",
+      "target": "a",
+      "source_seconds": 201.526,
+      "segments": {
+        "ok": 155
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "9650db9f9fd11fdea10f7436d29b174a562a37d18881b68178f83b2664f4fc1a"
+    },
+    {
+      "path": "a\\M912Ta.wav",
+      "speaker": "M912",
+      "target": "a",
+      "source_seconds": 118.027,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "a",
+      "source_sample_rate": 16000,
+      "source_sha256": "5977cfaf6e164ae51336ed94bf57844a68b5a9d5f17f873cdb0719301851451c"
+    },
+    {
+      "path": "aa\\F1047Taa.wav",
+      "speaker": "F1047",
+      "target": "aa",
+      "source_seconds": 159.185,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "aa",
+      "source_sample_rate": 16000,
+      "source_sha256": "e48b902c17e3df2f8fe6d2ff4538e2d2f949c76694efd14e4824dc5ecc2425c7"
+    },
+    {
+      "path": "aa\\F147Taa.wav",
+      "speaker": "F147",
+      "target": "aa",
+      "source_seconds": 156.494,
+      "segments": {
+        "ok": 114,
+        "no_speech": 4,
+        "multiple_vowels": 27
+      },
+      "source_label": "aa",
+      "source_sample_rate": 16000,
+      "source_sha256": "60ab6d4f59d2d4623b494191d0c5d53c97e33cfc881cba2b0ae6922dcd74a41b"
+    },
+    {
+      "path": "aa\\F29Taa.wav",
+      "speaker": "F29",
+      "target": "aa",
+      "source_seconds": 128.882,
+      "segments": {
+        "ok": 134,
+        "multiple_vowels": 7
+      },
+      "source_label": "aa",
+      "source_sample_rate": 16000,
+      "source_sha256": "b55f9162a5eb6b7df440ae9d20a4b8ff1e472d93b9e9f862263dcc1cce4d5d30"
+    },
+    {
+      "path": "aa\\F320Taa.wav",
+      "speaker": "F320",
+      "target": "aa",
+      "source_seconds": 108.719,
+      "segments": {
+        "multiple_vowels": 20,
+        "ok": 95,
+        "noisy_audio": 3,
+        "no_speech": 4
+      },
+      "source_label": "aa",
+      "source_sample_rate": 16000,
+      "source_sha256": "63f2f8f428d7dce6fbaef23a43281d639d4b1173f01adf8cfd7adccdaf28a35c"
+    },
+    {
+      "path": "aa\\F462Taa.wav",
+      "speaker": "F462",
+      "target": "aa",
+      "source_seconds": 157.521,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "aa",
+      "source_sample_rate": 16000,
+      "source_sha256": "d576dad7b7c3e6693591099e6c8baf147d2e2f59997ecb929ba138a72f9aa4c9"
+    },
+    {
+      "path": "aa\\F513Taa.wav",
+      "speaker": "F513",
+      "target": "aa",
+      "source_seconds": 98.917,
+      "segments": {
+        "ok": 133,
+        "no_speech": 3
+      },
+      "source_label": "aa",
+      "source_sample_rate": 16000,
+      "source_sha256": "f7126c70caa13b7d0ba593ec7b8a3a0f596b1daf7b15bab646be473f61c78256"
+    },
+    {
+      "path": "aa\\F643Taa.wav",
+      "speaker": "F643",
+      "target": "aa",
+      "source_seconds": 165.477,
+      "segments": {
+        "ok": 162,
+        "no_speech": 1
+      },
+      "source_label": "aa",
+      "source_sample_rate": 16000,
+      "source_sha256": "9802db51143de6d539bc1511236dcce7d339a79eb9d6ce723f1c1c84ac920874"
+    },
+    {
+      "path": "aa\\F711Taa.wav",
+      "speaker": "F711",
+      "target": "aa",
+      "source_seconds": 137.2343125,
+      "source_sample_rate": 44100,
+      "segments": {
+        "ok": 142
+      },
+      "source_label": "aa",
+      "source_sha256": "2e6eae4391d48247f2c20c4d1b2db75c997e192589c6962d4ddb7414fd43b204"
+    },
+    {
+      "path": "aa\\F813Taa.wav",
+      "speaker": "F813",
+      "target": "aa",
+      "source_seconds": 145.587,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "aa",
+      "source_sample_rate": 16000,
+      "source_sha256": "5395b263d6769619ef0eb9d14f1edcd1b1f81a8a81349989fad43908c2381bcd"
+    },
+    {
+      "path": "aa\\F943Taa.wav",
+      "speaker": "F943",
+      "target": "aa",
+      "source_seconds": 154.167,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "aa",
+      "source_sample_rate": 16000,
+      "source_sha256": "b828cfa018b73f5d07b9999c5212f3276a45d9a2f68ba05e4e030bbeef3e4278"
+    },
+    {
+      "path": "aa\\M1010Taa.wav",
+      "speaker": "M1010",
+      "target": "aa",
+      "source_seconds": 174.018,
+      "segments": {
+        "ok": 160,
+        "multiple_vowels": 1
+      },
+      "source_label": "aa",
+      "source_sample_rate": 16000,
+      "source_sha256": "979fd94e09f2405a479e405243087e50dcf93e1782b088e04deeb049c984e923"
+    },
+    {
+      "path": "aa\\M13Taa.wav",
+      "speaker": "M13",
+      "target": "aa",
+      "source_seconds": 133.276,
+      "segments": {
+        "ok": 104,
+        "no_speech": 13,
+        "multiple_vowels": 19
+      },
+      "source_label": "aa",
+      "source_sample_rate": 16000,
+      "source_sha256": "9a40beb55ffefc880ae91cb751d77219d933053cbed7b52e0d6d5980e813f4b6"
+    },
+    {
+      "path": "aa\\M221Taa.wav",
+      "speaker": "M221",
+      "target": "aa",
+      "source_seconds": 237.575,
+      "segments": {
+        "ok": 181
+      },
+      "source_label": "aa",
+      "source_sample_rate": 16000,
+      "source_sha256": "43a92e840e38878e5076db83dc8c6b978df36fe64eecd1f794e9634ec8e251e2"
+    },
+    {
+      "path": "aa\\M327Taa.wav",
+      "speaker": "M327",
+      "target": "aa",
+      "source_seconds": 144.508,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 147,
+        "no_speech": 1,
+        "noisy_audio": 2
+      },
+      "source_label": "aa",
+      "source_sha256": "7d87d5f6d51745e31fffcdd31b17b8717650617c5238c5b5fafc1a12a789635c"
+    },
+    {
+      "path": "aa\\M413Taa.wav",
+      "speaker": "M413",
+      "target": "aa",
+      "source_seconds": 250.848,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 155
+      },
+      "source_label": "aa",
+      "source_sha256": "6767284271a44d0f20cb394d29f55f89ece6d529db3870fb41922637d417f03e"
+    },
+    {
+      "path": "aa\\M522Taa.wav",
+      "speaker": "M522",
+      "target": "aa",
+      "source_seconds": 274.469,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 151
+      },
+      "source_label": "aa",
+      "source_sha256": "e2f2b54c821ed982483d95f4730a80cd96f435644b9d1fd8156d2dae5cb44a6d"
+    },
+    {
+      "path": "aa\\M660Taa.wav",
+      "speaker": "M660",
+      "target": "aa",
+      "source_seconds": 243.23,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "aa",
+      "source_sha256": "ce7c1e3df6e594bf5ae90ac5c16c0ddf46028000a0e4b4fefc73650b5447cafd"
+    },
+    {
+      "path": "aa\\M721Taa.wav",
+      "speaker": "M721",
+      "target": "aa",
+      "source_seconds": 172.25,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "aa",
+      "source_sha256": "1a6c4f11621dbbe7fd6494809f618dca7bd6d9c6b5a0c1bf5dad01ad3a02c8da"
+    },
+    {
+      "path": "aa\\M821Taa.wav",
+      "speaker": "M821",
+      "target": "aa",
+      "source_seconds": 181.948,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 138
+      },
+      "source_label": "aa",
+      "source_sha256": "9bd5c33b565ad55d7b7d6f9f5571aa51a2553f039cbdcd390888e4625d4ce578"
+    },
+    {
+      "path": "aa\\M912Taa.wav",
+      "speaker": "M912",
+      "target": "aa",
+      "source_seconds": 186.576,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "aa",
+      "source_sha256": "d0aedaf6121f4878cbfaacc98dcab0261ed4012aad0ee6ce670b6a144f3c9655"
+    },
+    {
+      "path": "av\\F1047Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\F147Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\F29Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\F320Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\F462Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\F513Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\F643Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\F711Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\F813Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\F943Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\M1010Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\M13Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\M221Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\M327Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\M413Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\M522Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\M660Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\M721Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\M821Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "av\\M912Tav.wav",
+      "excluded_label": "av"
+    },
+    {
+      "path": "e\\F1047Te.wav",
+      "speaker": "F1047",
+      "target": "i",
+      "source_seconds": 90.935,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "e",
+      "source_sha256": "248babe40f3243cd55c2c742d1c48014c92048db2555d5dc74fbce6a2547d77a"
+    },
+    {
+      "path": "e\\F147Te.wav",
+      "speaker": "F147",
+      "target": "i",
+      "source_seconds": 108.277,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 122,
+        "multiple_vowels": 11,
+        "no_speech": 5,
+        "noisy_audio": 1
+      },
+      "source_label": "e",
+      "source_sha256": "fd0fe1d5b60509691f76890b615093815ecdb9c589e3eaf5aa0bd9d0d0476eab"
+    },
+    {
+      "path": "e\\F29Te.wav",
+      "speaker": "F29",
+      "target": "i",
+      "source_seconds": 104.806,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 138,
+        "multiple_vowels": 5
+      },
+      "source_label": "e",
+      "source_sha256": "3c89b030ef55da9559d0cf1b63d72c425bb165b6737b365d8b090fce5d75d016"
+    },
+    {
+      "path": "e\\F320Te.wav",
+      "speaker": "F320",
+      "target": "i",
+      "source_seconds": 123.695,
+      "source_sample_rate": 16000,
+      "segments": {
+        "multiple_vowels": 11,
+        "ok": 124,
+        "no_speech": 5
+      },
+      "source_label": "e",
+      "source_sha256": "4ce28118e98d72d16b59d3403a29ab116bbf856993b4d56f0a332061b90f703c"
+    },
+    {
+      "path": "e\\F462Te.wav",
+      "speaker": "F462",
+      "target": "i",
+      "source_seconds": 138.177,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 149,
+        "no_speech": 3
+      },
+      "source_label": "e",
+      "source_sha256": "358c8f01d5367e0dd8fae8d0bd744df5805b4820728053d37374b2dad10e094d"
+    },
+    {
+      "path": "e\\F513Te.wav",
+      "speaker": "F513",
+      "target": "i",
+      "source_seconds": 87.698,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 143,
+        "multiple_vowels": 1
+      },
+      "source_label": "e",
+      "source_sha256": "37f3088515e2a422fa31ba986979353bec3d392f8753da3b872841764ced1d12"
+    },
+    {
+      "path": "e\\F643Te.wav",
+      "speaker": "F643",
+      "target": "i",
+      "source_seconds": 129.896,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 180,
+        "noisy_audio": 1,
+        "no_speech": 1,
+        "multiple_vowels": 1
+      },
+      "source_label": "e",
+      "source_sha256": "958756cb6db74bd4597b1d66d9cd0808b9e0c85871b85ad96a5d6ad4548a86f6"
+    },
+    {
+      "path": "e\\F711Te.wav",
+      "speaker": "F711",
+      "target": "i",
+      "source_seconds": 97.201,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 156
+      },
+      "source_label": "e",
+      "source_sha256": "a8cee674dcf74adeb101c2486199353d3773ec2854dc38d9e0d6e5e2494adeeb"
+    },
+    {
+      "path": "e\\F813Te.wav",
+      "speaker": "F813",
+      "target": "i",
+      "source_seconds": 142.545,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 151
+      },
+      "source_label": "e",
+      "source_sha256": "9a6aa05c4ff5cab6022a4c12395113387a64ff12444befd9d2f76c7bcd37a98c"
+    },
+    {
+      "path": "e\\F943Te.wav",
+      "speaker": "F943",
+      "target": "i",
+      "source_seconds": 135.837,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150,
+        "multiple_vowels": 3
+      },
+      "source_label": "e",
+      "source_sha256": "1391adaba1ecedaab79c946b6e1f361c81a1abaf2a97e7421f0a5d78e96b5af4"
+    },
+    {
+      "path": "e\\M1010Te.wav",
+      "speaker": "M1010",
+      "target": "i",
+      "source_seconds": 134.485,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 161
+      },
+      "source_label": "e",
+      "source_sha256": "c5495904286c0db325eddb4070007f37a636395cb142af7c944f7ef28c9e2e31"
+    },
+    {
+      "path": "e\\M13Te.wav",
+      "speaker": "M13",
+      "target": "i",
+      "source_seconds": 150.358,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 177,
+        "no_speech": 7,
+        "multiple_vowels": 14,
+        "noisy_audio": 2
+      },
+      "source_label": "e",
+      "source_sha256": "ebebe3b7f3ef92e8cec1b3ae991410bdaf8f08107a645c92f33d09e3787c5218"
+    },
+    {
+      "path": "e\\M221Te.wav",
+      "speaker": "M221",
+      "target": "i",
+      "source_seconds": 181.662,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 167
+      },
+      "source_label": "e",
+      "source_sha256": "76e25efaf402fba8db26ba6476d04577954e07c2ba61a6e116e99ce289caa7c6"
+    },
+    {
+      "path": "e\\M327Te.wav",
+      "speaker": "M327",
+      "target": "i",
+      "source_seconds": 92.69,
+      "source_sample_rate": 16000,
+      "segments": {
+        "no_speech": 1,
+        "ok": 162
+      },
+      "source_label": "e",
+      "source_sha256": "41c3ccb01c9cbe0b24a831447d221cae11dc67ddcd38e51350229928f2f97835"
+    },
+    {
+      "path": "e\\M413Te.wav",
+      "speaker": "M413",
+      "target": "i",
+      "source_seconds": 157.404,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 156,
+        "noisy_audio": 3
+      },
+      "source_label": "e",
+      "source_sha256": "c40257a237c5469be96c7fad648471c0d9e0f2f26d8ad2e9f1df1fdd0b30e367"
+    },
+    {
+      "path": "e\\M522Te.wav",
+      "speaker": "M522",
+      "target": "i",
+      "source_seconds": 124.865,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 162
+      },
+      "source_label": "e",
+      "source_sha256": "68a8524d16b6f8b6c65e57cb234b92b6c325c5b0703bfdd025e70995ca559a96"
+    },
+    {
+      "path": "e\\M660Te.wav",
+      "speaker": "M660",
+      "target": "i",
+      "source_seconds": 142.948,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "e",
+      "source_sha256": "47d8bba4fc00f9570221f81b45df46d4aa55024700efe01e3cbb87f16a0ecf58"
+    },
+    {
+      "path": "e\\M721Te.wav",
+      "speaker": "M721",
+      "target": "i",
+      "source_seconds": 127.01,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 152
+      },
+      "source_label": "e",
+      "source_sha256": "3769d473a76cf6d2c4b1ea5a947a5ddb0155766580eb9cd9a0d691fd3946b363"
+    },
+    {
+      "path": "e\\M821Te.wav",
+      "speaker": "M821",
+      "target": "i",
+      "source_seconds": 141.141,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 151
+      },
+      "source_label": "e",
+      "source_sha256": "5129855434b562209b7911a7eff74a23de60f56c0a99529239dc26c476128095"
+    },
+    {
+      "path": "e\\M912Te.wav",
+      "speaker": "M912",
+      "target": "i",
+      "source_seconds": 114.023,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 151,
+        "no_speech": 1
+      },
+      "source_label": "e",
+      "source_sha256": "c6af6e57bd41e96bb63d721824a73ca719fbd23b277d8730e8599c9865a4708c"
+    },
+    {
+      "path": "ee\\F1047Tee.wav",
+      "speaker": "F1047",
+      "target": "ii",
+      "source_seconds": 128.076,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "ee",
+      "source_sha256": "ce1a0adb2e0eb8aaf2e0a35f554ec370e8009f16de4f295df4e033886bff8dc3"
+    },
+    {
+      "path": "ee\\F147Tee.wav",
+      "speaker": "F147",
+      "target": "ii",
+      "source_seconds": 146.848,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 140,
+        "multiple_vowels": 6,
+        "no_speech": 9
+      },
+      "source_label": "ee",
+      "source_sha256": "b64fccef3d1291c00353f59321e10debcfc2c42da6bc047c111479223d01bfdb"
+    },
+    {
+      "path": "ee\\F29Tee.wav",
+      "speaker": "F29",
+      "target": "ii",
+      "source_seconds": 135.278,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 154
+      },
+      "source_label": "ee",
+      "source_sha256": "5bdc42e7f5f95d214ba1b0d10cd4799a5789b178ab48f867f9e3d3823ed615dc"
+    },
+    {
+      "path": "ee\\F320Tee.wav",
+      "speaker": "F320",
+      "target": "ii",
+      "source_seconds": 129.597,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 114,
+        "multiple_vowels": 19,
+        "no_speech": 7
+      },
+      "source_label": "ee",
+      "source_sha256": "d9dd67a3fe4769f26e75f293bbbf1ed329feb5fcc8bbb14ed53690d8bd38d280"
+    },
+    {
+      "path": "ee\\F462Tee.wav",
+      "speaker": "F462",
+      "target": "ii",
+      "source_seconds": 144.833,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "ee",
+      "source_sha256": "0fa7e1617467cad114b660735d757beb239a9ef1be43b695e6917d9c9d41729e"
+    },
+    {
+      "path": "ee\\F513Tee.wav",
+      "speaker": "F513",
+      "target": "ii",
+      "source_seconds": 112.203,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 138
+      },
+      "source_label": "ee",
+      "source_sha256": "9f6313bd0a7dac010e54f08463b1b2d8a8860b25f53459685c2da7126caf8525"
+    },
+    {
+      "path": "ee\\F643Tee.wav",
+      "speaker": "F643",
+      "target": "ii",
+      "source_seconds": 124.787,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 135
+      },
+      "source_label": "ee",
+      "source_sha256": "8f6feccad122f21090c445db62bb221d096d3b74b992f51f6cee12271b0cc2be"
+    },
+    {
+      "path": "ee\\F711Tee.wav",
+      "speaker": "F711",
+      "target": "ii",
+      "source_seconds": 134.03,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 147,
+        "noisy_audio": 1
+      },
+      "source_label": "ee",
+      "source_sha256": "470ecb703375a65f51b618cf69219f63caae6fd0164dd9c09857e060c83589c4"
+    },
+    {
+      "path": "ee\\F813Tee.wav",
+      "speaker": "F813",
+      "target": "ii",
+      "source_seconds": 181.727,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 152
+      },
+      "source_label": "ee",
+      "source_sha256": "ce3b2ee4eab4b9bf57a8d8a16f23c413c147d2380e3d268b8f5c750355567ac0"
+    },
+    {
+      "path": "ee\\F943Tee.wav",
+      "speaker": "F943",
+      "target": "ii",
+      "source_seconds": 171.548,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 154
+      },
+      "source_label": "ee",
+      "source_sha256": "2f60fb271083f0cc7b79108454b4aff79f220f8c003f5988cbb6265dd6b31e1b"
+    },
+    {
+      "path": "ee\\M1010Tee.wav",
+      "speaker": "M1010",
+      "target": "ii",
+      "source_seconds": 178.087,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 139,
+        "multiple_vowels": 6
+      },
+      "source_label": "ee",
+      "source_sha256": "1e8452cc4ee7858e3bf901da5fdc8b0d5ebf8265fc5c286f24e960a95a4be8a2"
+    },
+    {
+      "path": "ee\\M13Tee.wav",
+      "speaker": "M13",
+      "target": "ii",
+      "source_seconds": 160.355,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 189,
+        "no_speech": 3,
+        "noisy_audio": 1,
+        "multiple_vowels": 2
+      },
+      "source_label": "ee",
+      "source_sha256": "7bbfea9230019ec6407c9fbe80b10c0c54ae7610cdc5abfb6a9f6a0ace05987e"
+    },
+    {
+      "path": "ee\\M221Tee.wav",
+      "speaker": "M221",
+      "target": "ii",
+      "source_seconds": 209.703,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 160,
+        "no_speech": 2
+      },
+      "source_label": "ee",
+      "source_sha256": "766bc734caf1f938156a0c8a9f6b3a76d3bf640e1527abf255757eeb73f4f1fa"
+    },
+    {
+      "path": "ee\\M327Tee.wav",
+      "speaker": "M327",
+      "target": "ii",
+      "source_seconds": 160.667,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 160,
+        "no_speech": 4,
+        "noisy_audio": 4,
+        "multiple_vowels": 4
+      },
+      "source_label": "ee",
+      "source_sha256": "804019e36d8bcf4144ae2f7243b4b67bedabc544274efb0e2615314add1a5f90"
+    },
+    {
+      "path": "ee\\M413Tee.wav",
+      "speaker": "M413",
+      "target": "ii",
+      "source_seconds": 216.541,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 143
+      },
+      "source_label": "ee",
+      "source_sha256": "06d7e0575f073d236a17e13387affd72767a26ab8576fd1b682dd0dead63bd2d"
+    },
+    {
+      "path": "ee\\M522Tee.wav",
+      "speaker": "M522",
+      "target": "ii",
+      "source_seconds": 302.107,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 167,
+        "no_speech": 11,
+        "noisy_audio": 1
+      },
+      "source_label": "ee",
+      "source_sha256": "676e55d74c38ca189ef54a4343232bb732bac1c7909ece66c1706c06ec8f499a"
+    },
+    {
+      "path": "ee\\M660Tee.wav",
+      "speaker": "M660",
+      "target": "ii",
+      "source_seconds": 209.612,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150,
+        "no_speech": 1
+      },
+      "source_label": "ee",
+      "source_sha256": "f1ff3159b095351331c2e75142383c91d8d789c5e1105dab4cfcb4bd44578c0b"
+    },
+    {
+      "path": "ee\\M721Tee.wav",
+      "speaker": "M721",
+      "target": "ii",
+      "source_seconds": 163.878,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150,
+        "no_speech": 2
+      },
+      "source_label": "ee",
+      "source_sha256": "3cd548c292b7862ade48a735df3d76eb8eeccb473d295149946728d97fb8b18c"
+    },
+    {
+      "path": "ee\\M821Tee.wav",
+      "speaker": "M821",
+      "target": "ii",
+      "source_seconds": 174.824,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 148,
+        "noisy_audio": 2
+      },
+      "source_label": "ee",
+      "source_sha256": "10c3f4b72dc745361f9f30cc06836eff1ab402c3d2c0ae50cec7ee00299ef3ce"
+    },
+    {
+      "path": "ee\\M912Tee.wav",
+      "speaker": "M912",
+      "target": "ii",
+      "source_seconds": 199.056,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 149
+      },
+      "source_label": "ee",
+      "source_sha256": "a02ca53db997688f7bc0fda2c1892e348ef4f0caeed76407988a37674b75ef37"
+    },
+    {
+      "path": "eh\\F1047Teh.wav",
+      "speaker": "F1047",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 75.387,
+      "source_sample_rate": 16000,
+      "source_sha256": "42815206ad1a3d739cd2411c78dd85ce531ba82d0c30da802e5d18f2d5f50960",
+      "segments": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "eh\\F147Teh.wav",
+      "speaker": "F147",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 104.091,
+      "source_sample_rate": 16000,
+      "source_sha256": "5e6bc3d27481f7a8e59ac2cf4325db05aa78fd139a8fffb5332e2ffdac6ebe83",
+      "segments": {
+        "multiple_vowels": 17,
+        "ok": 102,
+        "no_speech": 19
+      }
+    },
+    {
+      "path": "eh\\F29Teh.wav",
+      "speaker": "F29",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 113.204,
+      "source_sample_rate": 16000,
+      "source_sha256": "7d0e63bcb18a1768a474c1d0d8b71c276904c5b48a8a6ee2198a7049849c7a2f",
+      "segments": {
+        "ok": 146,
+        "multiple_vowels": 1,
+        "no_speech": 1
+      }
+    },
+    {
+      "path": "eh\\F320Teh.wav",
+      "speaker": "F320",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 141.297,
+      "source_sample_rate": 16000,
+      "source_sha256": "ed6ba924a97c8f02ac91102638fe8b72086ab82b23a269eaa2e05e953ed91da3",
+      "segments": {
+        "multiple_vowels": 12,
+        "ok": 122,
+        "no_speech": 11
+      }
+    },
+    {
+      "path": "eh\\F462Teh.wav",
+      "speaker": "F462",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 97.422,
+      "source_sample_rate": 16000,
+      "source_sha256": "3fc55c18d0671f03217d82ce75f76b7c762a99131f06e8611b8fcadafa021725",
+      "segments": {
+        "ok": 149,
+        "noisy_audio": 1,
+        "no_speech": 1
+      }
+    },
+    {
+      "path": "eh\\F513Teh.wav",
+      "speaker": "F513",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 120.523,
+      "source_sample_rate": 16000,
+      "source_sha256": "ecd80c3526b0bdcd8b1ec667b5f0ed075970f8005f1e5595f10f7739d98c28bb",
+      "segments": {
+        "no_speech": 1,
+        "ok": 190
+      }
+    },
+    {
+      "path": "eh\\F643Teh.wav",
+      "speaker": "F643",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 153.777,
+      "source_sample_rate": 16000,
+      "source_sha256": "44e64fb6d7a8cb42758c885b5c2e88a1db96154144b16a6d7ac8d86a819cc6cb",
+      "segments": {
+        "ok": 167
+      }
+    },
+    {
+      "path": "eh\\F711Teh.wav",
+      "speaker": "F711",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 96.447,
+      "source_sample_rate": 16000,
+      "source_sha256": "4f8754142d8d01028c93ed48116e41ca1d7148ebcec398ad6af48ec686714440",
+      "segments": {
+        "ok": 175
+      }
+    },
+    {
+      "path": "eh\\F813Teh.wav",
+      "speaker": "F813",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 169.156,
+      "source_sample_rate": 16000,
+      "source_sha256": "785115a1f281f7c3e2926d0712c0ac34b91025f090331634999f4e111413447b",
+      "segments": {
+        "ok": 165
+      }
+    },
+    {
+      "path": "eh\\F943Teh.wav",
+      "speaker": "F943",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 102.817,
+      "source_sample_rate": 16000,
+      "source_sha256": "5fc703cee48adefcbbea9641dd889aecab269604df4031b7f41af1a236bacce3",
+      "segments": {
+        "ok": 152
+      }
+    },
+    {
+      "path": "eh\\M1010Teh.wav",
+      "speaker": "M1010",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 108.849,
+      "source_sample_rate": 16000,
+      "source_sha256": "77140f6794cc7c2718150f3eea107b952c6c1ffa34fb30fea4049aeb99c3b6ce",
+      "segments": {
+        "ok": 140
+      }
+    },
+    {
+      "path": "eh\\M13Teh.wav",
+      "speaker": "M13",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 121.927,
+      "source_sample_rate": 16000,
+      "source_sha256": "25cf51740cf15708e467f1d0ca13a10d545fa35a22ce35a9cabddd85a97bdebd",
+      "segments": {
+        "multiple_vowels": 18,
+        "ok": 106,
+        "noisy_audio": 1,
+        "no_speech": 23
+      }
+    },
+    {
+      "path": "eh\\M221Teh.wav",
+      "speaker": "M221",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 178.373,
+      "source_sample_rate": 16000,
+      "source_sha256": "d81d81b5172372091e6b889118588da6bc59f427cfabc40468704500de867c54",
+      "segments": {
+        "ok": 201
+      }
+    },
+    {
+      "path": "eh\\M327Teh.wav",
+      "speaker": "M327",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 142.688,
+      "source_sample_rate": 16000,
+      "source_sha256": "faeba5059ea6ebd1b30553ed719e5e78a592128616b0ed030edce1bcea686380",
+      "segments": {
+        "ok": 189
+      }
+    },
+    {
+      "path": "eh\\M413Teh.wav",
+      "speaker": "M413",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 206.349,
+      "source_sample_rate": 16000,
+      "source_sha256": "436340681d9a4514eb56fc13636c8101e3f57bbc1584ce245d4a2690914d511d",
+      "segments": {
+        "ok": 154,
+        "noisy_audio": 1
+      }
+    },
+    {
+      "path": "eh\\M522Teh.wav",
+      "speaker": "M522",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 112.138,
+      "source_sample_rate": 16000,
+      "source_sha256": "f880ec227bf8d89e5b83cae0883990062e811e23c3e28cc04e94634a7bf8937f",
+      "segments": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "eh\\M660Teh.wav",
+      "speaker": "M660",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 141.947,
+      "source_sample_rate": 16000,
+      "source_sha256": "2c5ea2f16bd7a20f318a511db17877cfae77ea4aa69684067fd2f2f588647250",
+      "segments": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "eh\\M721Teh.wav",
+      "speaker": "M721",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 113.529,
+      "source_sample_rate": 16000,
+      "source_sha256": "9ec0d9b3e55abeb4bad030a01f83cc370d707beaae7a08282c83858d639c3cc6",
+      "segments": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "eh\\M821Teh.wav",
+      "speaker": "M821",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 180.687,
+      "source_sample_rate": 16000,
+      "source_sha256": "72a4cb83f7edeea7ffa6adfeba32b3f5b73349d6bd35847e429e1fe44c0df39a",
+      "segments": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "eh\\M912Teh.wav",
+      "speaker": "M912",
+      "target": "e",
+      "source_label": "eh",
+      "source_seconds": 148.148,
+      "source_sample_rate": 16000,
+      "source_sha256": "a6d414830ae078e5e260c67959c20d9ecc3a2cf47aecaa12fcf1c9dd9bcc1ffd",
+      "segments": {
+        "ok": 148
+      }
+    },
+    {
+      "path": "ehh\\F1047Tehh.wav",
+      "speaker": "F1047",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 130.416,
+      "source_sample_rate": 16000,
+      "source_sha256": "b3bce06d6e2d1e514a5939731dcffe830af9a184e966c57e4659545d3ecf9235",
+      "segments": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "ehh\\F147Tehh.wav",
+      "speaker": "F147",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 150.358,
+      "source_sample_rate": 16000,
+      "source_sha256": "cac5d9c224dfd6c239f71ad8449c0dc49bd71c4d6d02a6aff8197fdee881cf11",
+      "segments": {
+        "ok": 139,
+        "no_speech": 5,
+        "multiple_vowels": 7
+      }
+    },
+    {
+      "path": "ehh\\F29Tehh.wav",
+      "speaker": "F29",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 119.158,
+      "source_sample_rate": 16000,
+      "source_sha256": "94f4c5b97ac0fa20302bac72382be59a0e7684e2e13b45d6af41689c6f09c2e5",
+      "segments": {
+        "multiple_vowels": 5,
+        "ok": 148,
+        "noisy_audio": 3,
+        "no_speech": 1
+      }
+    },
+    {
+      "path": "ehh\\F320Tehh.wav",
+      "speaker": "F320",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 147.004,
+      "source_sample_rate": 16000,
+      "source_sha256": "ec0bc29ad69cfe3358127db37d929bd93672fe5a6da22c9941ae5d0530b51acf",
+      "segments": {
+        "ok": 127,
+        "no_speech": 6,
+        "multiple_vowels": 9
+      }
+    },
+    {
+      "path": "ehh\\F462Tehh.wav",
+      "speaker": "F462",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 149.058,
+      "source_sample_rate": 16000,
+      "source_sha256": "bf7be569c467c094e974a80f1c2ef0fc2980e76a02f88aafc54aaffe5a02b714",
+      "segments": {
+        "ok": 149,
+        "multiple_vowels": 1
+      }
+    },
+    {
+      "path": "ehh\\F513Tehh.wav",
+      "speaker": "F513",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 155.597,
+      "source_sample_rate": 16000,
+      "source_sha256": "0fc3249201f61409aae48a2d631c3f5f7273b06860e146397f10291b1baab386",
+      "segments": {
+        "ok": 176
+      }
+    },
+    {
+      "path": "ehh\\F643Tehh.wav",
+      "speaker": "F643",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 173.368,
+      "source_sample_rate": 16000,
+      "source_sha256": "d17c4952ac667edc7bd2b26e1897b303c0255881df002b3416bf0b27b773f653",
+      "segments": {
+        "ok": 155
+      }
+    },
+    {
+      "path": "ehh\\F711Tehh.wav",
+      "speaker": "F711",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 143.468,
+      "source_sample_rate": 16000,
+      "source_sha256": "4e88c8e9320685497735dc614d85b95d396493609a2cafff0f97d00f5e1c7095",
+      "segments": {
+        "ok": 161
+      }
+    },
+    {
+      "path": "ehh\\F813Tehh.wav",
+      "speaker": "F813",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 156.13,
+      "source_sample_rate": 16000,
+      "source_sha256": "a28b1fac80503b85122f105cb8880146397b3c81424cb30a241c3c5ae7c8bc75",
+      "segments": {
+        "ok": 156
+      }
+    },
+    {
+      "path": "ehh\\F943Tehh.wav",
+      "speaker": "F943",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 149.89,
+      "source_sample_rate": 16000,
+      "source_sha256": "62eab5d3c1a64bb3eeb9799318c543d5fa8f1d58be6b64d26530c11c305b8b3a",
+      "segments": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "ehh\\M1010Tehh.wav",
+      "speaker": "M1010",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 125.307,
+      "source_sample_rate": 16000,
+      "source_sha256": "63b62929e2381f64037a4f4924b78603e4f85f95b10057de670f240a83dfaddb",
+      "segments": {
+        "ok": 132
+      }
+    },
+    {
+      "path": "ehh\\M13Tehh.wav",
+      "speaker": "M13",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 168.428,
+      "source_sample_rate": 16000,
+      "source_sha256": "2c0679eedbc00254f2c6eacacfe0fc2ef5ac7995ee05bd2da974709dff89fbb5",
+      "segments": {
+        "ok": 151,
+        "multiple_vowels": 1,
+        "no_speech": 1
+      }
+    },
+    {
+      "path": "ehh\\M221Tehh.wav",
+      "speaker": "M221",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 176.943,
+      "source_sample_rate": 16000,
+      "source_sha256": "b0729a11e41ecfad3a79f024e82d34be5619aed2e3052271d301ff1ee56a12a2",
+      "segments": {
+        "ok": 154
+      }
+    },
+    {
+      "path": "ehh\\M327Tehh.wav",
+      "speaker": "M327",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 169.572,
+      "source_sample_rate": 16000,
+      "source_sha256": "040418716e6acc72e1d07fefa459172972bc485a1b7360d5f9353c0d4871abcb",
+      "segments": {
+        "ok": 176,
+        "no_speech": 2
+      }
+    },
+    {
+      "path": "ehh\\M413Tehh.wav",
+      "speaker": "M413",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 197.067,
+      "source_sample_rate": 16000,
+      "source_sha256": "77c106f688b14dd294e135efc04a3cad8ecda36aa0a476d77ea77fdb91af7a9d",
+      "segments": {
+        "ok": 149,
+        "no_speech": 1
+      }
+    },
+    {
+      "path": "ehh\\M522Tehh.wav",
+      "speaker": "M522",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 268.541,
+      "source_sample_rate": 16000,
+      "source_sha256": "15b64697701e37e6303b10278a248e636ec216fc2d4370f4692f9d354547bd4b",
+      "segments": {
+        "ok": 155,
+        "no_speech": 12,
+        "noisy_audio": 2
+      }
+    },
+    {
+      "path": "ehh\\M660Tehh.wav",
+      "speaker": "M660",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 205.049,
+      "source_sample_rate": 16000,
+      "source_sha256": "7153721c2cd8c0171446b0b388c346f17c24792994e3f087622f20b9092297a0",
+      "segments": {
+        "ok": 133,
+        "multiple_vowels": 20
+      }
+    },
+    {
+      "path": "ehh\\M721Tehh.wav",
+      "speaker": "M721",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 167.466,
+      "source_sample_rate": 16000,
+      "source_sha256": "5e8d18d3b78e4e13fded81905595deb77e42e067f1d697c97aa4a226d79ad319",
+      "segments": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "ehh\\M821Tehh.wav",
+      "speaker": "M821",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 236.028,
+      "source_sample_rate": 16000,
+      "source_sha256": "d5eeae1a991028c8dee87a7798f1f763705b4011adccffc8c6dd1565a97963a7",
+      "segments": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "ehh\\M912Tehh.wav",
+      "speaker": "M912",
+      "target": "ee",
+      "source_label": "ehh",
+      "source_seconds": 221.039,
+      "source_sample_rate": 16000,
+      "source_sha256": "62ce6c668c3a8f2e75eacd45af3e4d6dccdd6b15ddb4e03c1ad64ab8ab250c37",
+      "segments": {
+        "ok": 148
+      }
+    },
+    {
+      "path": "i\\F1047Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\F147Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\F29Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\F320Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\F462Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\F513Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\F643Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\F711Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\F813Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\F943Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\M1010Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\M13Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\M221Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\M327Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\M413Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\M522Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\M660Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\M721Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\M821Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "i\\M912Ti.wav",
+      "excluded_label": "i"
+    },
+    {
+      "path": "o\\F1047To.wav",
+      "speaker": "F1047",
+      "target": "o",
+      "source_seconds": 73.892,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "o",
+      "source_sha256": "e590926a8a905369db326e37c42c5900ec1c41621cedae7584c26938df78cf7f"
+    },
+    {
+      "path": "o\\F147To.wav",
+      "speaker": "F147",
+      "target": "o",
+      "source_seconds": 111.761,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 140,
+        "multiple_vowels": 5
+      },
+      "source_label": "o",
+      "source_sha256": "821bebb56a8eeb8afc41497a83a3fa4b7f4e4f0ee37d2c83419397af45579bed"
+    },
+    {
+      "path": "o\\F29To.wav",
+      "speaker": "F29",
+      "target": "o",
+      "source_seconds": 112.827,
+      "source_sample_rate": 16000,
+      "segments": {
+        "multiple_vowels": 5,
+        "ok": 148,
+        "no_speech": 15,
+        "noisy_audio": 2
+      },
+      "source_label": "o",
+      "source_sha256": "ff3aae0e1afbca6db88edcac67ca61afeb72ff2caa28c84c4694f24dc0e5538a"
+    },
+    {
+      "path": "o\\F320To.wav",
+      "speaker": "F320",
+      "target": "o",
+      "source_seconds": 108.888,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 126,
+        "no_speech": 2,
+        "multiple_vowels": 9
+      },
+      "source_label": "o",
+      "source_sha256": "1e52a5c969835ad24af9f02d2cdc654d53a087b585de22b51ac834095c9c58ae"
+    },
+    {
+      "path": "o\\F462To.wav",
+      "speaker": "F462",
+      "target": "o",
+      "source_seconds": 118.001,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150,
+        "no_speech": 4
+      },
+      "source_label": "o",
+      "source_sha256": "ac3872d09e3fdb34d2d97d3ec19df41713dfca27df1235cc49a6a8d316e2eef5"
+    },
+    {
+      "path": "o\\F513To.wav",
+      "speaker": "F513",
+      "target": "o",
+      "source_seconds": 114.4,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 186
+      },
+      "source_label": "o",
+      "source_sha256": "5e7b3610ab36987c941172d214a7a92ef08eae4afbe0cd6eb25ef5327a07e67c"
+    },
+    {
+      "path": "o\\F643To.wav",
+      "speaker": "F643",
+      "target": "o",
+      "source_seconds": 147.99675,
+      "source_sample_rate": 44100,
+      "segments": {
+        "ok": 159
+      },
+      "source_label": "o",
+      "source_sha256": "4023c822c235ae0671f9612d3a536c0b49e4d6575d83a7d0bcbc8d6487cdf5ea"
+    },
+    {
+      "path": "o\\F711To.wav",
+      "speaker": "F711",
+      "target": "o",
+      "source_seconds": 97.539,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 170
+      },
+      "source_label": "o",
+      "source_sha256": "176d6b4933dff93feebb556d784d3c28d317b6b6dd01d524e5e404dd09fe7cf3"
+    },
+    {
+      "path": "o\\F813To.wav",
+      "speaker": "F813",
+      "target": "o",
+      "source_seconds": 155.298,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 162
+      },
+      "source_label": "o",
+      "source_sha256": "eec88a08907ac54bbdee29619acc59ebf5431902121137986302aa26c6939723"
+    },
+    {
+      "path": "o\\F943To.wav",
+      "speaker": "F943",
+      "target": "o",
+      "source_seconds": 111.683,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 153
+      },
+      "source_label": "o",
+      "source_sha256": "a7a31fe85421e9e1e7dec420bd697ba6428a36765294757826575de2d95edfda"
+    },
+    {
+      "path": "o\\M1010To.wav",
+      "speaker": "M1010",
+      "target": "o",
+      "source_seconds": 105.599,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 121
+      },
+      "source_label": "o",
+      "source_sha256": "b716be0d011e20f4f28662322c31a0900e5757745da2be263b9677a85c5766fb"
+    },
+    {
+      "path": "o\\M13To.wav",
+      "speaker": "M13",
+      "target": "o",
+      "source_seconds": 146.042,
+      "source_sample_rate": 16000,
+      "segments": {
+        "multiple_vowels": 8,
+        "ok": 142,
+        "no_speech": 4
+      },
+      "source_label": "o",
+      "source_sha256": "1b4215b81eeb6961ca03794380b5149bf6e986ac2b2758e98260eac5d113fc5e"
+    },
+    {
+      "path": "o\\M221To.wav",
+      "speaker": "M221",
+      "target": "o",
+      "source_seconds": 118.092,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 140
+      },
+      "source_label": "o",
+      "source_sha256": "f2dd984e8226e9b947e1cb2a00371c9600243a7cf37cd2f4fe77ce451e71836b"
+    },
+    {
+      "path": "o\\M327To.wav",
+      "speaker": "M327",
+      "target": "o",
+      "source_seconds": 127.166,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 187,
+        "no_speech": 1
+      },
+      "source_label": "o",
+      "source_sha256": "f6fa5b8e70cc4e74a3acf6bb1ced4a71d36d26702cd56f89f35708a73f0c883c"
+    },
+    {
+      "path": "o\\M413To.wav",
+      "speaker": "M413",
+      "target": "o",
+      "source_seconds": 228.865,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 161
+      },
+      "source_label": "o",
+      "source_sha256": "b8a87224ca39c00b502c26bc60b234f340ff28ad81e279495fc4626400879d5b"
+    },
+    {
+      "path": "o\\M522To.wav",
+      "speaker": "M522",
+      "target": "o",
+      "source_seconds": 173.095,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 166
+      },
+      "source_label": "o",
+      "source_sha256": "afc19e6440861e99d94959d70bb0c1bcf96568d36ecad3426e381cb0a45f594f"
+    },
+    {
+      "path": "o\\M660To.wav",
+      "speaker": "M660",
+      "target": "o",
+      "source_seconds": 135.434,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "o",
+      "source_sha256": "ce07cf3b15eb08ccbc1c647977fd4f14ba47d296517f1d006e151e0e81c9bc70"
+    },
+    {
+      "path": "o\\M721To.wav",
+      "speaker": "M721",
+      "target": "o",
+      "source_seconds": 109.837,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "o",
+      "source_sha256": "19c21fb4f0362a87c86d9b31ea107947da7e27fbe3c4b1ee0808a47483a96d42"
+    },
+    {
+      "path": "o\\M821To.wav",
+      "speaker": "M821",
+      "target": "o",
+      "source_seconds": 166.725,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 161,
+        "multiple_vowels": 1
+      },
+      "source_label": "o",
+      "source_sha256": "6dd04ea1137a8f8892f10ace26284aada57f7ff2bac628f2f1c7c1198e47ffc0"
+    },
+    {
+      "path": "o\\M912To.wav",
+      "speaker": "M912",
+      "target": "o",
+      "source_seconds": 128.609,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 149
+      },
+      "source_label": "o",
+      "source_sha256": "a8dab48cee8a90b63878f1ff24c31aa65444fa9f64a15030182190805036b887"
+    },
+    {
+      "path": "oo\\F1047Too.wav",
+      "speaker": "F1047",
+      "target": "oo",
+      "source_seconds": 137.397,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 150
+      },
+      "source_label": "oo",
+      "source_sha256": "cc7438bff7113e0ab9d942b975dd1e858a6deca411658ffb3a868e0c99dec64c"
+    },
+    {
+      "path": "oo\\F147Too.wav",
+      "speaker": "F147",
+      "target": "oo",
+      "source_seconds": 142.948,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 149,
+        "multiple_vowels": 2,
+        "no_speech": 1
+      },
+      "source_label": "oo",
+      "source_sha256": "dc792f7c9267972c88edd6ede223676b08e88dca1269ae6a044d431f42ef5972"
+    },
+    {
+      "path": "oo\\F29Too.wav",
+      "speaker": "F29",
+      "target": "oo",
+      "source_seconds": 126.906,
+      "source_sample_rate": 16000,
+      "segments": {
+        "ok": 148,
+        "multiple_vowels": 2
+      },
+      "source_label": "oo",
+      "source_sha256": "64cee60a334b76b0f72e886da998ebf4d19e26b4c49841825c2207f95ceb8761"
+    },
+    {
+      "path": "oo\\F320Too.wav",
+      "speaker": "F320",
+      "target": "oo",
+      "source_seconds": 133.757,
+      "source_sample_rate": 16000,
+      "segments": {
+        "multiple_vowels": 8,
+        "ok": 121,
+        "no_speech": 4
+      },
+      "source_label": "oo",
+      "source_sha256": "ce541da7ce6cbecb720a3c0ef0d4c454cec279c817b03498afc377a09f9c91ba"
+    },
+    {
+      "path": "oo\\F462Too.wav",
+      "speaker": "F462",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 151.97,
+      "source_sample_rate": 16000,
+      "source_sha256": "ad30a9eafbb94a39e7b1546a818badf2718feadfc52c87e7ed6c711912212f45",
+      "segments": {
+        "ok": 153
+      }
+    },
+    {
+      "path": "oo\\F513Too.wav",
+      "speaker": "F513",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 124.8,
+      "source_sample_rate": 16000,
+      "source_sha256": "bad465e2bb29cead5782033d52d814342942a5c32baf7e0b8db5677f6d0281c2",
+      "segments": {
+        "ok": 154
+      }
+    },
+    {
+      "path": "oo\\F643Too.wav",
+      "speaker": "F643",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 174.72,
+      "source_sample_rate": 16000,
+      "source_sha256": "4528d8d3a2f10697b1e356f91e1a341e827a203ba73053891f637c356abba702",
+      "segments": {
+        "ok": 159
+      }
+    },
+    {
+      "path": "oo\\F711Too.wav",
+      "speaker": "F711",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 149.539,
+      "source_sample_rate": 16000,
+      "source_sha256": "c106b4454833b3fe7b547b98d3b24f4c31a274afb4460829381ebb07beac22b7",
+      "segments": {
+        "ok": 160,
+        "noisy_audio": 1
+      }
+    },
+    {
+      "path": "oo\\F813Too.wav",
+      "speaker": "F813",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 161.98,
+      "source_sample_rate": 16000,
+      "source_sha256": "aabad88c9117c6ab1dc0fe9d340f346266948e94b688b15e12cf8e738b032e01",
+      "segments": {
+        "ok": 161
+      }
+    },
+    {
+      "path": "oo\\F943Too.wav",
+      "speaker": "F943",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 151.814,
+      "source_sample_rate": 16000,
+      "source_sha256": "0b74b85174d75f74b1252d8d86484ed40514262986544eea1fc4e7644635a376",
+      "segments": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "oo\\M1010Too.wav",
+      "speaker": "M1010",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 135.226,
+      "source_sample_rate": 16000,
+      "source_sha256": "88e4f26338040065d603de7c81735fc9c97703c4bfb69d5f8b6ad7dbea29beeb",
+      "segments": {
+        "ok": 129
+      }
+    },
+    {
+      "path": "oo\\M13Too.wav",
+      "speaker": "M13",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 146.055,
+      "source_sample_rate": 16000,
+      "source_sha256": "09d59bd7927f1d329121853d030c584b562022ed9ba3a8be355e0cc4cb9befb9",
+      "segments": {
+        "ok": 151,
+        "noisy_audio": 1,
+        "multiple_vowels": 3,
+        "no_speech": 1
+      }
+    },
+    {
+      "path": "oo\\M221Too.wav",
+      "speaker": "M221",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 170.664,
+      "source_sample_rate": 16000,
+      "source_sha256": "0c2946f1dbae5dd2579b53e83f535fd1ce375adf167982632d8a0ecf9e26e8af",
+      "segments": {
+        "no_speech": 1,
+        "ok": 173,
+        "noisy_audio": 1
+      }
+    },
+    {
+      "path": "oo\\M327Too.wav",
+      "speaker": "M327",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 192.426,
+      "source_sample_rate": 16000,
+      "source_sha256": "65cd73e9e49c8f8194533f820473a327c7e89cfb9f6f5445e4043ea3621ff630",
+      "segments": {
+        "ok": 166,
+        "no_speech": 3,
+        "noisy_audio": 1
+      }
+    },
+    {
+      "path": "oo\\M413Too.wav",
+      "speaker": "M413",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 178.152,
+      "source_sample_rate": 16000,
+      "source_sha256": "908bd2f1403044607a2004cea13fa12150fb3aa0437a3d6ab50680e578363286",
+      "segments": {
+        "ok": 128,
+        "noisy_audio": 10
+      }
+    },
+    {
+      "path": "oo\\M522Too.wav",
+      "speaker": "M522",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 272.584,
+      "source_sample_rate": 16000,
+      "source_sha256": "4f7e52bb89b93f4b123e0611fcafe7dba2c43e7e314bdd337a1c6d77c6582c2c",
+      "segments": {
+        "ok": 154,
+        "multiple_vowels": 1,
+        "no_speech": 4,
+        "noisy_audio": 1
+      }
+    },
+    {
+      "path": "oo\\M660Too.wav",
+      "speaker": "M660",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 204.269,
+      "source_sample_rate": 16000,
+      "source_sha256": "b8a2c0a80201c7b48b904ea496f759f0725618c4df6a3db320f2b65acdd40c05",
+      "segments": {
+        "ok": 149,
+        "multiple_vowels": 1
+      }
+    },
+    {
+      "path": "oo\\M721Too.wav",
+      "speaker": "M721",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 166.075,
+      "source_sample_rate": 16000,
+      "source_sha256": "8c251e2ca918a823f7ae67ff4cbb5b12da041bf236592fb4e8bfa90b1785030f",
+      "segments": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "oo\\M821Too.wav",
+      "speaker": "M821",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 188.084,
+      "source_sample_rate": 16000,
+      "source_sha256": "3ba4678d1386ce4dd2816d5a6944071e6dc99746758a9eac9aefafe80dafa975",
+      "segments": {
+        "ok": 152
+      }
+    },
+    {
+      "path": "oo\\M912Too.wav",
+      "speaker": "M912",
+      "target": "oo",
+      "source_label": "oo",
+      "source_seconds": 207.545,
+      "source_sample_rate": 16000,
+      "source_sha256": "3c8aa4d2e1347e41896fd11612fc2e38cacb6d96ecc94e5bce06247fdc188d73",
+      "segments": {
+        "ok": 149
+      }
+    },
+    {
+      "path": "u\\F1047Tu.wav",
+      "speaker": "F1047",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 78.221,
+      "source_sample_rate": 16000,
+      "source_sha256": "abe842c9870b83efe3a756bacfe3aebc3e87c63e7007ddf7466b4ec2e8d2ea92",
+      "segments": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "u\\F147Tu.wav",
+      "speaker": "F147",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 109.473,
+      "source_sample_rate": 16000,
+      "source_sha256": "c959ce42cb95121bd8f77e04487392414a4fd707d42cb8a69f394d9647bb46ef",
+      "segments": {
+        "no_speech": 5,
+        "ok": 128,
+        "multiple_vowels": 11
+      }
+    },
+    {
+      "path": "u\\F29Tu.wav",
+      "speaker": "F29",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 110.526,
+      "source_sample_rate": 16000,
+      "source_sha256": "fc255d4426920b5bf1bfd810e16b51b0de9d958d2983d6b361171815d4c9766e",
+      "segments": {
+        "ok": 129,
+        "no_speech": 12,
+        "multiple_vowels": 18
+      }
+    },
+    {
+      "path": "u\\F320Tu.wav",
+      "speaker": "F320",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 111.813,
+      "source_sample_rate": 16000,
+      "source_sha256": "f57bb38c154a5a82ac9ae15ac9ed3f0f6daf5ce31a5891fa5850f7c1c06888d7",
+      "segments": {
+        "multiple_vowels": 14,
+        "ok": 117,
+        "no_speech": 2
+      }
+    },
+    {
+      "path": "u\\F462Tu.wav",
+      "speaker": "F462",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 107.965,
+      "source_sample_rate": 16000,
+      "source_sha256": "e65e2182c6d224fe507d184cd535eed24d45f2ccdefbe000859b3130c5c4891b",
+      "segments": {
+        "ok": 147
+      }
+    },
+    {
+      "path": "u\\F513Tu.wav",
+      "speaker": "F513",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 95.927,
+      "source_sample_rate": 16000,
+      "source_sha256": "b6c47cc90b434942460fb92c3210d422073443a4259f75a076865ef8b64abb67",
+      "segments": {
+        "ok": 162,
+        "multiple_vowels": 1,
+        "no_speech": 1
+      }
+    },
+    {
+      "path": "u\\F643Tu.wav",
+      "speaker": "F643",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 144.651,
+      "source_sample_rate": 16000,
+      "source_sha256": "fb3f74e2ca30488905d39e99744b82b4d3595b8fbed0f7f774d93381f2a4a9e1",
+      "segments": {
+        "ok": 163
+      }
+    },
+    {
+      "path": "u\\F711Tu.wav",
+      "speaker": "F711",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 127.023,
+      "source_sample_rate": 16000,
+      "source_sha256": "99f68548962bb2727b9a874cec6920eeab583fd2be41bd8048bb0e26ff5ef339",
+      "segments": {
+        "ok": 104,
+        "no_speech": 73
+      }
+    },
+    {
+      "path": "u\\F813Tu.wav",
+      "speaker": "F813",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 174.85,
+      "source_sample_rate": 16000,
+      "source_sha256": "eca2e32738de546b7e8e5060c25941cdf90b34da9e82199c065ab184f2c6c8e0",
+      "segments": {
+        "ok": 158
+      }
+    },
+    {
+      "path": "u\\F943Tu.wav",
+      "speaker": "F943",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 114.4,
+      "source_sample_rate": 16000,
+      "source_sha256": "fe14dfa6dc20a1391862f96a094b1710cadf5e4a420e46ffe36617f0b5fb0509",
+      "segments": {
+        "ok": 154
+      }
+    },
+    {
+      "path": "u\\M1010Tu.wav",
+      "speaker": "M1010",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 115.206,
+      "source_sample_rate": 16000,
+      "source_sha256": "234a6f5f156bb32514e4cf7ca736c8b119007b03c9a0b57fa863eea9296ceb3f",
+      "segments": {
+        "ok": 142
+      }
+    },
+    {
+      "path": "u\\M13Tu.wav",
+      "speaker": "M13",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 149.123,
+      "source_sample_rate": 16000,
+      "source_sha256": "9145fa82cb8357d302179020dc20367de0dca3be1fb08cd79330302b0785ed2b",
+      "segments": {
+        "multiple_vowels": 11,
+        "ok": 136,
+        "no_speech": 8
+      }
+    },
+    {
+      "path": "u\\M221Tu.wav",
+      "speaker": "M221",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 171.535,
+      "source_sample_rate": 16000,
+      "source_sha256": "45ccbc1142f81d080309054cbbbe919a541d11c04a981dbff6928221f212743e",
+      "segments": {
+        "ok": 164,
+        "no_speech": 1
+      }
+    },
+    {
+      "path": "u\\M327Tu.wav",
+      "speaker": "M327",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 141.219,
+      "source_sample_rate": 16000,
+      "source_sha256": "062eee2f47f437032537b02a1279652d8bde523a05b7404747532fce8f77d614",
+      "segments": {
+        "ok": 191
+      }
+    },
+    {
+      "path": "u\\M413Tu.wav",
+      "speaker": "M413",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 160.277,
+      "source_sample_rate": 16000,
+      "source_sha256": "dd57fe69b1e11cb860bc5629923815edff22f601210f4e074ee0e6a0e5873b44",
+      "segments": {
+        "ok": 151,
+        "multiple_vowels": 8,
+        "noisy_audio": 5,
+        "clipped_audio": 2
+      }
+    },
+    {
+      "path": "u\\M522Tu.wav",
+      "speaker": "M522",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 189.67,
+      "source_sample_rate": 16000,
+      "source_sha256": "af0702578358ff51fdcc9c5b1b03a4d008720c4736590fb0c25bf8d7392b70b7",
+      "segments": {
+        "ok": 156,
+        "noisy_audio": 2
+      }
+    },
+    {
+      "path": "u\\M660Tu.wav",
+      "speaker": "M660",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 141.908,
+      "source_sample_rate": 16000,
+      "source_sha256": "0c49779a4c261eb3d2e2519bc4102437521549149f67b3d03586573eff0c1d57",
+      "segments": {
+        "ok": 140
+      }
+    },
+    {
+      "path": "u\\M721Tu.wav",
+      "speaker": "M721",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 108.55,
+      "source_sample_rate": 16000,
+      "source_sha256": "812d6fade394e97b9b11a20c591c0daccc4d17ce8047f6cc9ca617aa585998cf",
+      "segments": {
+        "ok": 148
+      }
+    },
+    {
+      "path": "u\\M821Tu.wav",
+      "speaker": "M821",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 170.638,
+      "source_sample_rate": 16000,
+      "source_sha256": "ae301f2e7aaa58f819df032789e4bfba24597d39dac1ef25d937c1798e0e2e91",
+      "segments": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "u\\M912Tu.wav",
+      "speaker": "M912",
+      "target": "u",
+      "source_label": "u",
+      "source_seconds": 116.038,
+      "source_sample_rate": 16000,
+      "source_sha256": "638e5b3948f256195cb6c2f6ebce99ac906097a55a0a749ba5b9378d1c6976c2",
+      "segments": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "uu\\F1047Tuu.wav",
+      "speaker": "F1047",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 137.306,
+      "source_sample_rate": 16000,
+      "source_sha256": "b6068d06bad151ea1178ca62bf4e70879f257768a77124b685b3392b370ad9d2",
+      "segments": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "uu\\F147Tuu.wav",
+      "speaker": "F147",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 158.73,
+      "source_sample_rate": 16000,
+      "source_sha256": "74b437a9a1d9227cb37b825c12008adf0af7c02f00857df8c17515428a54a932",
+      "segments": {
+        "ok": 127,
+        "multiple_vowels": 10,
+        "no_speech": 6
+      }
+    },
+    {
+      "path": "uu\\F29Tuu.wav",
+      "speaker": "F29",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 132.977,
+      "source_sample_rate": 16000,
+      "source_sha256": "74459baabe4a3380826b3c7009ec24e23befae7ef3e27681eed6ee7fd6a23417",
+      "segments": {
+        "multiple_vowels": 11,
+        "ok": 136,
+        "no_speech": 11
+      }
+    },
+    {
+      "path": "uu\\F320Tuu.wav",
+      "speaker": "F320",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 124.098,
+      "source_sample_rate": 16000,
+      "source_sha256": "ae0e32183897841048df900bd34e6052b0a63efd2d54ef83c9b2510d77ec5ea7",
+      "segments": {
+        "ok": 130,
+        "multiple_vowels": 5
+      }
+    },
+    {
+      "path": "uu\\F462Tuu.wav",
+      "speaker": "F462",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 123.305,
+      "source_sample_rate": 16000,
+      "source_sha256": "7d5a647a392e7139dce9a0c931d49928e17ed8f51b1dc6ee4d318f8d8581c39e",
+      "segments": {
+        "ok": 142,
+        "multiple_vowels": 11,
+        "noisy_audio": 1,
+        "no_speech": 1
+      }
+    },
+    {
+      "path": "uu\\F513Tuu.wav",
+      "speaker": "F513",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 131.157,
+      "source_sample_rate": 16000,
+      "source_sha256": "5a835dc4295072c0af0c76449de4ae400ca446a14e248b7bba5bc16b40f4b40d",
+      "segments": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "uu\\F643Tuu.wav",
+      "speaker": "F643",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 170.521,
+      "source_sample_rate": 16000,
+      "source_sha256": "f006ac631e02b03829d87853b69087ba96dfed4c6626703d52892e2fe609840e",
+      "segments": {
+        "ok": 164
+      }
+    },
+    {
+      "path": "uu\\F711Tuu.wav",
+      "speaker": "F711",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 151.229,
+      "source_sample_rate": 16000,
+      "source_sha256": "14df7ec7ec4f31e72cd541f542de0cfb983afb949d473cf038c94fc67709f042",
+      "segments": {
+        "ok": 143
+      }
+    },
+    {
+      "path": "uu\\F813Tuu.wav",
+      "speaker": "F813",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 185.042,
+      "source_sample_rate": 16000,
+      "source_sha256": "09b3872aeee35c16037ba46b1914a2f0f25a1f4916928540bd03d9d9b2a79e4a",
+      "segments": {
+        "ok": 158
+      }
+    },
+    {
+      "path": "uu\\F943Tuu.wav",
+      "speaker": "F943",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 142.246,
+      "source_sample_rate": 16000,
+      "source_sha256": "2298a8ef5707dfb6d3eb2921724885930e59674ca57c1ed6cbb83a4773da7141",
+      "segments": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "uu\\M1010Tuu.wav",
+      "speaker": "M1010",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 153.491,
+      "source_sample_rate": 16000,
+      "source_sha256": "6631a0a2d30d61bf32f8fd2f4c4ae082afddadb9f57b2c7ff8ff6f9ca619e143",
+      "segments": {
+        "ok": 162
+      }
+    },
+    {
+      "path": "uu\\M13Tuu.wav",
+      "speaker": "M13",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 148.915,
+      "source_sample_rate": 16000,
+      "source_sha256": "c117c3d8096cc032a9ab00cf0680fb7736fc2594c61d8a747c32d8ea4781c323",
+      "segments": {
+        "ok": 142,
+        "multiple_vowels": 16,
+        "no_speech": 1
+      }
+    },
+    {
+      "path": "uu\\M221Tuu.wav",
+      "speaker": "M221",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 231.296,
+      "source_sample_rate": 16000,
+      "source_sha256": "4642bac624e29ffe40e27b71dbe6651c4202617c5b2c1149d12c6e64b50763cd",
+      "segments": {
+        "ok": 194
+      }
+    },
+    {
+      "path": "uu\\M327Tuu.wav",
+      "speaker": "M327",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 180.648,
+      "source_sample_rate": 16000,
+      "source_sha256": "afa40ed4d727128bf3a544fb03dca1bbba4a9be595a3c5b53e631ab2b180c729",
+      "segments": {
+        "ok": 186,
+        "noisy_audio": 4
+      }
+    },
+    {
+      "path": "uu\\M413Tuu.wav",
+      "speaker": "M413",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 166.335,
+      "source_sample_rate": 16000,
+      "source_sha256": "20adb6f30d2a8b2a39555af2b6aff03f7dd7b2e42a127596bb4b69484d932f86",
+      "segments": {
+        "ok": 145,
+        "no_speech": 1,
+        "noisy_audio": 1
+      }
+    },
+    {
+      "path": "uu\\M522Tuu.wav",
+      "speaker": "M522",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 278.798,
+      "source_sample_rate": 16000,
+      "source_sha256": "a517efddd952b2507a64f905a3d5247205d572907d9aa0756f54b3b335ee6394",
+      "segments": {
+        "ok": 149,
+        "no_speech": 1,
+        "noisy_audio": 1
+      }
+    },
+    {
+      "path": "uu\\M660Tuu.wav",
+      "speaker": "M660",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 212.784,
+      "source_sample_rate": 16000,
+      "source_sha256": "168a41f04def5cec6923bf1e3355d45617e5196b517df4603fc94cc7871f60e8",
+      "segments": {
+        "ok": 152,
+        "multiple_vowels": 1,
+        "noisy_audio": 1
+      }
+    },
+    {
+      "path": "uu\\M721Tuu.wav",
+      "speaker": "M721",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 157.014,
+      "source_sample_rate": 16000,
+      "source_sha256": "ff558f3a99fff00dea465d0013a11c55d16ce0d4ce886e2ddc8874a42013399c",
+      "segments": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "uu\\M821Tuu.wav",
+      "speaker": "M821",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 207.779,
+      "source_sample_rate": 16000,
+      "source_sha256": "5780963daaaa7f4305a10093f1c6a1b72689f1b56ea02fdc145a104e93fc3a9b",
+      "segments": {
+        "ok": 155
+      }
+    },
+    {
+      "path": "uu\\M912Tuu.wav",
+      "speaker": "M912",
+      "target": "uu",
+      "source_label": "uu",
+      "source_seconds": 194.077,
+      "source_sample_rate": 16000,
+      "source_sha256": "028dd43b4838475ed4c7aebca6d6fbfc24fd632c86411c885efe85f5cd0f03ba",
+      "segments": {
+        "ok": 148
+      }
+    }
+  ],
+  "counts": {
+    "train": 18312,
+    "validation": 5574,
+    "test": 6078
+  },
+  "thresholds": {
+    "identity_threshold": 0.6,
+    "length_threshold": 0.6
+  },
+  "length_features": [
+    "log(actual_voiced_duration_seconds)"
+  ],
+  "learned_length_boundaries": {
+    "A": {
+      "equal_probability_seconds": 0.4144941198784008,
+      "ambiguous_duration_interval_seconds": [
+        0.39294291389408953,
+        0.43722731556899136
+      ]
+    },
+    "E": {
+      "equal_probability_seconds": 0.4325382085490964,
+      "ambiguous_duration_interval_seconds": [
+        0.4171557643657324,
+        0.44848787392240147
+      ]
+    },
+    "I": {
+      "equal_probability_seconds": 0.4356712354849107,
+      "ambiguous_duration_interval_seconds": [
+        0.4126231907136642,
+        0.4600066833390004
+      ]
+    },
+    "O": {
+      "equal_probability_seconds": 0.4317818362904115,
+      "ambiguous_duration_interval_seconds": [
+        0.41979202847371,
+        0.4441140886552006
+      ]
+    },
+    "U": {
+      "equal_probability_seconds": 0.4177020570748377,
+      "ambiguous_duration_interval_seconds": [
+        0.39762655694508725,
+        0.43879113564501226
+      ]
+    }
+  },
+  "identity_features": "80 MFCC statistics, coefficients 1..20, excluding duration and energy",
+  "calibration": "sigmoid calibration fitted on validation speakers; test speakers untouched",
+  "train": {
+    "identity": {
+      "accuracy": 0.9996723460026212,
+      "classification_report": {
+        "A": {
+          "precision": 1.0,
+          "recall": 0.999171956941761,
+          "f1-score": 0.9995858069860555,
+          "support": 3623.0
+        },
+        "E": {
+          "precision": 0.9986687965921193,
+          "recall": 1.0,
+          "f1-score": 0.9993339549753564,
+          "support": 3751.0
+        },
+        "I": {
+          "precision": 0.9997242140099283,
+          "recall": 0.9997242140099283,
+          "f1-score": 0.9997242140099283,
+          "support": 3626.0
+        },
+        "O": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 3684.0
+        },
+        "U": {
+          "precision": 1.0,
+          "recall": 0.9994487320837927,
+          "f1-score": 0.9997242900468707,
+          "support": 3628.0
+        },
+        "accuracy": 0.9996723460026212,
+        "macro avg": {
+          "precision": 0.9996786021204095,
+          "recall": 0.9996689806070964,
+          "f1-score": 0.9996736532036422,
+          "support": 18312.0
+        },
+        "weighted avg": {
+          "precision": 0.9996727094810528,
+          "recall": 0.9996723460026212,
+          "f1-score": 0.9996723879485085,
+          "support": 18312.0
+        }
+      },
+      "labels": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "confusion_matrix": [
+        [
+          3620,
+          2,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          3751,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          3625,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          3684,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          0,
+          3626
+        ]
+      ]
+    },
+    "length": {
+      "accuracy": 0.9064001747487986,
+      "classification_report": {
+        "short": {
+          "precision": 0.916287836789001,
+          "recall": 0.8960208175214138,
+          "f1-score": 0.906041004275847,
+          "support": 9223.0
+        },
+        "long": {
+          "precision": 0.8968040460561714,
+          "recall": 0.9169325558367257,
+          "f1-score": 0.9067566097269067,
+          "support": 9089.0
+        },
+        "accuracy": 0.9064001747487986,
+        "macro avg": {
+          "precision": 0.9065459414225863,
+          "recall": 0.9064766866790698,
+          "f1-score": 0.9063988070013769,
+          "support": 18312.0
+        },
+        "weighted avg": {
+          "precision": 0.9066172287740005,
+          "recall": 0.9064001747487986,
+          "f1-score": 0.9063961887420265,
+          "support": 18312.0
+        }
+      },
+      "labels": [
+        "short",
+        "long"
+      ],
+      "confusion_matrix": [
+        [
+          8264,
+          959
+        ],
+        [
+          755,
+          8334
+        ]
+      ]
+    },
+    "combined": {
+      "accuracy": 0.9061817387505461,
+      "classification_report": {
+        "A_long": {
+          "precision": 0.8656636217087588,
+          "recall": 0.895,
+          "f1-score": 0.8800874078120732,
+          "support": 1800.0
+        },
+        "A_short": {
+          "precision": 0.893121091529278,
+          "recall": 0.861766319253977,
+          "f1-score": 0.8771635957565606,
+          "support": 1823.0
+        },
+        "E_long": {
+          "precision": 0.9329367225527312,
+          "recall": 0.9504132231404959,
+          "f1-score": 0.9415938864628821,
+          "support": 1815.0
+        },
+        "E_short": {
+          "precision": 0.9501835343471421,
+          "recall": 0.9359504132231405,
+          "f1-score": 0.9430132708821234,
+          "support": 1936.0
+        },
+        "I_long": {
+          "precision": 0.867330016583748,
+          "recall": 0.8834459459459459,
+          "f1-score": 0.8753138075313808,
+          "support": 1776.0
+        },
+        "I_short": {
+          "precision": 0.8855255916345625,
+          "recall": 0.8697297297297297,
+          "f1-score": 0.8775565857649305,
+          "support": 1850.0
+        },
+        "O_long": {
+          "precision": 0.9454949944382648,
+          "recall": 0.9264305177111717,
+          "f1-score": 0.9358656757500688,
+          "support": 1835.0
+        },
+        "O_short": {
+          "precision": 0.9284199363732768,
+          "recall": 0.9469983775013521,
+          "f1-score": 0.9376171352074967,
+          "support": 1849.0
+        },
+        "U_long": {
+          "precision": 0.875,
+          "recall": 0.9280730005367687,
+          "f1-score": 0.9007554050533993,
+          "support": 1863.0
+        },
+        "U_short": {
+          "precision": 0.9193939393939394,
+          "recall": 0.8594900849858357,
+          "f1-score": 0.8884333821376281,
+          "support": 1765.0
+        },
+        "accuracy": 0.9061817387505461,
+        "macro avg": {
+          "precision": 0.9063069448561702,
+          "recall": 0.9057297612028418,
+          "f1-score": 0.9057400152358543,
+          "support": 18312.0
+        },
+        "weighted avg": {
+          "precision": 0.9066337525676224,
+          "recall": 0.9061817387505461,
+          "f1-score": 0.9061320450203227,
+          "support": 18312.0
+        }
+      },
+      "labels": [
+        "A_long",
+        "A_short",
+        "E_long",
+        "E_short",
+        "I_long",
+        "I_short",
+        "O_long",
+        "O_short",
+        "U_long",
+        "U_short"
+      ],
+      "confusion_matrix": [
+        [
+          1611,
+          188,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          250,
+          1571,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1725,
+          90,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          124,
+          1812,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1569,
+          207,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          240,
+          1609,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1700,
+          135,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          98,
+          1751,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1729,
+          133
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          247,
+          1517
+        ]
+      ]
+    },
+    "confidence_gate_coverage": 0.9400393184796855,
+    "accepted_combined_accuracy": 0.9279656093877077
+  },
+  "validation": {
+    "identity": {
+      "accuracy": 0.8744169357732329,
+      "classification_report": {
+        "A": {
+          "precision": 0.8883968113374667,
+          "recall": 0.9804496578690127,
+          "f1-score": 0.9321561338289963,
+          "support": 1023.0
+        },
+        "E": {
+          "precision": 0.9609756097560975,
+          "recall": 0.8897922312556459,
+          "f1-score": 0.924015009380863,
+          "support": 1107.0
+        },
+        "I": {
+          "precision": 0.9703056768558952,
+          "recall": 0.9242928452579035,
+          "f1-score": 0.9467405198125266,
+          "support": 1202.0
+        },
+        "O": {
+          "precision": 0.8348880597014925,
+          "recall": 0.7906360424028268,
+          "f1-score": 0.8121597096188747,
+          "support": 1132.0
+        },
+        "U": {
+          "precision": 0.7315045719035744,
+          "recall": 0.7927927927927928,
+          "f1-score": 0.7609165585819282,
+          "support": 1110.0
+        },
+        "accuracy": 0.8744169357732329,
+        "macro avg": {
+          "precision": 0.8772141459109053,
+          "recall": 0.8755927139156363,
+          "f1-score": 0.8751975862446377,
+          "support": 5574.0
+        },
+        "weighted avg": {
+          "precision": 0.8783639612440028,
+          "recall": 0.8744169357732329,
+          "f1-score": 0.8752143194152928,
+          "support": 5574.0
+        }
+      },
+      "labels": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "confusion_matrix": [
+        [
+          1003,
+          4,
+          2,
+          2,
+          12
+        ],
+        [
+          26,
+          985,
+          31,
+          20,
+          45
+        ],
+        [
+          2,
+          22,
+          1111,
+          5,
+          62
+        ],
+        [
+          29,
+          4,
+          0,
+          895,
+          204
+        ],
+        [
+          69,
+          10,
+          1,
+          150,
+          880
+        ]
+      ]
+    },
+    "length": {
+      "accuracy": 0.7334050950843201,
+      "classification_report": {
+        "short": {
+          "precision": 0.8282828282828283,
+          "recall": 0.5886575735821967,
+          "f1-score": 0.6882081409987411,
+          "support": 2786.0
+        },
+        "long": {
+          "precision": 0.6811352253756261,
+          "recall": 0.8780487804878049,
+          "f1-score": 0.7671576308367283,
+          "support": 2788.0
+        },
+        "accuracy": 0.7334050950843201,
+        "macro avg": {
+          "precision": 0.7547090268292271,
+          "recall": 0.7333531770350008,
+          "f1-score": 0.7276828859177347,
+          "support": 5574.0
+        },
+        "weighted avg": {
+          "precision": 0.754682627905132,
+          "recall": 0.7334050950843201,
+          "f1-score": 0.7276970498018104,
+          "support": 5574.0
+        }
+      },
+      "labels": [
+        "short",
+        "long"
+      ],
+      "confusion_matrix": [
+        [
+          1640,
+          1146
+        ],
+        [
+          340,
+          2448
+        ]
+      ]
+    },
+    "combined": {
+      "accuracy": 0.6539289558665231,
+      "classification_report": {
+        "A_long": {
+          "precision": 0.6500777604976672,
+          "recall": 0.8293650793650794,
+          "f1-score": 0.7288578901482128,
+          "support": 504.0
+        },
+        "A_short": {
+          "precision": 0.7139917695473251,
+          "recall": 0.6685934489402697,
+          "f1-score": 0.690547263681592,
+          "support": 519.0
+        },
+        "E_long": {
+          "precision": 0.6933139534883721,
+          "recall": 0.828125,
+          "f1-score": 0.754746835443038,
+          "support": 576.0
+        },
+        "E_short": {
+          "precision": 0.9169139465875371,
+          "recall": 0.5819209039548022,
+          "f1-score": 0.7119815668202765,
+          "support": 531.0
+        },
+        "I_long": {
+          "precision": 0.7348993288590604,
+          "recall": 0.7348993288590604,
+          "f1-score": 0.7348993288590604,
+          "support": 596.0
+        },
+        "I_short": {
+          "precision": 0.7340619307832422,
+          "recall": 0.665016501650165,
+          "f1-score": 0.6978354978354978,
+          "support": 606.0
+        },
+        "O_long": {
+          "precision": 0.5364583333333334,
+          "recall": 0.7450271247739603,
+          "f1-score": 0.6237698713096139,
+          "support": 553.0
+        },
+        "O_short": {
+          "precision": 0.680921052631579,
+          "recall": 0.35751295336787564,
+          "f1-score": 0.46885617214043035,
+          "support": 579.0
+        },
+        "U_long": {
+          "precision": 0.4994438264738598,
+          "recall": 0.8032200357781754,
+          "f1-score": 0.6159122085048011,
+          "support": 559.0
+        },
+        "U_short": {
+          "precision": 0.6085526315789473,
+          "recall": 0.33575317604355714,
+          "f1-score": 0.4327485380116959,
+          "support": 551.0
+        },
+        "accuracy": 0.6539289558665231,
+        "macro avg": {
+          "precision": 0.6768634533780922,
+          "recall": 0.6549433552732945,
+          "f1-score": 0.6460155172754218,
+          "support": 5574.0
+        },
+        "weighted avg": {
+          "precision": 0.6768369105478509,
+          "recall": 0.6539289558665231,
+          "f1-score": 0.6456000966761155,
+          "support": 5574.0
+        }
+      },
+      "labels": [
+        "A_long",
+        "A_short",
+        "E_long",
+        "E_short",
+        "I_long",
+        "I_short",
+        "O_long",
+        "O_short",
+        "U_long",
+        "U_short"
+      ],
+      "confusion_matrix": [
+        [
+          418,
+          74,
+          2,
+          1,
+          0,
+          1,
+          0,
+          0,
+          6,
+          2
+        ],
+        [
+          164,
+          347,
+          0,
+          1,
+          0,
+          1,
+          0,
+          2,
+          0,
+          4
+        ],
+        [
+          19,
+          2,
+          477,
+          6,
+          16,
+          0,
+          19,
+          0,
+          36,
+          1
+        ],
+        [
+          1,
+          4,
+          193,
+          309,
+          6,
+          9,
+          0,
+          1,
+          2,
+          6
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          438,
+          135,
+          0,
+          4,
+          3,
+          10
+        ],
+        [
+          0,
+          1,
+          6,
+          11,
+          135,
+          403,
+          0,
+          1,
+          25,
+          24
+        ],
+        [
+          14,
+          5,
+          1,
+          1,
+          0,
+          0,
+          412,
+          19,
+          81,
+          20
+        ],
+        [
+          4,
+          6,
+          2,
+          0,
+          0,
+          0,
+          257,
+          207,
+          90,
+          13
+        ],
+        [
+          4,
+          7,
+          1,
+          1,
+          0,
+          0,
+          50,
+          8,
+          449,
+          39
+        ],
+        [
+          19,
+          39,
+          4,
+          4,
+          1,
+          0,
+          30,
+          62,
+          207,
+          185
+        ]
+      ]
+    },
+    "confidence_gate_coverage": 0.8143164693218514,
+    "accepted_combined_accuracy": 0.7047807887199824
+  },
+  "test": {
+    "identity": {
+      "accuracy": 0.8190194142810134,
+      "classification_report": {
+        "A": {
+          "precision": 0.9981851179673321,
+          "recall": 0.9532062391681109,
+          "f1-score": 0.975177304964539,
+          "support": 1154.0
+        },
+        "E": {
+          "precision": 0.8803088803088803,
+          "recall": 0.9405940594059405,
+          "f1-score": 0.9094535301156761,
+          "support": 1212.0
+        },
+        "I": {
+          "precision": 0.9365942028985508,
+          "recall": 0.8524319868095631,
+          "f1-score": 0.8925334484246871,
+          "support": 1213.0
+        },
+        "O": {
+          "precision": 0.6347150259067358,
+          "recall": 0.7765451664025357,
+          "f1-score": 0.6985032074126871,
+          "support": 1262.0
+        },
+        "U": {
+          "precision": 0.7008712487899322,
+          "recall": 0.5852869846402587,
+          "f1-score": 0.6378854625550661,
+          "support": 1237.0
+        },
+        "accuracy": 0.8190194142810134,
+        "macro avg": {
+          "precision": 0.8301348951742863,
+          "recall": 0.8216128872852819,
+          "f1-score": 0.8227105906945311,
+          "support": 6078.0
+        },
+        "weighted avg": {
+          "precision": 0.8264094857900713,
+          "recall": 0.8190194142810134,
+          "f1-score": 0.8194851474669053,
+          "support": 6078.0
+        }
+      },
+      "labels": [
+        "A",
+        "E",
+        "I",
+        "O",
+        "U"
+      ],
+      "confusion_matrix": [
+        [
+          1100,
+          1,
+          1,
+          52,
+          0
+        ],
+        [
+          1,
+          1140,
+          67,
+          3,
+          1
+        ],
+        [
+          1,
+          152,
+          1034,
+          0,
+          26
+        ],
+        [
+          0,
+          0,
+          0,
+          980,
+          282
+        ],
+        [
+          0,
+          2,
+          2,
+          509,
+          724
+        ]
+      ]
+    },
+    "length": {
+      "accuracy": 0.9486673247778875,
+      "classification_report": {
+        "short": {
+          "precision": 0.9467668190725016,
+          "recall": 0.9511154855643045,
+          "f1-score": 0.948936170212766,
+          "support": 3048.0
+        },
+        "long": {
+          "precision": 0.9505968169761273,
+          "recall": 0.9462046204620462,
+          "f1-score": 0.9483956334766788,
+          "support": 3030.0
+        },
+        "accuracy": 0.9486673247778875,
+        "macro avg": {
+          "precision": 0.9486818180243144,
+          "recall": 0.9486600530131754,
+          "f1-score": 0.9486659018447223,
+          "support": 6078.0
+        },
+        "weighted avg": {
+          "precision": 0.9486761467539735,
+          "recall": 0.9486673247778875,
+          "f1-score": 0.9486667022446277,
+          "support": 6078.0
+        }
+      },
+      "labels": [
+        "short",
+        "long"
+      ],
+      "confusion_matrix": [
+        [
+          2899,
+          149
+        ],
+        [
+          163,
+          2867
+        ]
+      ]
+    },
+    "combined": {
+      "accuracy": 0.7747614346824613,
+      "classification_report": {
+        "A_long": {
+          "precision": 0.9637096774193549,
+          "recall": 0.8505338078291815,
+          "f1-score": 0.9035916824196597,
+          "support": 562.0
+        },
+        "A_short": {
+          "precision": 0.9389438943894389,
+          "recall": 0.9611486486486487,
+          "f1-score": 0.9499165275459098,
+          "support": 592.0
+        },
+        "E_long": {
+          "precision": 0.9297658862876255,
+          "recall": 0.896774193548387,
+          "f1-score": 0.9129720853858785,
+          "support": 620.0
+        },
+        "E_short": {
+          "precision": 0.7446197991391679,
+          "recall": 0.8766891891891891,
+          "f1-score": 0.8052754072924748,
+          "support": 592.0
+        },
+        "I_long": {
+          "precision": 0.9323432343234324,
+          "recall": 0.9157212317666127,
+          "f1-score": 0.9239574816026165,
+          "support": 617.0
+        },
+        "I_short": {
+          "precision": 0.8554216867469879,
+          "recall": 0.714765100671141,
+          "f1-score": 0.7787934186471663,
+          "support": 596.0
+        },
+        "O_long": {
+          "precision": 0.6587301587301587,
+          "recall": 0.8045234248788369,
+          "f1-score": 0.7243636363636363,
+          "support": 619.0
+        },
+        "O_short": {
+          "precision": 0.516497461928934,
+          "recall": 0.6329704510108864,
+          "f1-score": 0.5688329839273235,
+          "support": 643.0
+        },
+        "U_long": {
+          "precision": 0.7571428571428571,
+          "recall": 0.6928104575163399,
+          "f1-score": 0.7235494880546075,
+          "support": 612.0
+        },
+        "U_short": {
+          "precision": 0.5644820295983086,
+          "recall": 0.4272,
+          "f1-score": 0.48633879781420764,
+          "support": 625.0
+        },
+        "accuracy": 0.7747614346824613,
+        "macro avg": {
+          "precision": 0.7861656685706265,
+          "recall": 0.7773136505059224,
+          "f1-score": 0.7777591509053481,
+          "support": 6078.0
+        },
+        "weighted avg": {
+          "precision": 0.7824697316552068,
+          "recall": 0.7747614346824613,
+          "f1-score": 0.7746120800334981,
+          "support": 6078.0
+        }
+      },
+      "labels": [
+        "A_long",
+        "A_short",
+        "E_long",
+        "E_short",
+        "I_long",
+        "I_short",
+        "O_long",
+        "O_short",
+        "U_long",
+        "U_short"
+      ],
+      "confusion_matrix": [
+        [
+          478,
+          35,
+          0,
+          0,
+          0,
+          0,
+          31,
+          18,
+          0,
+          0
+        ],
+        [
+          18,
+          569,
+          0,
+          1,
+          1,
+          0,
+          0,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          556,
+          52,
+          10,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          13,
+          519,
+          1,
+          56,
+          0,
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          22,
+          1,
+          565,
+          15,
+          0,
+          0,
+          14,
+          0
+        ],
+        [
+          0,
+          1,
+          6,
+          123,
+          28,
+          426,
+          0,
+          0,
+          0,
+          12
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          498,
+          15,
+          106,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          60,
+          407,
+          0,
+          176
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          162,
+          9,
+          424,
+          17
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          4,
+          334,
+          16,
+          267
+        ]
+      ]
+    },
+    "confidence_gate_coverage": 0.805528134254689,
+    "accepted_combined_accuracy": 0.8464052287581699
+  },
+  "artifact_sha256": "d34aa58dec90c764f82380918673d3f823f077928cf5bd4f4be667d4030d2cee",
+  "noise_gate": {
+    "feature": "median voiced-frame spectral flatness, excluding first four FFT bins",
+    "threshold": 0.011625066635756342,
+    "training_quantile": 0.995,
+    "training_segments": 600,
+    "selection": "Five evenly spaced segments from each training-speaker/target original recording; no validation or test samples.",
+    "note": "Added after a synthetic noise stress test exposed confident errors. Classifier weights are unchanged; runtime evaluation is rerun."
+  }
+}

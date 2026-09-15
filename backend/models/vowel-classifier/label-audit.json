@@ -1,0 +1,65 @@
+[
+  {
+    "source_folder": "a",
+    "speaker": "F1047",
+    "median_lpc_F1_F2_hz": [
+      963.0,
+      1395.0
+    ],
+    "sample_count": 20
+  },
+  {
+    "source_folder": "aa",
+    "speaker": "F1047",
+    "median_lpc_F1_F2_hz": [
+      841.0,
+      1231.0
+    ],
+    "sample_count": 20
+  },
+  {
+    "source_folder": "e",
+    "speaker": "F1047",
+    "median_lpc_F1_F2_hz": [
+      407.0,
+      2610.0
+    ],
+    "sample_count": 18
+  },
+  {
+    "source_folder": "ee",
+    "speaker": "F1047",
+    "median_lpc_F1_F2_hz": [
+      393.0,
+      2694.0
+    ],
+    "sample_count": 18
+  },
+  {
+    "source_folder": "eh",
+    "speaker": "F1047",
+    "median_lpc_F1_F2_hz": [
+      510.0,
+      2349.0
+    ],
+    "sample_count": 20
+  },
+  {
+    "source_folder": "ehh",
+    "speaker": "F1047",
+    "median_lpc_F1_F2_hz": [
+      527.0,
+      1517.0
+    ],
+    "sample_count": 20
+  },
+  {
+    "source_folder": "i",
+    "speaker": "F1047",
+    "median_lpc_F1_F2_hz": [
+      517.0,
+      2527.0
+    ],
+    "sample_count": 20
+  }
+]

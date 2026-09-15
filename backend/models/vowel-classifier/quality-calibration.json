@@ -1,0 +1,4202 @@
+[
+  {
+    "speaker": "F29",
+    "target": "a",
+    "source_file": "a\\F29Ta.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0005999327793561805
+  },
+  {
+    "speaker": "F29",
+    "target": "a",
+    "source_file": "a\\F29Ta.wav",
+    "source_segment_index": 30,
+    "spectral_flatness": 7.65334631237175e-05
+  },
+  {
+    "speaker": "F29",
+    "target": "a",
+    "source_file": "a\\F29Ta.wav",
+    "source_segment_index": 61,
+    "spectral_flatness": 0.0002576236139888254
+  },
+  {
+    "speaker": "F29",
+    "target": "a",
+    "source_file": "a\\F29Ta.wav",
+    "source_segment_index": 91,
+    "spectral_flatness": 0.0001969571032470569
+  },
+  {
+    "speaker": "F29",
+    "target": "a",
+    "source_file": "a\\F29Ta.wav",
+    "source_segment_index": 122,
+    "spectral_flatness": 0.0009612559139836843
+  },
+  {
+    "speaker": "F513",
+    "target": "a",
+    "source_file": "a\\F513Ta.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.01674023455915975
+  },
+  {
+    "speaker": "F513",
+    "target": "a",
+    "source_file": "a\\F513Ta.wav",
+    "source_segment_index": 32,
+    "spectral_flatness": 0.004309585551693622
+  },
+  {
+    "speaker": "F513",
+    "target": "a",
+    "source_file": "a\\F513Ta.wav",
+    "source_segment_index": 65,
+    "spectral_flatness": 0.007527425010057495
+  },
+  {
+    "speaker": "F513",
+    "target": "a",
+    "source_file": "a\\F513Ta.wav",
+    "source_segment_index": 97,
+    "spectral_flatness": 0.003981973296058552
+  },
+  {
+    "speaker": "F513",
+    "target": "a",
+    "source_file": "a\\F513Ta.wav",
+    "source_segment_index": 130,
+    "spectral_flatness": 0.01161156210622362
+  },
+  {
+    "speaker": "F643",
+    "target": "a",
+    "source_file": "a\\F643Ta.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.005149171480838462
+  },
+  {
+    "speaker": "F643",
+    "target": "a",
+    "source_file": "a\\F643Ta.wav",
+    "source_segment_index": 43,
+    "spectral_flatness": 0.003777024015260014
+  },
+  {
+    "speaker": "F643",
+    "target": "a",
+    "source_file": "a\\F643Ta.wav",
+    "source_segment_index": 86,
+    "spectral_flatness": 0.004589325988412908
+  },
+  {
+    "speaker": "F643",
+    "target": "a",
+    "source_file": "a\\F643Ta.wav",
+    "source_segment_index": 129,
+    "spectral_flatness": 0.0044927054111108845
+  },
+  {
+    "speaker": "F643",
+    "target": "a",
+    "source_file": "a\\F643Ta.wav",
+    "source_segment_index": 172,
+    "spectral_flatness": 0.003998984825219404
+  },
+  {
+    "speaker": "F711",
+    "target": "a",
+    "source_file": "a\\F711Ta.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.005341450467008294
+  },
+  {
+    "speaker": "F711",
+    "target": "a",
+    "source_file": "a\\F711Ta.wav",
+    "source_segment_index": 44,
+    "spectral_flatness": 0.0012763946323106467
+  },
+  {
+    "speaker": "F711",
+    "target": "a",
+    "source_file": "a\\F711Ta.wav",
+    "source_segment_index": 88,
+    "spectral_flatness": 0.0028571121112090183
+  },
+  {
+    "speaker": "F711",
+    "target": "a",
+    "source_file": "a\\F711Ta.wav",
+    "source_segment_index": 132,
+    "spectral_flatness": 0.0012501991864505018
+  },
+  {
+    "speaker": "F711",
+    "target": "a",
+    "source_file": "a\\F711Ta.wav",
+    "source_segment_index": 176,
+    "spectral_flatness": 0.0008638201586972951
+  },
+  {
+    "speaker": "F813",
+    "target": "a",
+    "source_file": "a\\F813Ta.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0005135131536197744
+  },
+  {
+    "speaker": "F813",
+    "target": "a",
+    "source_file": "a\\F813Ta.wav",
+    "source_segment_index": 36,
+    "spectral_flatness": 0.0012072627795520967
+  },
+  {
+    "speaker": "F813",
+    "target": "a",
+    "source_file": "a\\F813Ta.wav",
+    "source_segment_index": 72,
+    "spectral_flatness": 0.0013897972320695985
+  },
+  {
+    "speaker": "F813",
+    "target": "a",
+    "source_file": "a\\F813Ta.wav",
+    "source_segment_index": 108,
+    "spectral_flatness": 0.000600467648437184
+  },
+  {
+    "speaker": "F813",
+    "target": "a",
+    "source_file": "a\\F813Ta.wav",
+    "source_segment_index": 145,
+    "spectral_flatness": 0.0009141649322364268
+  },
+  {
+    "speaker": "F943",
+    "target": "a",
+    "source_file": "a\\F943Ta.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0019517447772374942
+  },
+  {
+    "speaker": "F943",
+    "target": "a",
+    "source_file": "a\\F943Ta.wav",
+    "source_segment_index": 38,
+    "spectral_flatness": 0.0005967096130756153
+  },
+  {
+    "speaker": "F943",
+    "target": "a",
+    "source_file": "a\\F943Ta.wav",
+    "source_segment_index": 76,
+    "spectral_flatness": 0.0012877063072568044
+  },
+  {
+    "speaker": "F943",
+    "target": "a",
+    "source_file": "a\\F943Ta.wav",
+    "source_segment_index": 114,
+    "spectral_flatness": 0.0012437369628493368
+  },
+  {
+    "speaker": "F943",
+    "target": "a",
+    "source_file": "a\\F943Ta.wav",
+    "source_segment_index": 152,
+    "spectral_flatness": 0.0014301125026753383
+  },
+  {
+    "speaker": "M1010",
+    "target": "a",
+    "source_file": "a\\M1010Ta.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0010810386572866074
+  },
+  {
+    "speaker": "M1010",
+    "target": "a",
+    "source_file": "a\\M1010Ta.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.001161015873350802
+  },
+  {
+    "speaker": "M1010",
+    "target": "a",
+    "source_file": "a\\M1010Ta.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 0.00025139867910465414
+  },
+  {
+    "speaker": "M1010",
+    "target": "a",
+    "source_file": "a\\M1010Ta.wav",
+    "source_segment_index": 112,
+    "spectral_flatness": 0.0008231358501238237
+  },
+  {
+    "speaker": "M1010",
+    "target": "a",
+    "source_file": "a\\M1010Ta.wav",
+    "source_segment_index": 150,
+    "spectral_flatness": 0.00024288106847034338
+  },
+  {
+    "speaker": "M221",
+    "target": "a",
+    "source_file": "a\\M221Ta.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.002392570264993966
+  },
+  {
+    "speaker": "M221",
+    "target": "a",
+    "source_file": "a\\M221Ta.wav",
+    "source_segment_index": 41,
+    "spectral_flatness": 0.0024040365608900185
+  },
+  {
+    "speaker": "M221",
+    "target": "a",
+    "source_file": "a\\M221Ta.wav",
+    "source_segment_index": 82,
+    "spectral_flatness": 0.001287476808337619
+  },
+  {
+    "speaker": "M221",
+    "target": "a",
+    "source_file": "a\\M221Ta.wav",
+    "source_segment_index": 123,
+    "spectral_flatness": 0.002750158116577181
+  },
+  {
+    "speaker": "M221",
+    "target": "a",
+    "source_file": "a\\M221Ta.wav",
+    "source_segment_index": 165,
+    "spectral_flatness": 0.001516599382571178
+  },
+  {
+    "speaker": "M660",
+    "target": "a",
+    "source_file": "a\\M660Ta.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0037620540394917583
+  },
+  {
+    "speaker": "M660",
+    "target": "a",
+    "source_file": "a\\M660Ta.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0008732039505050903
+  },
+  {
+    "speaker": "M660",
+    "target": "a",
+    "source_file": "a\\M660Ta.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.0009028616176283095
+  },
+  {
+    "speaker": "M660",
+    "target": "a",
+    "source_file": "a\\M660Ta.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0007231594169419626
+  },
+  {
+    "speaker": "M660",
+    "target": "a",
+    "source_file": "a\\M660Ta.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.0006956620497110429
+  },
+  {
+    "speaker": "M721",
+    "target": "a",
+    "source_file": "a\\M721Ta.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.002719451411508148
+  },
+  {
+    "speaker": "M721",
+    "target": "a",
+    "source_file": "a\\M721Ta.wav",
+    "source_segment_index": 36,
+    "spectral_flatness": 0.0026461154504287833
+  },
+  {
+    "speaker": "M721",
+    "target": "a",
+    "source_file": "a\\M721Ta.wav",
+    "source_segment_index": 73,
+    "spectral_flatness": 0.0010204633672199
+  },
+  {
+    "speaker": "M721",
+    "target": "a",
+    "source_file": "a\\M721Ta.wav",
+    "source_segment_index": 110,
+    "spectral_flatness": 0.0011259424840729302
+  },
+  {
+    "speaker": "M721",
+    "target": "a",
+    "source_file": "a\\M721Ta.wav",
+    "source_segment_index": 147,
+    "spectral_flatness": 2.91213247691419e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "a",
+    "source_file": "a\\M821Ta.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00036651314294937045
+  },
+  {
+    "speaker": "M821",
+    "target": "a",
+    "source_file": "a\\M821Ta.wav",
+    "source_segment_index": 38,
+    "spectral_flatness": 0.00029946868589263164
+  },
+  {
+    "speaker": "M821",
+    "target": "a",
+    "source_file": "a\\M821Ta.wav",
+    "source_segment_index": 77,
+    "spectral_flatness": 0.00043828967990801066
+  },
+  {
+    "speaker": "M821",
+    "target": "a",
+    "source_file": "a\\M821Ta.wav",
+    "source_segment_index": 115,
+    "spectral_flatness": 0.0003731536569819059
+  },
+  {
+    "speaker": "M821",
+    "target": "a",
+    "source_file": "a\\M821Ta.wav",
+    "source_segment_index": 154,
+    "spectral_flatness": 0.0002891422660132558
+  },
+  {
+    "speaker": "M912",
+    "target": "a",
+    "source_file": "a\\M912Ta.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0007224919154133689
+  },
+  {
+    "speaker": "M912",
+    "target": "a",
+    "source_file": "a\\M912Ta.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.00024385374439409664
+  },
+  {
+    "speaker": "M912",
+    "target": "a",
+    "source_file": "a\\M912Ta.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.0006117930878183571
+  },
+  {
+    "speaker": "M912",
+    "target": "a",
+    "source_file": "a\\M912Ta.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0011178072183247471
+  },
+  {
+    "speaker": "M912",
+    "target": "a",
+    "source_file": "a\\M912Ta.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.0013258128140569091
+  },
+  {
+    "speaker": "F29",
+    "target": "aa",
+    "source_file": "aa\\F29Taa.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0010492896004700898
+  },
+  {
+    "speaker": "F29",
+    "target": "aa",
+    "source_file": "aa\\F29Taa.wav",
+    "source_segment_index": 33,
+    "spectral_flatness": 0.0008135196411197372
+  },
+  {
+    "speaker": "F29",
+    "target": "aa",
+    "source_file": "aa\\F29Taa.wav",
+    "source_segment_index": 66,
+    "spectral_flatness": 0.0003681457891622241
+  },
+  {
+    "speaker": "F29",
+    "target": "aa",
+    "source_file": "aa\\F29Taa.wav",
+    "source_segment_index": 99,
+    "spectral_flatness": 0.0011101277366431957
+  },
+  {
+    "speaker": "F29",
+    "target": "aa",
+    "source_file": "aa\\F29Taa.wav",
+    "source_segment_index": 133,
+    "spectral_flatness": 0.0019549926200875135
+  },
+  {
+    "speaker": "F513",
+    "target": "aa",
+    "source_file": "aa\\F513Taa.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.006680968797703918
+  },
+  {
+    "speaker": "F513",
+    "target": "aa",
+    "source_file": "aa\\F513Taa.wav",
+    "source_segment_index": 33,
+    "spectral_flatness": 0.003232140078043311
+  },
+  {
+    "speaker": "F513",
+    "target": "aa",
+    "source_file": "aa\\F513Taa.wav",
+    "source_segment_index": 66,
+    "spectral_flatness": 0.00325909337811573
+  },
+  {
+    "speaker": "F513",
+    "target": "aa",
+    "source_file": "aa\\F513Taa.wav",
+    "source_segment_index": 99,
+    "spectral_flatness": 0.0033606790353819384
+  },
+  {
+    "speaker": "F513",
+    "target": "aa",
+    "source_file": "aa\\F513Taa.wav",
+    "source_segment_index": 132,
+    "spectral_flatness": 0.002071707002225439
+  },
+  {
+    "speaker": "F643",
+    "target": "aa",
+    "source_file": "aa\\F643Taa.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0019613022327910653
+  },
+  {
+    "speaker": "F643",
+    "target": "aa",
+    "source_file": "aa\\F643Taa.wav",
+    "source_segment_index": 40,
+    "spectral_flatness": 0.0021602415782514955
+  },
+  {
+    "speaker": "F643",
+    "target": "aa",
+    "source_file": "aa\\F643Taa.wav",
+    "source_segment_index": 80,
+    "spectral_flatness": 0.0019492962746058048
+  },
+  {
+    "speaker": "F643",
+    "target": "aa",
+    "source_file": "aa\\F643Taa.wav",
+    "source_segment_index": 120,
+    "spectral_flatness": 0.001913074146488005
+  },
+  {
+    "speaker": "F643",
+    "target": "aa",
+    "source_file": "aa\\F643Taa.wav",
+    "source_segment_index": 161,
+    "spectral_flatness": 0.003553724048768154
+  },
+  {
+    "speaker": "F711",
+    "target": "aa",
+    "source_file": "aa\\F711Taa.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.002599542048952969
+  },
+  {
+    "speaker": "F711",
+    "target": "aa",
+    "source_file": "aa\\F711Taa.wav",
+    "source_segment_index": 35,
+    "spectral_flatness": 0.0014488230360366473
+  },
+  {
+    "speaker": "F711",
+    "target": "aa",
+    "source_file": "aa\\F711Taa.wav",
+    "source_segment_index": 70,
+    "spectral_flatness": 0.001270149783691635
+  },
+  {
+    "speaker": "F711",
+    "target": "aa",
+    "source_file": "aa\\F711Taa.wav",
+    "source_segment_index": 105,
+    "spectral_flatness": 0.001445447424265851
+  },
+  {
+    "speaker": "F711",
+    "target": "aa",
+    "source_file": "aa\\F711Taa.wav",
+    "source_segment_index": 141,
+    "spectral_flatness": 0.0017686222647186433
+  },
+  {
+    "speaker": "F813",
+    "target": "aa",
+    "source_file": "aa\\F813Taa.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0006020392942576868
+  },
+  {
+    "speaker": "F813",
+    "target": "aa",
+    "source_file": "aa\\F813Taa.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0006852275624231253
+  },
+  {
+    "speaker": "F813",
+    "target": "aa",
+    "source_file": "aa\\F813Taa.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.0004333349578867294
+  },
+  {
+    "speaker": "F813",
+    "target": "aa",
+    "source_file": "aa\\F813Taa.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0004788777371805926
+  },
+  {
+    "speaker": "F813",
+    "target": "aa",
+    "source_file": "aa\\F813Taa.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.00022801699233447582
+  },
+  {
+    "speaker": "F943",
+    "target": "aa",
+    "source_file": "aa\\F943Taa.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0005572394607557652
+  },
+  {
+    "speaker": "F943",
+    "target": "aa",
+    "source_file": "aa\\F943Taa.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 8.84774859973159e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "aa",
+    "source_file": "aa\\F943Taa.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.0004455836586153113
+  },
+  {
+    "speaker": "F943",
+    "target": "aa",
+    "source_file": "aa\\F943Taa.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0001679196882069376
+  },
+  {
+    "speaker": "F943",
+    "target": "aa",
+    "source_file": "aa\\F943Taa.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.0002636996058150033
+  },
+  {
+    "speaker": "M1010",
+    "target": "aa",
+    "source_file": "aa\\M1010Taa.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0006619253510788146
+  },
+  {
+    "speaker": "M1010",
+    "target": "aa",
+    "source_file": "aa\\M1010Taa.wav",
+    "source_segment_index": 39,
+    "spectral_flatness": 0.0017284597878245219
+  },
+  {
+    "speaker": "M1010",
+    "target": "aa",
+    "source_file": "aa\\M1010Taa.wav",
+    "source_segment_index": 79,
+    "spectral_flatness": 0.0012649576336819734
+  },
+  {
+    "speaker": "M1010",
+    "target": "aa",
+    "source_file": "aa\\M1010Taa.wav",
+    "source_segment_index": 119,
+    "spectral_flatness": 0.0007541909368829196
+  },
+  {
+    "speaker": "M1010",
+    "target": "aa",
+    "source_file": "aa\\M1010Taa.wav",
+    "source_segment_index": 159,
+    "spectral_flatness": 0.0010227016823687572
+  },
+  {
+    "speaker": "M221",
+    "target": "aa",
+    "source_file": "aa\\M221Taa.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.002062803616787874
+  },
+  {
+    "speaker": "M221",
+    "target": "aa",
+    "source_file": "aa\\M221Taa.wav",
+    "source_segment_index": 45,
+    "spectral_flatness": 0.0015197082245610863
+  },
+  {
+    "speaker": "M221",
+    "target": "aa",
+    "source_file": "aa\\M221Taa.wav",
+    "source_segment_index": 90,
+    "spectral_flatness": 0.002312443435160836
+  },
+  {
+    "speaker": "M221",
+    "target": "aa",
+    "source_file": "aa\\M221Taa.wav",
+    "source_segment_index": 135,
+    "spectral_flatness": 0.0032558994785745954
+  },
+  {
+    "speaker": "M221",
+    "target": "aa",
+    "source_file": "aa\\M221Taa.wav",
+    "source_segment_index": 180,
+    "spectral_flatness": 0.0030278887586863692
+  },
+  {
+    "speaker": "M660",
+    "target": "aa",
+    "source_file": "aa\\M660Taa.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00036779253865422727
+  },
+  {
+    "speaker": "M660",
+    "target": "aa",
+    "source_file": "aa\\M660Taa.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0001292671248011425
+  },
+  {
+    "speaker": "M660",
+    "target": "aa",
+    "source_file": "aa\\M660Taa.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.00022764685092199042
+  },
+  {
+    "speaker": "M660",
+    "target": "aa",
+    "source_file": "aa\\M660Taa.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0003906271208267261
+  },
+  {
+    "speaker": "M660",
+    "target": "aa",
+    "source_file": "aa\\M660Taa.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.0003592010494734674
+  },
+  {
+    "speaker": "M721",
+    "target": "aa",
+    "source_file": "aa\\M721Taa.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0015585911085789954
+  },
+  {
+    "speaker": "M721",
+    "target": "aa",
+    "source_file": "aa\\M721Taa.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0007060352489606863
+  },
+  {
+    "speaker": "M721",
+    "target": "aa",
+    "source_file": "aa\\M721Taa.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.0004912899635802942
+  },
+  {
+    "speaker": "M721",
+    "target": "aa",
+    "source_file": "aa\\M721Taa.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0004764043156646116
+  },
+  {
+    "speaker": "M721",
+    "target": "aa",
+    "source_file": "aa\\M721Taa.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.000724463745268298
+  },
+  {
+    "speaker": "M821",
+    "target": "aa",
+    "source_file": "aa\\M821Taa.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00032691620218304294
+  },
+  {
+    "speaker": "M821",
+    "target": "aa",
+    "source_file": "aa\\M821Taa.wav",
+    "source_segment_index": 34,
+    "spectral_flatness": 0.0005021913134227921
+  },
+  {
+    "speaker": "M821",
+    "target": "aa",
+    "source_file": "aa\\M821Taa.wav",
+    "source_segment_index": 68,
+    "spectral_flatness": 0.00036558866527116403
+  },
+  {
+    "speaker": "M821",
+    "target": "aa",
+    "source_file": "aa\\M821Taa.wav",
+    "source_segment_index": 102,
+    "spectral_flatness": 0.00035954665371552694
+  },
+  {
+    "speaker": "M821",
+    "target": "aa",
+    "source_file": "aa\\M821Taa.wav",
+    "source_segment_index": 137,
+    "spectral_flatness": 0.0003985563905118345
+  },
+  {
+    "speaker": "M912",
+    "target": "aa",
+    "source_file": "aa\\M912Taa.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0009041805849393551
+  },
+  {
+    "speaker": "M912",
+    "target": "aa",
+    "source_file": "aa\\M912Taa.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0004235230333740678
+  },
+  {
+    "speaker": "M912",
+    "target": "aa",
+    "source_file": "aa\\M912Taa.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.000797340485114093
+  },
+  {
+    "speaker": "M912",
+    "target": "aa",
+    "source_file": "aa\\M912Taa.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0009272731050821354
+  },
+  {
+    "speaker": "M912",
+    "target": "aa",
+    "source_file": "aa\\M912Taa.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.0014258812781102277
+  },
+  {
+    "speaker": "F29",
+    "target": "i",
+    "source_file": "e\\F29Te.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00021900840174041248
+  },
+  {
+    "speaker": "F29",
+    "target": "i",
+    "source_file": "e\\F29Te.wav",
+    "source_segment_index": 34,
+    "spectral_flatness": 0.0004408823692857713
+  },
+  {
+    "speaker": "F29",
+    "target": "i",
+    "source_file": "e\\F29Te.wav",
+    "source_segment_index": 68,
+    "spectral_flatness": 0.0002454287335570164
+  },
+  {
+    "speaker": "F29",
+    "target": "i",
+    "source_file": "e\\F29Te.wav",
+    "source_segment_index": 102,
+    "spectral_flatness": 0.0002431356092985525
+  },
+  {
+    "speaker": "F29",
+    "target": "i",
+    "source_file": "e\\F29Te.wav",
+    "source_segment_index": 137,
+    "spectral_flatness": 0.0001477173657342661
+  },
+  {
+    "speaker": "F513",
+    "target": "i",
+    "source_file": "e\\F513Te.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0021349497102653723
+  },
+  {
+    "speaker": "F513",
+    "target": "i",
+    "source_file": "e\\F513Te.wav",
+    "source_segment_index": 35,
+    "spectral_flatness": 0.0016426154741819127
+  },
+  {
+    "speaker": "F513",
+    "target": "i",
+    "source_file": "e\\F513Te.wav",
+    "source_segment_index": 71,
+    "spectral_flatness": 0.001349570254286601
+  },
+  {
+    "speaker": "F513",
+    "target": "i",
+    "source_file": "e\\F513Te.wav",
+    "source_segment_index": 106,
+    "spectral_flatness": 0.001045515411396382
+  },
+  {
+    "speaker": "F513",
+    "target": "i",
+    "source_file": "e\\F513Te.wav",
+    "source_segment_index": 142,
+    "spectral_flatness": 0.0014415200851169332
+  },
+  {
+    "speaker": "F643",
+    "target": "i",
+    "source_file": "e\\F643Te.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0009678140995713837
+  },
+  {
+    "speaker": "F643",
+    "target": "i",
+    "source_file": "e\\F643Te.wav",
+    "source_segment_index": 44,
+    "spectral_flatness": 0.0012314952226086505
+  },
+  {
+    "speaker": "F643",
+    "target": "i",
+    "source_file": "e\\F643Te.wav",
+    "source_segment_index": 89,
+    "spectral_flatness": 0.0015406348559654824
+  },
+  {
+    "speaker": "F643",
+    "target": "i",
+    "source_file": "e\\F643Te.wav",
+    "source_segment_index": 134,
+    "spectral_flatness": 0.0010778865246215024
+  },
+  {
+    "speaker": "F643",
+    "target": "i",
+    "source_file": "e\\F643Te.wav",
+    "source_segment_index": 179,
+    "spectral_flatness": 0.001258225921931932
+  },
+  {
+    "speaker": "F711",
+    "target": "i",
+    "source_file": "e\\F711Te.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.001156612214348455
+  },
+  {
+    "speaker": "F711",
+    "target": "i",
+    "source_file": "e\\F711Te.wav",
+    "source_segment_index": 38,
+    "spectral_flatness": 0.0022748257334585264
+  },
+  {
+    "speaker": "F711",
+    "target": "i",
+    "source_file": "e\\F711Te.wav",
+    "source_segment_index": 77,
+    "spectral_flatness": 0.001786972293897432
+  },
+  {
+    "speaker": "F711",
+    "target": "i",
+    "source_file": "e\\F711Te.wav",
+    "source_segment_index": 116,
+    "spectral_flatness": 0.001418857544171679
+  },
+  {
+    "speaker": "F711",
+    "target": "i",
+    "source_file": "e\\F711Te.wav",
+    "source_segment_index": 155,
+    "spectral_flatness": 0.001342170402571298
+  },
+  {
+    "speaker": "F813",
+    "target": "i",
+    "source_file": "e\\F813Te.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.002621589400572338
+  },
+  {
+    "speaker": "F813",
+    "target": "i",
+    "source_file": "e\\F813Te.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 6.898586851279275e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "i",
+    "source_file": "e\\F813Te.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 0.00023460990382344256
+  },
+  {
+    "speaker": "F813",
+    "target": "i",
+    "source_file": "e\\F813Te.wav",
+    "source_segment_index": 112,
+    "spectral_flatness": 0.00010043147121440701
+  },
+  {
+    "speaker": "F813",
+    "target": "i",
+    "source_file": "e\\F813Te.wav",
+    "source_segment_index": 150,
+    "spectral_flatness": 9.506791448616281e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "i",
+    "source_file": "e\\F943Te.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00027438198754916194
+  },
+  {
+    "speaker": "F943",
+    "target": "i",
+    "source_file": "e\\F943Te.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0007567836389182691
+  },
+  {
+    "speaker": "F943",
+    "target": "i",
+    "source_file": "e\\F943Te.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.0005191307853197331
+  },
+  {
+    "speaker": "F943",
+    "target": "i",
+    "source_file": "e\\F943Te.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0017719881505212066
+  },
+  {
+    "speaker": "F943",
+    "target": "i",
+    "source_file": "e\\F943Te.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.0008091221349175117
+  },
+  {
+    "speaker": "M1010",
+    "target": "i",
+    "source_file": "e\\M1010Te.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0010959176456766884
+  },
+  {
+    "speaker": "M1010",
+    "target": "i",
+    "source_file": "e\\M1010Te.wav",
+    "source_segment_index": 40,
+    "spectral_flatness": 0.003123613545516329
+  },
+  {
+    "speaker": "M1010",
+    "target": "i",
+    "source_file": "e\\M1010Te.wav",
+    "source_segment_index": 80,
+    "spectral_flatness": 0.0016388472135433305
+  },
+  {
+    "speaker": "M1010",
+    "target": "i",
+    "source_file": "e\\M1010Te.wav",
+    "source_segment_index": 120,
+    "spectral_flatness": 0.0019329852547296175
+  },
+  {
+    "speaker": "M1010",
+    "target": "i",
+    "source_file": "e\\M1010Te.wav",
+    "source_segment_index": 160,
+    "spectral_flatness": 0.0017880711921106668
+  },
+  {
+    "speaker": "M221",
+    "target": "i",
+    "source_file": "e\\M221Te.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.002695376120518663
+  },
+  {
+    "speaker": "M221",
+    "target": "i",
+    "source_file": "e\\M221Te.wav",
+    "source_segment_index": 41,
+    "spectral_flatness": 0.0021330015491646723
+  },
+  {
+    "speaker": "M221",
+    "target": "i",
+    "source_file": "e\\M221Te.wav",
+    "source_segment_index": 83,
+    "spectral_flatness": 0.0012969588795648343
+  },
+  {
+    "speaker": "M221",
+    "target": "i",
+    "source_file": "e\\M221Te.wav",
+    "source_segment_index": 124,
+    "spectral_flatness": 0.0011585516099345459
+  },
+  {
+    "speaker": "M221",
+    "target": "i",
+    "source_file": "e\\M221Te.wav",
+    "source_segment_index": 166,
+    "spectral_flatness": 0.0012556610210159845
+  },
+  {
+    "speaker": "M660",
+    "target": "i",
+    "source_file": "e\\M660Te.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00047100592834227017
+  },
+  {
+    "speaker": "M660",
+    "target": "i",
+    "source_file": "e\\M660Te.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0006615041282705672
+  },
+  {
+    "speaker": "M660",
+    "target": "i",
+    "source_file": "e\\M660Te.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.0011682035647259557
+  },
+  {
+    "speaker": "M660",
+    "target": "i",
+    "source_file": "e\\M660Te.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0005458936433890724
+  },
+  {
+    "speaker": "M660",
+    "target": "i",
+    "source_file": "e\\M660Te.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.0010484189554785853
+  },
+  {
+    "speaker": "M721",
+    "target": "i",
+    "source_file": "e\\M721Te.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0035652541692957735
+  },
+  {
+    "speaker": "M721",
+    "target": "i",
+    "source_file": "e\\M721Te.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0011545833948530197
+  },
+  {
+    "speaker": "M721",
+    "target": "i",
+    "source_file": "e\\M721Te.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 0.001445544435175537
+  },
+  {
+    "speaker": "M721",
+    "target": "i",
+    "source_file": "e\\M721Te.wav",
+    "source_segment_index": 113,
+    "spectral_flatness": 0.0011832785001549121
+  },
+  {
+    "speaker": "M721",
+    "target": "i",
+    "source_file": "e\\M721Te.wav",
+    "source_segment_index": 151,
+    "spectral_flatness": 7.59128209228184e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "i",
+    "source_file": "e\\M821Te.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0004814810520098217
+  },
+  {
+    "speaker": "M821",
+    "target": "i",
+    "source_file": "e\\M821Te.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.002406567948712129
+  },
+  {
+    "speaker": "M821",
+    "target": "i",
+    "source_file": "e\\M821Te.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 0.0009767882480020882
+  },
+  {
+    "speaker": "M821",
+    "target": "i",
+    "source_file": "e\\M821Te.wav",
+    "source_segment_index": 112,
+    "spectral_flatness": 0.00045174988383667674
+  },
+  {
+    "speaker": "M821",
+    "target": "i",
+    "source_file": "e\\M821Te.wav",
+    "source_segment_index": 150,
+    "spectral_flatness": 0.0009754335103711484
+  },
+  {
+    "speaker": "M912",
+    "target": "i",
+    "source_file": "e\\M912Te.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.007673255301882603
+  },
+  {
+    "speaker": "M912",
+    "target": "i",
+    "source_file": "e\\M912Te.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.003970099735280835
+  },
+  {
+    "speaker": "M912",
+    "target": "i",
+    "source_file": "e\\M912Te.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 0.001393284760981643
+  },
+  {
+    "speaker": "M912",
+    "target": "i",
+    "source_file": "e\\M912Te.wav",
+    "source_segment_index": 112,
+    "spectral_flatness": 0.006877003522196462
+  },
+  {
+    "speaker": "M912",
+    "target": "i",
+    "source_file": "e\\M912Te.wav",
+    "source_segment_index": 150,
+    "spectral_flatness": 0.003437139521811789
+  },
+  {
+    "speaker": "F29",
+    "target": "ii",
+    "source_file": "ee\\F29Tee.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 5.034859723425771e-05
+  },
+  {
+    "speaker": "F29",
+    "target": "ii",
+    "source_file": "ee\\F29Tee.wav",
+    "source_segment_index": 38,
+    "spectral_flatness": 0.0005352253057277771
+  },
+  {
+    "speaker": "F29",
+    "target": "ii",
+    "source_file": "ee\\F29Tee.wav",
+    "source_segment_index": 76,
+    "spectral_flatness": 0.0014051398688265909
+  },
+  {
+    "speaker": "F29",
+    "target": "ii",
+    "source_file": "ee\\F29Tee.wav",
+    "source_segment_index": 114,
+    "spectral_flatness": 0.00024966594342141395
+  },
+  {
+    "speaker": "F29",
+    "target": "ii",
+    "source_file": "ee\\F29Tee.wav",
+    "source_segment_index": 153,
+    "spectral_flatness": 9.820879002039541e-05
+  },
+  {
+    "speaker": "F513",
+    "target": "ii",
+    "source_file": "ee\\F513Tee.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0029131079140547124
+  },
+  {
+    "speaker": "F513",
+    "target": "ii",
+    "source_file": "ee\\F513Tee.wav",
+    "source_segment_index": 34,
+    "spectral_flatness": 0.003003426165373523
+  },
+  {
+    "speaker": "F513",
+    "target": "ii",
+    "source_file": "ee\\F513Tee.wav",
+    "source_segment_index": 68,
+    "spectral_flatness": 0.003331812959922876
+  },
+  {
+    "speaker": "F513",
+    "target": "ii",
+    "source_file": "ee\\F513Tee.wav",
+    "source_segment_index": 102,
+    "spectral_flatness": 0.0027606344264654
+  },
+  {
+    "speaker": "F513",
+    "target": "ii",
+    "source_file": "ee\\F513Tee.wav",
+    "source_segment_index": 137,
+    "spectral_flatness": 0.0035117197180447486
+  },
+  {
+    "speaker": "F643",
+    "target": "ii",
+    "source_file": "ee\\F643Tee.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0010006287533813267
+  },
+  {
+    "speaker": "F643",
+    "target": "ii",
+    "source_file": "ee\\F643Tee.wav",
+    "source_segment_index": 33,
+    "spectral_flatness": 0.0009407447026911
+  },
+  {
+    "speaker": "F643",
+    "target": "ii",
+    "source_file": "ee\\F643Tee.wav",
+    "source_segment_index": 67,
+    "spectral_flatness": 0.0013672082511380457
+  },
+  {
+    "speaker": "F643",
+    "target": "ii",
+    "source_file": "ee\\F643Tee.wav",
+    "source_segment_index": 100,
+    "spectral_flatness": 0.000907137010856515
+  },
+  {
+    "speaker": "F643",
+    "target": "ii",
+    "source_file": "ee\\F643Tee.wav",
+    "source_segment_index": 134,
+    "spectral_flatness": 0.0011814755509223182
+  },
+  {
+    "speaker": "F711",
+    "target": "ii",
+    "source_file": "ee\\F711Tee.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0017638683495780061
+  },
+  {
+    "speaker": "F711",
+    "target": "ii",
+    "source_file": "ee\\F711Tee.wav",
+    "source_segment_index": 36,
+    "spectral_flatness": 0.0018304250210789067
+  },
+  {
+    "speaker": "F711",
+    "target": "ii",
+    "source_file": "ee\\F711Tee.wav",
+    "source_segment_index": 73,
+    "spectral_flatness": 0.0009574515733482747
+  },
+  {
+    "speaker": "F711",
+    "target": "ii",
+    "source_file": "ee\\F711Tee.wav",
+    "source_segment_index": 109,
+    "spectral_flatness": 0.0014981727349625044
+  },
+  {
+    "speaker": "F711",
+    "target": "ii",
+    "source_file": "ee\\F711Tee.wav",
+    "source_segment_index": 146,
+    "spectral_flatness": 0.0007507707639195452
+  },
+  {
+    "speaker": "F813",
+    "target": "ii",
+    "source_file": "ee\\F813Tee.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.001066861968290434
+  },
+  {
+    "speaker": "F813",
+    "target": "ii",
+    "source_file": "ee\\F813Tee.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0014408158402451324
+  },
+  {
+    "speaker": "F813",
+    "target": "ii",
+    "source_file": "ee\\F813Tee.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 0.0008678049810223573
+  },
+  {
+    "speaker": "F813",
+    "target": "ii",
+    "source_file": "ee\\F813Tee.wav",
+    "source_segment_index": 113,
+    "spectral_flatness": 0.0009143283714883792
+  },
+  {
+    "speaker": "F813",
+    "target": "ii",
+    "source_file": "ee\\F813Tee.wav",
+    "source_segment_index": 151,
+    "spectral_flatness": 0.0015667846557001113
+  },
+  {
+    "speaker": "F943",
+    "target": "ii",
+    "source_file": "ee\\F943Tee.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00013340952353971432
+  },
+  {
+    "speaker": "F943",
+    "target": "ii",
+    "source_file": "ee\\F943Tee.wav",
+    "source_segment_index": 38,
+    "spectral_flatness": 0.0006649381394708965
+  },
+  {
+    "speaker": "F943",
+    "target": "ii",
+    "source_file": "ee\\F943Tee.wav",
+    "source_segment_index": 76,
+    "spectral_flatness": 0.0005877188221808828
+  },
+  {
+    "speaker": "F943",
+    "target": "ii",
+    "source_file": "ee\\F943Tee.wav",
+    "source_segment_index": 114,
+    "spectral_flatness": 0.000850667484699279
+  },
+  {
+    "speaker": "F943",
+    "target": "ii",
+    "source_file": "ee\\F943Tee.wav",
+    "source_segment_index": 153,
+    "spectral_flatness": 0.0004717152755315848
+  },
+  {
+    "speaker": "M1010",
+    "target": "ii",
+    "source_file": "ee\\M1010Tee.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0006091606361545552
+  },
+  {
+    "speaker": "M1010",
+    "target": "ii",
+    "source_file": "ee\\M1010Tee.wav",
+    "source_segment_index": 34,
+    "spectral_flatness": 0.0010052868163957247
+  },
+  {
+    "speaker": "M1010",
+    "target": "ii",
+    "source_file": "ee\\M1010Tee.wav",
+    "source_segment_index": 69,
+    "spectral_flatness": 0.002623863066449753
+  },
+  {
+    "speaker": "M1010",
+    "target": "ii",
+    "source_file": "ee\\M1010Tee.wav",
+    "source_segment_index": 103,
+    "spectral_flatness": 0.0014410454405143444
+  },
+  {
+    "speaker": "M1010",
+    "target": "ii",
+    "source_file": "ee\\M1010Tee.wav",
+    "source_segment_index": 138,
+    "spectral_flatness": 0.0020561558474760976
+  },
+  {
+    "speaker": "M221",
+    "target": "ii",
+    "source_file": "ee\\M221Tee.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00249321052465763
+  },
+  {
+    "speaker": "M221",
+    "target": "ii",
+    "source_file": "ee\\M221Tee.wav",
+    "source_segment_index": 39,
+    "spectral_flatness": 0.002590736609572144
+  },
+  {
+    "speaker": "M221",
+    "target": "ii",
+    "source_file": "ee\\M221Tee.wav",
+    "source_segment_index": 79,
+    "spectral_flatness": 0.0029132275095878992
+  },
+  {
+    "speaker": "M221",
+    "target": "ii",
+    "source_file": "ee\\M221Tee.wav",
+    "source_segment_index": 119,
+    "spectral_flatness": 0.0052387515835314235
+  },
+  {
+    "speaker": "M221",
+    "target": "ii",
+    "source_file": "ee\\M221Tee.wav",
+    "source_segment_index": 159,
+    "spectral_flatness": 0.002293353654277565
+  },
+  {
+    "speaker": "M660",
+    "target": "ii",
+    "source_file": "ee\\M660Tee.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0007290034002813968
+  },
+  {
+    "speaker": "M660",
+    "target": "ii",
+    "source_file": "ee\\M660Tee.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0009404062269990561
+  },
+  {
+    "speaker": "M660",
+    "target": "ii",
+    "source_file": "ee\\M660Tee.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.000615367895199871
+  },
+  {
+    "speaker": "M660",
+    "target": "ii",
+    "source_file": "ee\\M660Tee.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.000713969733598813
+  },
+  {
+    "speaker": "M660",
+    "target": "ii",
+    "source_file": "ee\\M660Tee.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.00042192055862163945
+  },
+  {
+    "speaker": "M721",
+    "target": "ii",
+    "source_file": "ee\\M721Tee.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.003375134465288764
+  },
+  {
+    "speaker": "M721",
+    "target": "ii",
+    "source_file": "ee\\M721Tee.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0007604473105864797
+  },
+  {
+    "speaker": "M721",
+    "target": "ii",
+    "source_file": "ee\\M721Tee.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.0006219240598720327
+  },
+  {
+    "speaker": "M721",
+    "target": "ii",
+    "source_file": "ee\\M721Tee.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.001082682519651006
+  },
+  {
+    "speaker": "M721",
+    "target": "ii",
+    "source_file": "ee\\M721Tee.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.00068378455174631
+  },
+  {
+    "speaker": "M821",
+    "target": "ii",
+    "source_file": "ee\\M821Tee.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0013651441810045395
+  },
+  {
+    "speaker": "M821",
+    "target": "ii",
+    "source_file": "ee\\M821Tee.wav",
+    "source_segment_index": 36,
+    "spectral_flatness": 0.003796361360592129
+  },
+  {
+    "speaker": "M821",
+    "target": "ii",
+    "source_file": "ee\\M821Tee.wav",
+    "source_segment_index": 73,
+    "spectral_flatness": 0.0010691329130539406
+  },
+  {
+    "speaker": "M821",
+    "target": "ii",
+    "source_file": "ee\\M821Tee.wav",
+    "source_segment_index": 110,
+    "spectral_flatness": 0.0015731290483649261
+  },
+  {
+    "speaker": "M821",
+    "target": "ii",
+    "source_file": "ee\\M821Tee.wav",
+    "source_segment_index": 147,
+    "spectral_flatness": 0.0011332789211868479
+  },
+  {
+    "speaker": "M912",
+    "target": "ii",
+    "source_file": "ee\\M912Tee.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0026548658771663367
+  },
+  {
+    "speaker": "M912",
+    "target": "ii",
+    "source_file": "ee\\M912Tee.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0016698605091809923
+  },
+  {
+    "speaker": "M912",
+    "target": "ii",
+    "source_file": "ee\\M912Tee.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.0021681673070083635
+  },
+  {
+    "speaker": "M912",
+    "target": "ii",
+    "source_file": "ee\\M912Tee.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.001891433707358226
+  },
+  {
+    "speaker": "M912",
+    "target": "ii",
+    "source_file": "ee\\M912Tee.wav",
+    "source_segment_index": 148,
+    "spectral_flatness": 0.002765454145342528
+  },
+  {
+    "speaker": "F29",
+    "target": "e",
+    "source_file": "eh\\F29Teh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.003664544512191608
+  },
+  {
+    "speaker": "F29",
+    "target": "e",
+    "source_file": "eh\\F29Teh.wav",
+    "source_segment_index": 36,
+    "spectral_flatness": 0.007979302539148818
+  },
+  {
+    "speaker": "F29",
+    "target": "e",
+    "source_file": "eh\\F29Teh.wav",
+    "source_segment_index": 72,
+    "spectral_flatness": 0.014312468012770316
+  },
+  {
+    "speaker": "F29",
+    "target": "e",
+    "source_file": "eh\\F29Teh.wav",
+    "source_segment_index": 108,
+    "spectral_flatness": 0.0021070271591543
+  },
+  {
+    "speaker": "F29",
+    "target": "e",
+    "source_file": "eh\\F29Teh.wav",
+    "source_segment_index": 145,
+    "spectral_flatness": 0.0029214411975410585
+  },
+  {
+    "speaker": "F513",
+    "target": "e",
+    "source_file": "eh\\F513Teh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00205005865900818
+  },
+  {
+    "speaker": "F513",
+    "target": "e",
+    "source_file": "eh\\F513Teh.wav",
+    "source_segment_index": 47,
+    "spectral_flatness": 0.0027966116987851062
+  },
+  {
+    "speaker": "F513",
+    "target": "e",
+    "source_file": "eh\\F513Teh.wav",
+    "source_segment_index": 94,
+    "spectral_flatness": 0.003330535176445051
+  },
+  {
+    "speaker": "F513",
+    "target": "e",
+    "source_file": "eh\\F513Teh.wav",
+    "source_segment_index": 141,
+    "spectral_flatness": 0.0032172634865005436
+  },
+  {
+    "speaker": "F513",
+    "target": "e",
+    "source_file": "eh\\F513Teh.wav",
+    "source_segment_index": 189,
+    "spectral_flatness": 0.0025650329877488836
+  },
+  {
+    "speaker": "F643",
+    "target": "e",
+    "source_file": "eh\\F643Teh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0008106644826687211
+  },
+  {
+    "speaker": "F643",
+    "target": "e",
+    "source_file": "eh\\F643Teh.wav",
+    "source_segment_index": 41,
+    "spectral_flatness": 0.0005948607336500037
+  },
+  {
+    "speaker": "F643",
+    "target": "e",
+    "source_file": "eh\\F643Teh.wav",
+    "source_segment_index": 83,
+    "spectral_flatness": 0.00044019775319617706
+  },
+  {
+    "speaker": "F643",
+    "target": "e",
+    "source_file": "eh\\F643Teh.wav",
+    "source_segment_index": 124,
+    "spectral_flatness": 0.00040815925697951607
+  },
+  {
+    "speaker": "F643",
+    "target": "e",
+    "source_file": "eh\\F643Teh.wav",
+    "source_segment_index": 166,
+    "spectral_flatness": 0.0008530069843468288
+  },
+  {
+    "speaker": "F711",
+    "target": "e",
+    "source_file": "eh\\F711Teh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0014652036019569882
+  },
+  {
+    "speaker": "F711",
+    "target": "e",
+    "source_file": "eh\\F711Teh.wav",
+    "source_segment_index": 43,
+    "spectral_flatness": 0.0020031425808813507
+  },
+  {
+    "speaker": "F711",
+    "target": "e",
+    "source_file": "eh\\F711Teh.wav",
+    "source_segment_index": 87,
+    "spectral_flatness": 0.0025976764899449975
+  },
+  {
+    "speaker": "F711",
+    "target": "e",
+    "source_file": "eh\\F711Teh.wav",
+    "source_segment_index": 130,
+    "spectral_flatness": 0.000610058515574222
+  },
+  {
+    "speaker": "F711",
+    "target": "e",
+    "source_file": "eh\\F711Teh.wav",
+    "source_segment_index": 174,
+    "spectral_flatness": 0.0017452826198042551
+  },
+  {
+    "speaker": "F813",
+    "target": "e",
+    "source_file": "eh\\F813Teh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0002706292146254735
+  },
+  {
+    "speaker": "F813",
+    "target": "e",
+    "source_file": "eh\\F813Teh.wav",
+    "source_segment_index": 41,
+    "spectral_flatness": 0.0010208688760004916
+  },
+  {
+    "speaker": "F813",
+    "target": "e",
+    "source_file": "eh\\F813Teh.wav",
+    "source_segment_index": 82,
+    "spectral_flatness": 0.0008007633121036478
+  },
+  {
+    "speaker": "F813",
+    "target": "e",
+    "source_file": "eh\\F813Teh.wav",
+    "source_segment_index": 123,
+    "spectral_flatness": 0.000694406251326229
+  },
+  {
+    "speaker": "F813",
+    "target": "e",
+    "source_file": "eh\\F813Teh.wav",
+    "source_segment_index": 164,
+    "spectral_flatness": 0.005284683734212998
+  },
+  {
+    "speaker": "F943",
+    "target": "e",
+    "source_file": "eh\\F943Teh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0004505492284933444
+  },
+  {
+    "speaker": "F943",
+    "target": "e",
+    "source_file": "eh\\F943Teh.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0028765000720618354
+  },
+  {
+    "speaker": "F943",
+    "target": "e",
+    "source_file": "eh\\F943Teh.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 0.0023720670384662474
+  },
+  {
+    "speaker": "F943",
+    "target": "e",
+    "source_file": "eh\\F943Teh.wav",
+    "source_segment_index": 113,
+    "spectral_flatness": 0.0016764215607071207
+  },
+  {
+    "speaker": "F943",
+    "target": "e",
+    "source_file": "eh\\F943Teh.wav",
+    "source_segment_index": 151,
+    "spectral_flatness": 0.002365112667187196
+  },
+  {
+    "speaker": "M1010",
+    "target": "e",
+    "source_file": "eh\\M1010Teh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00019601262963696693
+  },
+  {
+    "speaker": "M1010",
+    "target": "e",
+    "source_file": "eh\\M1010Teh.wav",
+    "source_segment_index": 34,
+    "spectral_flatness": 0.0004027375896012665
+  },
+  {
+    "speaker": "M1010",
+    "target": "e",
+    "source_file": "eh\\M1010Teh.wav",
+    "source_segment_index": 69,
+    "spectral_flatness": 0.0006108020401798498
+  },
+  {
+    "speaker": "M1010",
+    "target": "e",
+    "source_file": "eh\\M1010Teh.wav",
+    "source_segment_index": 104,
+    "spectral_flatness": 0.0005769497247589098
+  },
+  {
+    "speaker": "M1010",
+    "target": "e",
+    "source_file": "eh\\M1010Teh.wav",
+    "source_segment_index": 139,
+    "spectral_flatness": 0.0006843104866980767
+  },
+  {
+    "speaker": "M221",
+    "target": "e",
+    "source_file": "eh\\M221Teh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0023740934122354214
+  },
+  {
+    "speaker": "M221",
+    "target": "e",
+    "source_file": "eh\\M221Teh.wav",
+    "source_segment_index": 50,
+    "spectral_flatness": 0.003553338870083675
+  },
+  {
+    "speaker": "M221",
+    "target": "e",
+    "source_file": "eh\\M221Teh.wav",
+    "source_segment_index": 100,
+    "spectral_flatness": 0.0024516694721310045
+  },
+  {
+    "speaker": "M221",
+    "target": "e",
+    "source_file": "eh\\M221Teh.wav",
+    "source_segment_index": 150,
+    "spectral_flatness": 0.004429541507760849
+  },
+  {
+    "speaker": "M221",
+    "target": "e",
+    "source_file": "eh\\M221Teh.wav",
+    "source_segment_index": 200,
+    "spectral_flatness": 0.0034061551121308594
+  },
+  {
+    "speaker": "M660",
+    "target": "e",
+    "source_file": "eh\\M660Teh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0017496260880304326
+  },
+  {
+    "speaker": "M660",
+    "target": "e",
+    "source_file": "eh\\M660Teh.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0015568840966247788
+  },
+  {
+    "speaker": "M660",
+    "target": "e",
+    "source_file": "eh\\M660Teh.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 0.001490689772672009
+  },
+  {
+    "speaker": "M660",
+    "target": "e",
+    "source_file": "eh\\M660Teh.wav",
+    "source_segment_index": 112,
+    "spectral_flatness": 0.001408179679479144
+  },
+  {
+    "speaker": "M660",
+    "target": "e",
+    "source_file": "eh\\M660Teh.wav",
+    "source_segment_index": 150,
+    "spectral_flatness": 0.0007500711862234717
+  },
+  {
+    "speaker": "M721",
+    "target": "e",
+    "source_file": "eh\\M721Teh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.004142319481267821
+  },
+  {
+    "speaker": "M721",
+    "target": "e",
+    "source_file": "eh\\M721Teh.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.001957734525137741
+  },
+  {
+    "speaker": "M721",
+    "target": "e",
+    "source_file": "eh\\M721Teh.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.001605062526780096
+  },
+  {
+    "speaker": "M721",
+    "target": "e",
+    "source_file": "eh\\M721Teh.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0021088369323478597
+  },
+  {
+    "speaker": "M721",
+    "target": "e",
+    "source_file": "eh\\M721Teh.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.0022634816214603614
+  },
+  {
+    "speaker": "M821",
+    "target": "e",
+    "source_file": "eh\\M821Teh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0005359092889868053
+  },
+  {
+    "speaker": "M821",
+    "target": "e",
+    "source_file": "eh\\M821Teh.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.000893754777427296
+  },
+  {
+    "speaker": "M821",
+    "target": "e",
+    "source_file": "eh\\M821Teh.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 0.0011913915607540389
+  },
+  {
+    "speaker": "M821",
+    "target": "e",
+    "source_file": "eh\\M821Teh.wav",
+    "source_segment_index": 112,
+    "spectral_flatness": 0.0009561245401503238
+  },
+  {
+    "speaker": "M821",
+    "target": "e",
+    "source_file": "eh\\M821Teh.wav",
+    "source_segment_index": 150,
+    "spectral_flatness": 0.0009050393811960781
+  },
+  {
+    "speaker": "M912",
+    "target": "e",
+    "source_file": "eh\\M912Teh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0010026052079405514
+  },
+  {
+    "speaker": "M912",
+    "target": "e",
+    "source_file": "eh\\M912Teh.wav",
+    "source_segment_index": 36,
+    "spectral_flatness": 0.0027895969591197507
+  },
+  {
+    "speaker": "M912",
+    "target": "e",
+    "source_file": "eh\\M912Teh.wav",
+    "source_segment_index": 73,
+    "spectral_flatness": 0.001827562038497727
+  },
+  {
+    "speaker": "M912",
+    "target": "e",
+    "source_file": "eh\\M912Teh.wav",
+    "source_segment_index": 110,
+    "spectral_flatness": 0.002325104185945225
+  },
+  {
+    "speaker": "M912",
+    "target": "e",
+    "source_file": "eh\\M912Teh.wav",
+    "source_segment_index": 147,
+    "spectral_flatness": 0.004020520456466954
+  },
+  {
+    "speaker": "F29",
+    "target": "ee",
+    "source_file": "ehh\\F29Tehh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.015196446466001337
+  },
+  {
+    "speaker": "F29",
+    "target": "ee",
+    "source_file": "ehh\\F29Tehh.wav",
+    "source_segment_index": 36,
+    "spectral_flatness": 0.007117495988702569
+  },
+  {
+    "speaker": "F29",
+    "target": "ee",
+    "source_file": "ehh\\F29Tehh.wav",
+    "source_segment_index": 73,
+    "spectral_flatness": 0.0018078327934946074
+  },
+  {
+    "speaker": "F29",
+    "target": "ee",
+    "source_file": "ehh\\F29Tehh.wav",
+    "source_segment_index": 110,
+    "spectral_flatness": 0.00869096733246522
+  },
+  {
+    "speaker": "F29",
+    "target": "ee",
+    "source_file": "ehh\\F29Tehh.wav",
+    "source_segment_index": 147,
+    "spectral_flatness": 0.0024063600351421
+  },
+  {
+    "speaker": "F513",
+    "target": "ee",
+    "source_file": "ehh\\F513Tehh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.006812962707872414
+  },
+  {
+    "speaker": "F513",
+    "target": "ee",
+    "source_file": "ehh\\F513Tehh.wav",
+    "source_segment_index": 43,
+    "spectral_flatness": 0.00899191519496898
+  },
+  {
+    "speaker": "F513",
+    "target": "ee",
+    "source_file": "ehh\\F513Tehh.wav",
+    "source_segment_index": 87,
+    "spectral_flatness": 0.004292382917027582
+  },
+  {
+    "speaker": "F513",
+    "target": "ee",
+    "source_file": "ehh\\F513Tehh.wav",
+    "source_segment_index": 131,
+    "spectral_flatness": 0.0035904074234442275
+  },
+  {
+    "speaker": "F513",
+    "target": "ee",
+    "source_file": "ehh\\F513Tehh.wav",
+    "source_segment_index": 175,
+    "spectral_flatness": 0.002794279438939831
+  },
+  {
+    "speaker": "F643",
+    "target": "ee",
+    "source_file": "ehh\\F643Tehh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0009383558944232827
+  },
+  {
+    "speaker": "F643",
+    "target": "ee",
+    "source_file": "ehh\\F643Tehh.wav",
+    "source_segment_index": 38,
+    "spectral_flatness": 0.00011444356168719745
+  },
+  {
+    "speaker": "F643",
+    "target": "ee",
+    "source_file": "ehh\\F643Tehh.wav",
+    "source_segment_index": 77,
+    "spectral_flatness": 0.0002418565823575078
+  },
+  {
+    "speaker": "F643",
+    "target": "ee",
+    "source_file": "ehh\\F643Tehh.wav",
+    "source_segment_index": 115,
+    "spectral_flatness": 0.00019670865711578006
+  },
+  {
+    "speaker": "F643",
+    "target": "ee",
+    "source_file": "ehh\\F643Tehh.wav",
+    "source_segment_index": 154,
+    "spectral_flatness": 0.00013460473543867055
+  },
+  {
+    "speaker": "F711",
+    "target": "ee",
+    "source_file": "ehh\\F711Tehh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0014671148324831768
+  },
+  {
+    "speaker": "F711",
+    "target": "ee",
+    "source_file": "ehh\\F711Tehh.wav",
+    "source_segment_index": 40,
+    "spectral_flatness": 0.0012637021266704337
+  },
+  {
+    "speaker": "F711",
+    "target": "ee",
+    "source_file": "ehh\\F711Tehh.wav",
+    "source_segment_index": 80,
+    "spectral_flatness": 0.0009176464828239
+  },
+  {
+    "speaker": "F711",
+    "target": "ee",
+    "source_file": "ehh\\F711Tehh.wav",
+    "source_segment_index": 120,
+    "spectral_flatness": 0.0011089926508777268
+  },
+  {
+    "speaker": "F711",
+    "target": "ee",
+    "source_file": "ehh\\F711Tehh.wav",
+    "source_segment_index": 160,
+    "spectral_flatness": 0.00045001924619823683
+  },
+  {
+    "speaker": "F813",
+    "target": "ee",
+    "source_file": "ehh\\F813Tehh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0002630013928551463
+  },
+  {
+    "speaker": "F813",
+    "target": "ee",
+    "source_file": "ehh\\F813Tehh.wav",
+    "source_segment_index": 38,
+    "spectral_flatness": 0.0004590684805635165
+  },
+  {
+    "speaker": "F813",
+    "target": "ee",
+    "source_file": "ehh\\F813Tehh.wav",
+    "source_segment_index": 77,
+    "spectral_flatness": 0.00035610876176405304
+  },
+  {
+    "speaker": "F813",
+    "target": "ee",
+    "source_file": "ehh\\F813Tehh.wav",
+    "source_segment_index": 116,
+    "spectral_flatness": 0.0002512166039152742
+  },
+  {
+    "speaker": "F813",
+    "target": "ee",
+    "source_file": "ehh\\F813Tehh.wav",
+    "source_segment_index": 155,
+    "spectral_flatness": 0.0007953564070964735
+  },
+  {
+    "speaker": "F943",
+    "target": "ee",
+    "source_file": "ehh\\F943Tehh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0008195118114214112
+  },
+  {
+    "speaker": "F943",
+    "target": "ee",
+    "source_file": "ehh\\F943Tehh.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0009703129501936988
+  },
+  {
+    "speaker": "F943",
+    "target": "ee",
+    "source_file": "ehh\\F943Tehh.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 0.000515635742060018
+  },
+  {
+    "speaker": "F943",
+    "target": "ee",
+    "source_file": "ehh\\F943Tehh.wav",
+    "source_segment_index": 112,
+    "spectral_flatness": 0.00036840347961014967
+  },
+  {
+    "speaker": "F943",
+    "target": "ee",
+    "source_file": "ehh\\F943Tehh.wav",
+    "source_segment_index": 150,
+    "spectral_flatness": 0.0004842438145933262
+  },
+  {
+    "speaker": "M1010",
+    "target": "ee",
+    "source_file": "ehh\\M1010Tehh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00039781428056346354
+  },
+  {
+    "speaker": "M1010",
+    "target": "ee",
+    "source_file": "ehh\\M1010Tehh.wav",
+    "source_segment_index": 32,
+    "spectral_flatness": 0.0011871030469697609
+  },
+  {
+    "speaker": "M1010",
+    "target": "ee",
+    "source_file": "ehh\\M1010Tehh.wav",
+    "source_segment_index": 65,
+    "spectral_flatness": 0.0012135784510073902
+  },
+  {
+    "speaker": "M1010",
+    "target": "ee",
+    "source_file": "ehh\\M1010Tehh.wav",
+    "source_segment_index": 98,
+    "spectral_flatness": 0.0009612413085991092
+  },
+  {
+    "speaker": "M1010",
+    "target": "ee",
+    "source_file": "ehh\\M1010Tehh.wav",
+    "source_segment_index": 131,
+    "spectral_flatness": 0.00010562044579387033
+  },
+  {
+    "speaker": "M221",
+    "target": "ee",
+    "source_file": "ehh\\M221Tehh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.002602149805625131
+  },
+  {
+    "speaker": "M221",
+    "target": "ee",
+    "source_file": "ehh\\M221Tehh.wav",
+    "source_segment_index": 38,
+    "spectral_flatness": 0.001793171868518759
+  },
+  {
+    "speaker": "M221",
+    "target": "ee",
+    "source_file": "ehh\\M221Tehh.wav",
+    "source_segment_index": 76,
+    "spectral_flatness": 0.0026219621181272097
+  },
+  {
+    "speaker": "M221",
+    "target": "ee",
+    "source_file": "ehh\\M221Tehh.wav",
+    "source_segment_index": 114,
+    "spectral_flatness": 0.002440495152128134
+  },
+  {
+    "speaker": "M221",
+    "target": "ee",
+    "source_file": "ehh\\M221Tehh.wav",
+    "source_segment_index": 153,
+    "spectral_flatness": 0.009796395373031981
+  },
+  {
+    "speaker": "M660",
+    "target": "ee",
+    "source_file": "ehh\\M660Tehh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0011403659367667297
+  },
+  {
+    "speaker": "M660",
+    "target": "ee",
+    "source_file": "ehh\\M660Tehh.wav",
+    "source_segment_index": 33,
+    "spectral_flatness": 0.0007193115002138917
+  },
+  {
+    "speaker": "M660",
+    "target": "ee",
+    "source_file": "ehh\\M660Tehh.wav",
+    "source_segment_index": 66,
+    "spectral_flatness": 0.0008798417799504895
+  },
+  {
+    "speaker": "M660",
+    "target": "ee",
+    "source_file": "ehh\\M660Tehh.wav",
+    "source_segment_index": 99,
+    "spectral_flatness": 0.0011474734972476018
+  },
+  {
+    "speaker": "M660",
+    "target": "ee",
+    "source_file": "ehh\\M660Tehh.wav",
+    "source_segment_index": 132,
+    "spectral_flatness": 0.00010755217961887868
+  },
+  {
+    "speaker": "M721",
+    "target": "ee",
+    "source_file": "ehh\\M721Tehh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.006139985642834693
+  },
+  {
+    "speaker": "M721",
+    "target": "ee",
+    "source_file": "ehh\\M721Tehh.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0005851268806621431
+  },
+  {
+    "speaker": "M721",
+    "target": "ee",
+    "source_file": "ehh\\M721Tehh.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.0004755515909493332
+  },
+  {
+    "speaker": "M721",
+    "target": "ee",
+    "source_file": "ehh\\M721Tehh.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0009032928519165262
+  },
+  {
+    "speaker": "M721",
+    "target": "ee",
+    "source_file": "ehh\\M721Tehh.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.0005070777361603903
+  },
+  {
+    "speaker": "M821",
+    "target": "ee",
+    "source_file": "ehh\\M821Tehh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0006465406008042227
+  },
+  {
+    "speaker": "M821",
+    "target": "ee",
+    "source_file": "ehh\\M821Tehh.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.002126049264733708
+  },
+  {
+    "speaker": "M821",
+    "target": "ee",
+    "source_file": "ehh\\M821Tehh.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 0.003213456706308571
+  },
+  {
+    "speaker": "M821",
+    "target": "ee",
+    "source_file": "ehh\\M821Tehh.wav",
+    "source_segment_index": 112,
+    "spectral_flatness": 0.002870226517998526
+  },
+  {
+    "speaker": "M821",
+    "target": "ee",
+    "source_file": "ehh\\M821Tehh.wav",
+    "source_segment_index": 150,
+    "spectral_flatness": 0.004172932391399024
+  },
+  {
+    "speaker": "M912",
+    "target": "ee",
+    "source_file": "ehh\\M912Tehh.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0018992142008191848
+  },
+  {
+    "speaker": "M912",
+    "target": "ee",
+    "source_file": "ehh\\M912Tehh.wav",
+    "source_segment_index": 36,
+    "spectral_flatness": 0.0009747722743868599
+  },
+  {
+    "speaker": "M912",
+    "target": "ee",
+    "source_file": "ehh\\M912Tehh.wav",
+    "source_segment_index": 73,
+    "spectral_flatness": 0.0010123600894926827
+  },
+  {
+    "speaker": "M912",
+    "target": "ee",
+    "source_file": "ehh\\M912Tehh.wav",
+    "source_segment_index": 110,
+    "spectral_flatness": 0.0025690538719569667
+  },
+  {
+    "speaker": "M912",
+    "target": "ee",
+    "source_file": "ehh\\M912Tehh.wav",
+    "source_segment_index": 147,
+    "spectral_flatness": 0.0009738695268192024
+  },
+  {
+    "speaker": "F29",
+    "target": "o",
+    "source_file": "o\\F29To.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00014296973137985615
+  },
+  {
+    "speaker": "F29",
+    "target": "o",
+    "source_file": "o\\F29To.wav",
+    "source_segment_index": 36,
+    "spectral_flatness": 0.00027980083335790305
+  },
+  {
+    "speaker": "F29",
+    "target": "o",
+    "source_file": "o\\F29To.wav",
+    "source_segment_index": 73,
+    "spectral_flatness": 0.0006683302327090493
+  },
+  {
+    "speaker": "F29",
+    "target": "o",
+    "source_file": "o\\F29To.wav",
+    "source_segment_index": 110,
+    "spectral_flatness": 0.0001688566980559745
+  },
+  {
+    "speaker": "F29",
+    "target": "o",
+    "source_file": "o\\F29To.wav",
+    "source_segment_index": 147,
+    "spectral_flatness": 0.0006410079081158585
+  },
+  {
+    "speaker": "F513",
+    "target": "o",
+    "source_file": "o\\F513To.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0002480048330449013
+  },
+  {
+    "speaker": "F513",
+    "target": "o",
+    "source_file": "o\\F513To.wav",
+    "source_segment_index": 46,
+    "spectral_flatness": 0.0006588328004134879
+  },
+  {
+    "speaker": "F513",
+    "target": "o",
+    "source_file": "o\\F513To.wav",
+    "source_segment_index": 92,
+    "spectral_flatness": 0.0005876672219456865
+  },
+  {
+    "speaker": "F513",
+    "target": "o",
+    "source_file": "o\\F513To.wav",
+    "source_segment_index": 138,
+    "spectral_flatness": 0.0002888347141532442
+  },
+  {
+    "speaker": "F513",
+    "target": "o",
+    "source_file": "o\\F513To.wav",
+    "source_segment_index": 185,
+    "spectral_flatness": 0.0003286291064119338
+  },
+  {
+    "speaker": "F643",
+    "target": "o",
+    "source_file": "o\\F643To.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00019778908423955484
+  },
+  {
+    "speaker": "F643",
+    "target": "o",
+    "source_file": "o\\F643To.wav",
+    "source_segment_index": 39,
+    "spectral_flatness": 0.00015575429727294007
+  },
+  {
+    "speaker": "F643",
+    "target": "o",
+    "source_file": "o\\F643To.wav",
+    "source_segment_index": 79,
+    "spectral_flatness": 0.0001767636601519877
+  },
+  {
+    "speaker": "F643",
+    "target": "o",
+    "source_file": "o\\F643To.wav",
+    "source_segment_index": 118,
+    "spectral_flatness": 0.0001236829052255736
+  },
+  {
+    "speaker": "F643",
+    "target": "o",
+    "source_file": "o\\F643To.wav",
+    "source_segment_index": 158,
+    "spectral_flatness": 8.166089293962505e-05
+  },
+  {
+    "speaker": "F711",
+    "target": "o",
+    "source_file": "o\\F711To.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00015034572957129303
+  },
+  {
+    "speaker": "F711",
+    "target": "o",
+    "source_file": "o\\F711To.wav",
+    "source_segment_index": 42,
+    "spectral_flatness": 0.0004345599508297299
+  },
+  {
+    "speaker": "F711",
+    "target": "o",
+    "source_file": "o\\F711To.wav",
+    "source_segment_index": 84,
+    "spectral_flatness": 0.0002271419583767453
+  },
+  {
+    "speaker": "F711",
+    "target": "o",
+    "source_file": "o\\F711To.wav",
+    "source_segment_index": 126,
+    "spectral_flatness": 0.00013836342595633703
+  },
+  {
+    "speaker": "F711",
+    "target": "o",
+    "source_file": "o\\F711To.wav",
+    "source_segment_index": 169,
+    "spectral_flatness": 0.00019047190816114747
+  },
+  {
+    "speaker": "F813",
+    "target": "o",
+    "source_file": "o\\F813To.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 8.433018120323655e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "o",
+    "source_file": "o\\F813To.wav",
+    "source_segment_index": 40,
+    "spectral_flatness": 4.6295911621213064e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "o",
+    "source_file": "o\\F813To.wav",
+    "source_segment_index": 80,
+    "spectral_flatness": 4.0789388646461454e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "o",
+    "source_file": "o\\F813To.wav",
+    "source_segment_index": 120,
+    "spectral_flatness": 3.806524767145508e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "o",
+    "source_file": "o\\F813To.wav",
+    "source_segment_index": 161,
+    "spectral_flatness": 5.8231290109769844e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "o",
+    "source_file": "o\\F943To.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 7.566826050401632e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "o",
+    "source_file": "o\\F943To.wav",
+    "source_segment_index": 38,
+    "spectral_flatness": 0.000106647797904338
+  },
+  {
+    "speaker": "F943",
+    "target": "o",
+    "source_file": "o\\F943To.wav",
+    "source_segment_index": 76,
+    "spectral_flatness": 0.0002290189712214932
+  },
+  {
+    "speaker": "F943",
+    "target": "o",
+    "source_file": "o\\F943To.wav",
+    "source_segment_index": 114,
+    "spectral_flatness": 0.00015518394580836038
+  },
+  {
+    "speaker": "F943",
+    "target": "o",
+    "source_file": "o\\F943To.wav",
+    "source_segment_index": 152,
+    "spectral_flatness": 0.0001718714615355346
+  },
+  {
+    "speaker": "M1010",
+    "target": "o",
+    "source_file": "o\\M1010To.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00013503311955552017
+  },
+  {
+    "speaker": "M1010",
+    "target": "o",
+    "source_file": "o\\M1010To.wav",
+    "source_segment_index": 30,
+    "spectral_flatness": 5.205113193825696e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "o",
+    "source_file": "o\\M1010To.wav",
+    "source_segment_index": 60,
+    "spectral_flatness": 7.286238971926956e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "o",
+    "source_file": "o\\M1010To.wav",
+    "source_segment_index": 90,
+    "spectral_flatness": 5.855352219680169e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "o",
+    "source_file": "o\\M1010To.wav",
+    "source_segment_index": 120,
+    "spectral_flatness": 0.00011285118924690787
+  },
+  {
+    "speaker": "M221",
+    "target": "o",
+    "source_file": "o\\M221To.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0003930089578922037
+  },
+  {
+    "speaker": "M221",
+    "target": "o",
+    "source_file": "o\\M221To.wav",
+    "source_segment_index": 34,
+    "spectral_flatness": 0.0002055939985532951
+  },
+  {
+    "speaker": "M221",
+    "target": "o",
+    "source_file": "o\\M221To.wav",
+    "source_segment_index": 69,
+    "spectral_flatness": 0.0002847260105927074
+  },
+  {
+    "speaker": "M221",
+    "target": "o",
+    "source_file": "o\\M221To.wav",
+    "source_segment_index": 104,
+    "spectral_flatness": 0.00036971381995620485
+  },
+  {
+    "speaker": "M221",
+    "target": "o",
+    "source_file": "o\\M221To.wav",
+    "source_segment_index": 139,
+    "spectral_flatness": 0.0002276359269519127
+  },
+  {
+    "speaker": "M660",
+    "target": "o",
+    "source_file": "o\\M660To.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0004909574319693994
+  },
+  {
+    "speaker": "M660",
+    "target": "o",
+    "source_file": "o\\M660To.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 6.43110291193956e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "o",
+    "source_file": "o\\M660To.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 5.756066300052742e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "o",
+    "source_file": "o\\M660To.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 6.594856565203114e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "o",
+    "source_file": "o\\M660To.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 4.7625044880754785e-05
+  },
+  {
+    "speaker": "M721",
+    "target": "o",
+    "source_file": "o\\M721To.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00018442799201701246
+  },
+  {
+    "speaker": "M721",
+    "target": "o",
+    "source_file": "o\\M721To.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0001318422061200766
+  },
+  {
+    "speaker": "M721",
+    "target": "o",
+    "source_file": "o\\M721To.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.00013026544691218018
+  },
+  {
+    "speaker": "M721",
+    "target": "o",
+    "source_file": "o\\M721To.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0001271642726890863
+  },
+  {
+    "speaker": "M721",
+    "target": "o",
+    "source_file": "o\\M721To.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 9.653039445429163e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "o",
+    "source_file": "o\\M821To.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 4.832376482538437e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "o",
+    "source_file": "o\\M821To.wav",
+    "source_segment_index": 40,
+    "spectral_flatness": 3.855964538065909e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "o",
+    "source_file": "o\\M821To.wav",
+    "source_segment_index": 80,
+    "spectral_flatness": 6.159800450825976e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "o",
+    "source_file": "o\\M821To.wav",
+    "source_segment_index": 120,
+    "spectral_flatness": 9.38857927342594e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "o",
+    "source_file": "o\\M821To.wav",
+    "source_segment_index": 160,
+    "spectral_flatness": 0.00014118181957924
+  },
+  {
+    "speaker": "M912",
+    "target": "o",
+    "source_file": "o\\M912To.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00024064287511294235
+  },
+  {
+    "speaker": "M912",
+    "target": "o",
+    "source_file": "o\\M912To.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0007883732721857693
+  },
+  {
+    "speaker": "M912",
+    "target": "o",
+    "source_file": "o\\M912To.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.000408410359290612
+  },
+  {
+    "speaker": "M912",
+    "target": "o",
+    "source_file": "o\\M912To.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.00032275764159874507
+  },
+  {
+    "speaker": "M912",
+    "target": "o",
+    "source_file": "o\\M912To.wav",
+    "source_segment_index": 148,
+    "spectral_flatness": 0.0002033686596920828
+  },
+  {
+    "speaker": "F29",
+    "target": "oo",
+    "source_file": "oo\\F29Too.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00045059118983922076
+  },
+  {
+    "speaker": "F29",
+    "target": "oo",
+    "source_file": "oo\\F29Too.wav",
+    "source_segment_index": 36,
+    "spectral_flatness": 0.0002624518674157983
+  },
+  {
+    "speaker": "F29",
+    "target": "oo",
+    "source_file": "oo\\F29Too.wav",
+    "source_segment_index": 73,
+    "spectral_flatness": 0.00018088978060228585
+  },
+  {
+    "speaker": "F29",
+    "target": "oo",
+    "source_file": "oo\\F29Too.wav",
+    "source_segment_index": 110,
+    "spectral_flatness": 0.00018207325397746465
+  },
+  {
+    "speaker": "F29",
+    "target": "oo",
+    "source_file": "oo\\F29Too.wav",
+    "source_segment_index": 147,
+    "spectral_flatness": 0.0003299854132398185
+  },
+  {
+    "speaker": "F513",
+    "target": "oo",
+    "source_file": "oo\\F513Too.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0005195470138405511
+  },
+  {
+    "speaker": "F513",
+    "target": "oo",
+    "source_file": "oo\\F513Too.wav",
+    "source_segment_index": 38,
+    "spectral_flatness": 0.0004175219066308819
+  },
+  {
+    "speaker": "F513",
+    "target": "oo",
+    "source_file": "oo\\F513Too.wav",
+    "source_segment_index": 76,
+    "spectral_flatness": 0.0006729209180668357
+  },
+  {
+    "speaker": "F513",
+    "target": "oo",
+    "source_file": "oo\\F513Too.wav",
+    "source_segment_index": 114,
+    "spectral_flatness": 0.00031093482164941974
+  },
+  {
+    "speaker": "F513",
+    "target": "oo",
+    "source_file": "oo\\F513Too.wav",
+    "source_segment_index": 153,
+    "spectral_flatness": 0.0004142809020731971
+  },
+  {
+    "speaker": "F643",
+    "target": "oo",
+    "source_file": "oo\\F643Too.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 5.614531248360514e-05
+  },
+  {
+    "speaker": "F643",
+    "target": "oo",
+    "source_file": "oo\\F643Too.wav",
+    "source_segment_index": 39,
+    "spectral_flatness": 5.601924685524243e-05
+  },
+  {
+    "speaker": "F643",
+    "target": "oo",
+    "source_file": "oo\\F643Too.wav",
+    "source_segment_index": 79,
+    "spectral_flatness": 4.432626615191032e-05
+  },
+  {
+    "speaker": "F643",
+    "target": "oo",
+    "source_file": "oo\\F643Too.wav",
+    "source_segment_index": 118,
+    "spectral_flatness": 2.8160687291691324e-05
+  },
+  {
+    "speaker": "F643",
+    "target": "oo",
+    "source_file": "oo\\F643Too.wav",
+    "source_segment_index": 158,
+    "spectral_flatness": 3.7640632756781784e-05
+  },
+  {
+    "speaker": "F711",
+    "target": "oo",
+    "source_file": "oo\\F711Too.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0002050989018916367
+  },
+  {
+    "speaker": "F711",
+    "target": "oo",
+    "source_file": "oo\\F711Too.wav",
+    "source_segment_index": 39,
+    "spectral_flatness": 0.00018912752519270417
+  },
+  {
+    "speaker": "F711",
+    "target": "oo",
+    "source_file": "oo\\F711Too.wav",
+    "source_segment_index": 79,
+    "spectral_flatness": 0.00011989257966061445
+  },
+  {
+    "speaker": "F711",
+    "target": "oo",
+    "source_file": "oo\\F711Too.wav",
+    "source_segment_index": 119,
+    "spectral_flatness": 6.074129988190958e-05
+  },
+  {
+    "speaker": "F711",
+    "target": "oo",
+    "source_file": "oo\\F711Too.wav",
+    "source_segment_index": 159,
+    "spectral_flatness": 7.157126950618905e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "oo",
+    "source_file": "oo\\F813Too.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 4.2475038878798e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "oo",
+    "source_file": "oo\\F813Too.wav",
+    "source_segment_index": 40,
+    "spectral_flatness": 3.359571237158009e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "oo",
+    "source_file": "oo\\F813Too.wav",
+    "source_segment_index": 80,
+    "spectral_flatness": 3.7728474346051386e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "oo",
+    "source_file": "oo\\F813Too.wav",
+    "source_segment_index": 120,
+    "spectral_flatness": 4.098997338530409e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "oo",
+    "source_file": "oo\\F813Too.wav",
+    "source_segment_index": 160,
+    "spectral_flatness": 7.995614698984462e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "oo",
+    "source_file": "oo\\F943Too.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 3.6341155275009345e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "oo",
+    "source_file": "oo\\F943Too.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 2.6938627652674414e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "oo",
+    "source_file": "oo\\F943Too.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 2.060080539546609e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "oo",
+    "source_file": "oo\\F943Too.wav",
+    "source_segment_index": 112,
+    "spectral_flatness": 3.3622047259465714e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "oo",
+    "source_file": "oo\\F943Too.wav",
+    "source_segment_index": 150,
+    "spectral_flatness": 4.042699063443495e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "oo",
+    "source_file": "oo\\M1010Too.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 2.1025865740844657e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "oo",
+    "source_file": "oo\\M1010Too.wav",
+    "source_segment_index": 32,
+    "spectral_flatness": 8.199882296804032e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "oo",
+    "source_file": "oo\\M1010Too.wav",
+    "source_segment_index": 64,
+    "spectral_flatness": 0.00013170125448380498
+  },
+  {
+    "speaker": "M1010",
+    "target": "oo",
+    "source_file": "oo\\M1010Too.wav",
+    "source_segment_index": 96,
+    "spectral_flatness": 6.870205438072317e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "oo",
+    "source_file": "oo\\M1010Too.wav",
+    "source_segment_index": 128,
+    "spectral_flatness": 0.00021845005081837351
+  },
+  {
+    "speaker": "M221",
+    "target": "oo",
+    "source_file": "oo\\M221Too.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0003966162978096392
+  },
+  {
+    "speaker": "M221",
+    "target": "oo",
+    "source_file": "oo\\M221Too.wav",
+    "source_segment_index": 43,
+    "spectral_flatness": 0.0008477842950132637
+  },
+  {
+    "speaker": "M221",
+    "target": "oo",
+    "source_file": "oo\\M221Too.wav",
+    "source_segment_index": 86,
+    "spectral_flatness": 0.000509970504391583
+  },
+  {
+    "speaker": "M221",
+    "target": "oo",
+    "source_file": "oo\\M221Too.wav",
+    "source_segment_index": 129,
+    "spectral_flatness": 0.0008770875873029217
+  },
+  {
+    "speaker": "M221",
+    "target": "oo",
+    "source_file": "oo\\M221Too.wav",
+    "source_segment_index": 172,
+    "spectral_flatness": 0.0005674989109359512
+  },
+  {
+    "speaker": "M660",
+    "target": "oo",
+    "source_file": "oo\\M660Too.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00014108890237832364
+  },
+  {
+    "speaker": "M660",
+    "target": "oo",
+    "source_file": "oo\\M660Too.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 4.630869691766882e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "oo",
+    "source_file": "oo\\M660Too.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 2.9821817551690142e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "oo",
+    "source_file": "oo\\M660Too.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 3.061514753286921e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "oo",
+    "source_file": "oo\\M660Too.wav",
+    "source_segment_index": 148,
+    "spectral_flatness": 1.7152037179292876e-05
+  },
+  {
+    "speaker": "M721",
+    "target": "oo",
+    "source_file": "oo\\M721Too.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00016061676429126673
+  },
+  {
+    "speaker": "M721",
+    "target": "oo",
+    "source_file": "oo\\M721Too.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 2.460917588842778e-05
+  },
+  {
+    "speaker": "M721",
+    "target": "oo",
+    "source_file": "oo\\M721Too.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 9.576335554588353e-06
+  },
+  {
+    "speaker": "M721",
+    "target": "oo",
+    "source_file": "oo\\M721Too.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 1.2146790458496039e-05
+  },
+  {
+    "speaker": "M721",
+    "target": "oo",
+    "source_file": "oo\\M721Too.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 1.2156530229591834e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "oo",
+    "source_file": "oo\\M821Too.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 4.4343182696782696e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "oo",
+    "source_file": "oo\\M821Too.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0001631817214534331
+  },
+  {
+    "speaker": "M821",
+    "target": "oo",
+    "source_file": "oo\\M821Too.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 0.0003176929216986904
+  },
+  {
+    "speaker": "M821",
+    "target": "oo",
+    "source_file": "oo\\M821Too.wav",
+    "source_segment_index": 113,
+    "spectral_flatness": 0.00016341321411835464
+  },
+  {
+    "speaker": "M821",
+    "target": "oo",
+    "source_file": "oo\\M821Too.wav",
+    "source_segment_index": 151,
+    "spectral_flatness": 0.00029090466731302394
+  },
+  {
+    "speaker": "M912",
+    "target": "oo",
+    "source_file": "oo\\M912Too.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 7.299539643055132e-05
+  },
+  {
+    "speaker": "M912",
+    "target": "oo",
+    "source_file": "oo\\M912Too.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 4.6749879419234465e-05
+  },
+  {
+    "speaker": "M912",
+    "target": "oo",
+    "source_file": "oo\\M912Too.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 1.3355616785239304e-05
+  },
+  {
+    "speaker": "M912",
+    "target": "oo",
+    "source_file": "oo\\M912Too.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.00010234615534226263
+  },
+  {
+    "speaker": "M912",
+    "target": "oo",
+    "source_file": "oo\\M912Too.wav",
+    "source_segment_index": 148,
+    "spectral_flatness": 6.5970542759769764e-06
+  },
+  {
+    "speaker": "F29",
+    "target": "u",
+    "source_file": "u\\F29Tu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00078030290805597
+  },
+  {
+    "speaker": "F29",
+    "target": "u",
+    "source_file": "u\\F29Tu.wav",
+    "source_segment_index": 32,
+    "spectral_flatness": 0.00016401539050982776
+  },
+  {
+    "speaker": "F29",
+    "target": "u",
+    "source_file": "u\\F29Tu.wav",
+    "source_segment_index": 64,
+    "spectral_flatness": 6.608260876763607e-05
+  },
+  {
+    "speaker": "F29",
+    "target": "u",
+    "source_file": "u\\F29Tu.wav",
+    "source_segment_index": 96,
+    "spectral_flatness": 0.00022312633481157715
+  },
+  {
+    "speaker": "F29",
+    "target": "u",
+    "source_file": "u\\F29Tu.wav",
+    "source_segment_index": 128,
+    "spectral_flatness": 8.396071190587315e-05
+  },
+  {
+    "speaker": "F513",
+    "target": "u",
+    "source_file": "u\\F513Tu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0001565409682439349
+  },
+  {
+    "speaker": "F513",
+    "target": "u",
+    "source_file": "u\\F513Tu.wav",
+    "source_segment_index": 40,
+    "spectral_flatness": 0.00020481491641454263
+  },
+  {
+    "speaker": "F513",
+    "target": "u",
+    "source_file": "u\\F513Tu.wav",
+    "source_segment_index": 80,
+    "spectral_flatness": 0.0002700400362041903
+  },
+  {
+    "speaker": "F513",
+    "target": "u",
+    "source_file": "u\\F513Tu.wav",
+    "source_segment_index": 120,
+    "spectral_flatness": 0.0001572734866021836
+  },
+  {
+    "speaker": "F513",
+    "target": "u",
+    "source_file": "u\\F513Tu.wav",
+    "source_segment_index": 161,
+    "spectral_flatness": 8.97482802895144e-05
+  },
+  {
+    "speaker": "F643",
+    "target": "u",
+    "source_file": "u\\F643Tu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 9.739488018569879e-05
+  },
+  {
+    "speaker": "F643",
+    "target": "u",
+    "source_file": "u\\F643Tu.wav",
+    "source_segment_index": 40,
+    "spectral_flatness": 0.00011474564524579897
+  },
+  {
+    "speaker": "F643",
+    "target": "u",
+    "source_file": "u\\F643Tu.wav",
+    "source_segment_index": 81,
+    "spectral_flatness": 0.00010892138769181288
+  },
+  {
+    "speaker": "F643",
+    "target": "u",
+    "source_file": "u\\F643Tu.wav",
+    "source_segment_index": 121,
+    "spectral_flatness": 9.625608188661706e-05
+  },
+  {
+    "speaker": "F643",
+    "target": "u",
+    "source_file": "u\\F643Tu.wav",
+    "source_segment_index": 162,
+    "spectral_flatness": 0.00012264426663188114
+  },
+  {
+    "speaker": "F711",
+    "target": "u",
+    "source_file": "u\\F711Tu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0009751463686295337
+  },
+  {
+    "speaker": "F711",
+    "target": "u",
+    "source_file": "u\\F711Tu.wav",
+    "source_segment_index": 25,
+    "spectral_flatness": 0.00048619320324526735
+  },
+  {
+    "speaker": "F711",
+    "target": "u",
+    "source_file": "u\\F711Tu.wav",
+    "source_segment_index": 51,
+    "spectral_flatness": 0.0003375125729890274
+  },
+  {
+    "speaker": "F711",
+    "target": "u",
+    "source_file": "u\\F711Tu.wav",
+    "source_segment_index": 77,
+    "spectral_flatness": 0.0002677164700188578
+  },
+  {
+    "speaker": "F711",
+    "target": "u",
+    "source_file": "u\\F711Tu.wav",
+    "source_segment_index": 103,
+    "spectral_flatness": 0.0003651346220584136
+  },
+  {
+    "speaker": "F813",
+    "target": "u",
+    "source_file": "u\\F813Tu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 2.0301460530155963e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "u",
+    "source_file": "u\\F813Tu.wav",
+    "source_segment_index": 39,
+    "spectral_flatness": 5.271744558545745e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "u",
+    "source_file": "u\\F813Tu.wav",
+    "source_segment_index": 78,
+    "spectral_flatness": 1.589207573495811e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "u",
+    "source_file": "u\\F813Tu.wav",
+    "source_segment_index": 117,
+    "spectral_flatness": 2.3138579605695186e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "u",
+    "source_file": "u\\F813Tu.wav",
+    "source_segment_index": 157,
+    "spectral_flatness": 1.042149146797965e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "u",
+    "source_file": "u\\F943Tu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 5.708221249708584e-06
+  },
+  {
+    "speaker": "F943",
+    "target": "u",
+    "source_file": "u\\F943Tu.wav",
+    "source_segment_index": 38,
+    "spectral_flatness": 8.883163807670304e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "u",
+    "source_file": "u\\F943Tu.wav",
+    "source_segment_index": 76,
+    "spectral_flatness": 0.0001289211848973311
+  },
+  {
+    "speaker": "F943",
+    "target": "u",
+    "source_file": "u\\F943Tu.wav",
+    "source_segment_index": 114,
+    "spectral_flatness": 6.0430121193844696e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "u",
+    "source_file": "u\\F943Tu.wav",
+    "source_segment_index": 153,
+    "spectral_flatness": 0.00010666790601387826
+  },
+  {
+    "speaker": "M1010",
+    "target": "u",
+    "source_file": "u\\M1010Tu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 4.164607223358535e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "u",
+    "source_file": "u\\M1010Tu.wav",
+    "source_segment_index": 35,
+    "spectral_flatness": 7.070437974206174e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "u",
+    "source_file": "u\\M1010Tu.wav",
+    "source_segment_index": 70,
+    "spectral_flatness": 7.299451836330528e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "u",
+    "source_file": "u\\M1010Tu.wav",
+    "source_segment_index": 105,
+    "spectral_flatness": 4.6666976041746974e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "u",
+    "source_file": "u\\M1010Tu.wav",
+    "source_segment_index": 141,
+    "spectral_flatness": 0.00023415507131630916
+  },
+  {
+    "speaker": "M221",
+    "target": "u",
+    "source_file": "u\\M221Tu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00012283307439959294
+  },
+  {
+    "speaker": "M221",
+    "target": "u",
+    "source_file": "u\\M221Tu.wav",
+    "source_segment_index": 40,
+    "spectral_flatness": 0.00017476261278289327
+  },
+  {
+    "speaker": "M221",
+    "target": "u",
+    "source_file": "u\\M221Tu.wav",
+    "source_segment_index": 81,
+    "spectral_flatness": 0.00014371171496615104
+  },
+  {
+    "speaker": "M221",
+    "target": "u",
+    "source_file": "u\\M221Tu.wav",
+    "source_segment_index": 122,
+    "spectral_flatness": 0.0002670853755252642
+  },
+  {
+    "speaker": "M221",
+    "target": "u",
+    "source_file": "u\\M221Tu.wav",
+    "source_segment_index": 163,
+    "spectral_flatness": 0.00026706849125391686
+  },
+  {
+    "speaker": "M660",
+    "target": "u",
+    "source_file": "u\\M660Tu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 2.2481409514657974e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "u",
+    "source_file": "u\\M660Tu.wav",
+    "source_segment_index": 34,
+    "spectral_flatness": 2.4259318563216726e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "u",
+    "source_file": "u\\M660Tu.wav",
+    "source_segment_index": 69,
+    "spectral_flatness": 1.5143588462318666e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "u",
+    "source_file": "u\\M660Tu.wav",
+    "source_segment_index": 104,
+    "spectral_flatness": 2.0097772784252105e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "u",
+    "source_file": "u\\M660Tu.wav",
+    "source_segment_index": 139,
+    "spectral_flatness": 1.6600559029062577e-05
+  },
+  {
+    "speaker": "M721",
+    "target": "u",
+    "source_file": "u\\M721Tu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 7.271315674582015e-05
+  },
+  {
+    "speaker": "M721",
+    "target": "u",
+    "source_file": "u\\M721Tu.wav",
+    "source_segment_index": 36,
+    "spectral_flatness": 0.00010358055634631279
+  },
+  {
+    "speaker": "M721",
+    "target": "u",
+    "source_file": "u\\M721Tu.wav",
+    "source_segment_index": 73,
+    "spectral_flatness": 8.175676288746294e-05
+  },
+  {
+    "speaker": "M721",
+    "target": "u",
+    "source_file": "u\\M721Tu.wav",
+    "source_segment_index": 110,
+    "spectral_flatness": 6.229549085479152e-05
+  },
+  {
+    "speaker": "M721",
+    "target": "u",
+    "source_file": "u\\M721Tu.wav",
+    "source_segment_index": 147,
+    "spectral_flatness": 6.483764040062325e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "u",
+    "source_file": "u\\M821Tu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 7.692240126620447e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "u",
+    "source_file": "u\\M821Tu.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 9.180158880211767e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "u",
+    "source_file": "u\\M821Tu.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 0.00017819776153037644
+  },
+  {
+    "speaker": "M821",
+    "target": "u",
+    "source_file": "u\\M821Tu.wav",
+    "source_segment_index": 112,
+    "spectral_flatness": 9.285800016886472e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "u",
+    "source_file": "u\\M821Tu.wav",
+    "source_segment_index": 150,
+    "spectral_flatness": 7.7019422225158e-05
+  },
+  {
+    "speaker": "M912",
+    "target": "u",
+    "source_file": "u\\M912Tu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0002691689210901334
+  },
+  {
+    "speaker": "M912",
+    "target": "u",
+    "source_file": "u\\M912Tu.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0006453266455611607
+  },
+  {
+    "speaker": "M912",
+    "target": "u",
+    "source_file": "u\\M912Tu.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.0002690134592450043
+  },
+  {
+    "speaker": "M912",
+    "target": "u",
+    "source_file": "u\\M912Tu.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0001186783004182946
+  },
+  {
+    "speaker": "M912",
+    "target": "u",
+    "source_file": "u\\M912Tu.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.00021092708368523373
+  },
+  {
+    "speaker": "F29",
+    "target": "uu",
+    "source_file": "uu\\F29Tuu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 6.054833029980627e-05
+  },
+  {
+    "speaker": "F29",
+    "target": "uu",
+    "source_file": "uu\\F29Tuu.wav",
+    "source_segment_index": 33,
+    "spectral_flatness": 0.00020855533477025367
+  },
+  {
+    "speaker": "F29",
+    "target": "uu",
+    "source_file": "uu\\F29Tuu.wav",
+    "source_segment_index": 67,
+    "spectral_flatness": 0.0001446539264372223
+  },
+  {
+    "speaker": "F29",
+    "target": "uu",
+    "source_file": "uu\\F29Tuu.wav",
+    "source_segment_index": 101,
+    "spectral_flatness": 0.00016816570766387784
+  },
+  {
+    "speaker": "F29",
+    "target": "uu",
+    "source_file": "uu\\F29Tuu.wav",
+    "source_segment_index": 135,
+    "spectral_flatness": 0.00020711415994222743
+  },
+  {
+    "speaker": "F513",
+    "target": "uu",
+    "source_file": "uu\\F513Tuu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00011900725595385225
+  },
+  {
+    "speaker": "F513",
+    "target": "uu",
+    "source_file": "uu\\F513Tuu.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 0.0001475356551772658
+  },
+  {
+    "speaker": "F513",
+    "target": "uu",
+    "source_file": "uu\\F513Tuu.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 0.0001772491355154511
+  },
+  {
+    "speaker": "F513",
+    "target": "uu",
+    "source_file": "uu\\F513Tuu.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 0.0002371854038377183
+  },
+  {
+    "speaker": "F513",
+    "target": "uu",
+    "source_file": "uu\\F513Tuu.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 0.0008345786905967878
+  },
+  {
+    "speaker": "F643",
+    "target": "uu",
+    "source_file": "uu\\F643Tuu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 9.520195008998639e-05
+  },
+  {
+    "speaker": "F643",
+    "target": "uu",
+    "source_file": "uu\\F643Tuu.wav",
+    "source_segment_index": 40,
+    "spectral_flatness": 0.000120025485692745
+  },
+  {
+    "speaker": "F643",
+    "target": "uu",
+    "source_file": "uu\\F643Tuu.wav",
+    "source_segment_index": 81,
+    "spectral_flatness": 0.00011238470037144824
+  },
+  {
+    "speaker": "F643",
+    "target": "uu",
+    "source_file": "uu\\F643Tuu.wav",
+    "source_segment_index": 122,
+    "spectral_flatness": 0.00012779730339239706
+  },
+  {
+    "speaker": "F643",
+    "target": "uu",
+    "source_file": "uu\\F643Tuu.wav",
+    "source_segment_index": 163,
+    "spectral_flatness": 0.00010341919590332617
+  },
+  {
+    "speaker": "F711",
+    "target": "uu",
+    "source_file": "uu\\F711Tuu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0001544886744163342
+  },
+  {
+    "speaker": "F711",
+    "target": "uu",
+    "source_file": "uu\\F711Tuu.wav",
+    "source_segment_index": 35,
+    "spectral_flatness": 9.941450249808754e-05
+  },
+  {
+    "speaker": "F711",
+    "target": "uu",
+    "source_file": "uu\\F711Tuu.wav",
+    "source_segment_index": 71,
+    "spectral_flatness": 9.327879147732251e-05
+  },
+  {
+    "speaker": "F711",
+    "target": "uu",
+    "source_file": "uu\\F711Tuu.wav",
+    "source_segment_index": 106,
+    "spectral_flatness": 9.54617938411264e-05
+  },
+  {
+    "speaker": "F711",
+    "target": "uu",
+    "source_file": "uu\\F711Tuu.wav",
+    "source_segment_index": 142,
+    "spectral_flatness": 7.428989309483811e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "uu",
+    "source_file": "uu\\F813Tuu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 1.5076031950640314e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "uu",
+    "source_file": "uu\\F813Tuu.wav",
+    "source_segment_index": 39,
+    "spectral_flatness": 2.4125860370892857e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "uu",
+    "source_file": "uu\\F813Tuu.wav",
+    "source_segment_index": 78,
+    "spectral_flatness": 1.853795401030942e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "uu",
+    "source_file": "uu\\F813Tuu.wav",
+    "source_segment_index": 117,
+    "spectral_flatness": 2.922836232832763e-05
+  },
+  {
+    "speaker": "F813",
+    "target": "uu",
+    "source_file": "uu\\F813Tuu.wav",
+    "source_segment_index": 157,
+    "spectral_flatness": 3.225204896436267e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "uu",
+    "source_file": "uu\\F943Tuu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 4.244722455176677e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "uu",
+    "source_file": "uu\\F943Tuu.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 3.663041984402203e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "uu",
+    "source_file": "uu\\F943Tuu.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 4.701618719637922e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "uu",
+    "source_file": "uu\\F943Tuu.wav",
+    "source_segment_index": 112,
+    "spectral_flatness": 5.465121685946108e-05
+  },
+  {
+    "speaker": "F943",
+    "target": "uu",
+    "source_file": "uu\\F943Tuu.wav",
+    "source_segment_index": 150,
+    "spectral_flatness": 6.2765643622644e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "uu",
+    "source_file": "uu\\M1010Tuu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 2.1143451136802852e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "uu",
+    "source_file": "uu\\M1010Tuu.wav",
+    "source_segment_index": 40,
+    "spectral_flatness": 5.404161320401233e-05
+  },
+  {
+    "speaker": "M1010",
+    "target": "uu",
+    "source_file": "uu\\M1010Tuu.wav",
+    "source_segment_index": 80,
+    "spectral_flatness": 0.0001328311870555266
+  },
+  {
+    "speaker": "M1010",
+    "target": "uu",
+    "source_file": "uu\\M1010Tuu.wav",
+    "source_segment_index": 120,
+    "spectral_flatness": 0.00017576700799845608
+  },
+  {
+    "speaker": "M1010",
+    "target": "uu",
+    "source_file": "uu\\M1010Tuu.wav",
+    "source_segment_index": 161,
+    "spectral_flatness": 0.00013684066374074487
+  },
+  {
+    "speaker": "M221",
+    "target": "uu",
+    "source_file": "uu\\M221Tuu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.0001934980552449272
+  },
+  {
+    "speaker": "M221",
+    "target": "uu",
+    "source_file": "uu\\M221Tuu.wav",
+    "source_segment_index": 48,
+    "spectral_flatness": 0.00023486537701272733
+  },
+  {
+    "speaker": "M221",
+    "target": "uu",
+    "source_file": "uu\\M221Tuu.wav",
+    "source_segment_index": 96,
+    "spectral_flatness": 0.00021833393862976378
+  },
+  {
+    "speaker": "M221",
+    "target": "uu",
+    "source_file": "uu\\M221Tuu.wav",
+    "source_segment_index": 144,
+    "spectral_flatness": 0.0003125327264973585
+  },
+  {
+    "speaker": "M221",
+    "target": "uu",
+    "source_file": "uu\\M221Tuu.wav",
+    "source_segment_index": 193,
+    "spectral_flatness": 0.0003107117171168952
+  },
+  {
+    "speaker": "M660",
+    "target": "uu",
+    "source_file": "uu\\M660Tuu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 3.608796952946694e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "uu",
+    "source_file": "uu\\M660Tuu.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 1.3849006823678821e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "uu",
+    "source_file": "uu\\M660Tuu.wav",
+    "source_segment_index": 75,
+    "spectral_flatness": 1.3584811685562275e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "uu",
+    "source_file": "uu\\M660Tuu.wav",
+    "source_segment_index": 113,
+    "spectral_flatness": 1.9537603259244936e-05
+  },
+  {
+    "speaker": "M660",
+    "target": "uu",
+    "source_file": "uu\\M660Tuu.wav",
+    "source_segment_index": 151,
+    "spectral_flatness": 2.6841089063511082e-05
+  },
+  {
+    "speaker": "M721",
+    "target": "uu",
+    "source_file": "uu\\M721Tuu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 4.2450145567858435e-05
+  },
+  {
+    "speaker": "M721",
+    "target": "uu",
+    "source_file": "uu\\M721Tuu.wav",
+    "source_segment_index": 37,
+    "spectral_flatness": 2.5946498992145975e-05
+  },
+  {
+    "speaker": "M721",
+    "target": "uu",
+    "source_file": "uu\\M721Tuu.wav",
+    "source_segment_index": 74,
+    "spectral_flatness": 2.531571032541282e-05
+  },
+  {
+    "speaker": "M721",
+    "target": "uu",
+    "source_file": "uu\\M721Tuu.wav",
+    "source_segment_index": 111,
+    "spectral_flatness": 3.068325112119155e-05
+  },
+  {
+    "speaker": "M721",
+    "target": "uu",
+    "source_file": "uu\\M721Tuu.wav",
+    "source_segment_index": 149,
+    "spectral_flatness": 3.742397925650859e-05
+  },
+  {
+    "speaker": "M821",
+    "target": "uu",
+    "source_file": "uu\\M821Tuu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00022669791146519194
+  },
+  {
+    "speaker": "M821",
+    "target": "uu",
+    "source_file": "uu\\M821Tuu.wav",
+    "source_segment_index": 38,
+    "spectral_flatness": 0.00025173599916698044
+  },
+  {
+    "speaker": "M821",
+    "target": "uu",
+    "source_file": "uu\\M821Tuu.wav",
+    "source_segment_index": 77,
+    "spectral_flatness": 0.0002128369086787933
+  },
+  {
+    "speaker": "M821",
+    "target": "uu",
+    "source_file": "uu\\M821Tuu.wav",
+    "source_segment_index": 115,
+    "spectral_flatness": 0.00018989449166326928
+  },
+  {
+    "speaker": "M821",
+    "target": "uu",
+    "source_file": "uu\\M821Tuu.wav",
+    "source_segment_index": 154,
+    "spectral_flatness": 0.00027148393256457086
+  },
+  {
+    "speaker": "M912",
+    "target": "uu",
+    "source_file": "uu\\M912Tuu.wav",
+    "source_segment_index": 0,
+    "spectral_flatness": 0.00017261991717769758
+  },
+  {
+    "speaker": "M912",
+    "target": "uu",
+    "source_file": "uu\\M912Tuu.wav",
+    "source_segment_index": 36,
+    "spectral_flatness": 6.916593163923927e-05
+  },
+  {
+    "speaker": "M912",
+    "target": "uu",
+    "source_file": "uu\\M912Tuu.wav",
+    "source_segment_index": 73,
+    "spectral_flatness": 0.0001650058875945169
+  },
+  {
+    "speaker": "M912",
+    "target": "uu",
+    "source_file": "uu\\M912Tuu.wav",
+    "source_segment_index": 110,
+    "spectral_flatness": 9.184524635692222e-05
+  },
+  {
+    "speaker": "M912",
+    "target": "uu",
+    "source_file": "uu\\M912Tuu.wav",
+    "source_segment_index": 147,
+    "spectral_flatness": 7.848949269196019e-05
+  }
+]

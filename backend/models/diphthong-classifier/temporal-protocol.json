@@ -1,0 +1,23 @@
+{
+  "strategy": "balanced seven-identity with 20 last-minus-first-third MFCC mean deltas",
+  "n_estimators": 400,
+  "min_samples_leaf": 3,
+  "random_state": 260906,
+  "class_weight": "balanced",
+  "classes": [
+    "A",
+    "AI",
+    "AU",
+    "E",
+    "I",
+    "O",
+    "U"
+  ],
+  "confidence_threshold": 0.6,
+  "calibration": "sigmoid validation speakers",
+  "selection": "One predeclared balanced7 candidate; validation-only deployment gate",
+  "gate": "val macroF1>=.65, accepted accuracy>=.80, accepted-correct recall>=.40 for AI and AU",
+  "prior_visibility": "Baseline and first candidate historical test results seen. Iterative validation; no test-driven tuning.",
+  "features": "80 MFCC statistics + 20 temporal deltas; no duration",
+  "sampling": "Fixed30 random rows per train/validation speaker/source category, seed260906; full test only after validation passes"
+}

@@ -1,0 +1,818 @@
+{
+  "model_version": "tamil-diphthong-v3-trajectory-2026-09-06",
+  "protocol": {
+    "strategy": "balanced seven-identity with 20 last-minus-first-third MFCC mean deltas",
+    "n_estimators": 400,
+    "min_samples_leaf": 3,
+    "random_state": 260906,
+    "class_weight": "balanced",
+    "classes": [
+      "A",
+      "AI",
+      "AU",
+      "E",
+      "I",
+      "O",
+      "U"
+    ],
+    "confidence_threshold": 0.6,
+    "calibration": "sigmoid validation speakers",
+    "selection": "One predeclared balanced7 candidate; validation-only deployment gate",
+    "gate": "val macroF1>=.65, accepted accuracy>=.80, accepted-correct recall>=.40 for AI and AU",
+    "prior_visibility": "Baseline and first candidate historical test results seen. Iterative validation; no test-driven tuning.",
+    "features": "80 MFCC statistics + 20 temporal deltas; no duration",
+    "sampling": "Fixed30 random rows per train/validation speaker/source category, seed260906; full test only after validation passes"
+  },
+  "speaker_splits": {
+    "train": [
+      "F943",
+      "F711",
+      "F643",
+      "F513",
+      "F813",
+      "F29",
+      "M912",
+      "M660",
+      "M1010",
+      "M721",
+      "M221",
+      "M821"
+    ],
+    "validation": [
+      "F320",
+      "F462",
+      "M413",
+      "M13"
+    ],
+    "test": [
+      "F1047",
+      "F147",
+      "M522",
+      "M327"
+    ]
+  },
+  "source": "https://doi.org/10.17632/2dnxmvm22k.1",
+  "license": "CC BY 4.0",
+  "source_label_mapping": {
+    "a": "A",
+    "aa": "A",
+    "e": "I",
+    "ee": "I",
+    "eh": "E",
+    "ehh": "E",
+    "o": "O",
+    "oo": "O",
+    "u": "U",
+    "uu": "U",
+    "i": "AI",
+    "av": "AU"
+  },
+  "inventory": [
+    {
+      "path": "av\\F1047Tav.wav",
+      "sha256": "29d689062486a4c3db9284dc18c6943ec84ed0c37018afdcfc86f02693e0323e",
+      "statuses": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "av\\F147Tav.wav",
+      "sha256": "bcfe1be5c3a4d1118e4562f3b5251d53245f5dba6e50c05a25c0d12451e23987",
+      "statuses": {
+        "ok": 142,
+        "multiple_vowels": 5
+      }
+    },
+    {
+      "path": "av\\F29Tav.wav",
+      "sha256": "2843d8e90dccabed3261d20834a221f5d8ec316006bfc608b324e76c41347321",
+      "statuses": {
+        "multiple_vowels": 7,
+        "ok": 129
+      }
+    },
+    {
+      "path": "av\\F320Tav.wav",
+      "sha256": "24276bdafaaf8d90553aef7d02c21ea1f74eaf3c67999d89944c639651d38f02",
+      "statuses": {
+        "multiple_vowels": 9,
+        "ok": 124
+      }
+    },
+    {
+      "path": "av\\F462Tav.wav",
+      "sha256": "a30b7dc415a409726c0a43397e989c0adba1a7caf35d08b8da14267743f0ac83",
+      "statuses": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "av\\F513Tav.wav",
+      "sha256": "2137d9aaebd69e236792dee5836ca8cf3a5f0f292166ab1fcd26b6d0a4283e80",
+      "statuses": {
+        "ok": 215
+      }
+    },
+    {
+      "path": "av\\F643Tav.wav",
+      "sha256": "13acdb2c0d0c85ee8476458504c7c8d06e61f999f5790004600702c61768f976",
+      "statuses": {
+        "ok": 178
+      }
+    },
+    {
+      "path": "av\\F711Tav.wav",
+      "sha256": "eba3ff022bdac74cd2c3041e9a4d55132c12fbc3398e9c6a7c3c786fa2f1d7d3",
+      "statuses": {
+        "ok": 166
+      }
+    },
+    {
+      "path": "av\\F813Tav.wav",
+      "sha256": "69531caad3d37b25e97ecaa154627c18c7041c486a4644c92da00aac0306ee17",
+      "statuses": {
+        "ok": 153
+      }
+    },
+    {
+      "path": "av\\F943Tav.wav",
+      "sha256": "ef4bba24e5337a8fae3b917658fad3d4fffb6ec2dd31a6f355ffee2fc7151d0b",
+      "statuses": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "av\\M1010Tav.wav",
+      "sha256": "cebe3cf71ed87f5000b6eb025c84ba2bae4900ef621ad51c2dc1076fee6699b3",
+      "statuses": {
+        "ok": 117
+      }
+    },
+    {
+      "path": "av\\M13Tav.wav",
+      "sha256": "539d1fa2bcb48800c8cdb556976fce7d9c91cc9adc94a994b6ce77e93c1dfe1e",
+      "statuses": {
+        "multiple_vowels": 4,
+        "ok": 153,
+        "noisy_audio": 3
+      }
+    },
+    {
+      "path": "av\\M221Tav.wav",
+      "sha256": "e6043439edd67a0ddd6e07e9aec87c0c06a40dcbe726b955b5e3631776898da4",
+      "statuses": {
+        "ok": 195
+      }
+    },
+    {
+      "path": "av\\M327Tav.wav",
+      "sha256": "947987fc039d252e064209bc06e8f3d94acc47dd40ece861f35f9838a44f8233",
+      "statuses": {
+        "ok": 192
+      }
+    },
+    {
+      "path": "av\\M413Tav.wav",
+      "sha256": "5a21379082abe8b96b0b9336dd5669c6afdbd7a0bb53e1129f91bbd9f6ed7bad",
+      "statuses": {
+        "ok": 148,
+        "noisy_audio": 4
+      }
+    },
+    {
+      "path": "av\\M522Tav.wav",
+      "sha256": "104fd62aa0ff272ee943fce75e3a8e3409c65939b5c1372252616cdbaabc193a",
+      "statuses": {
+        "ok": 155
+      }
+    },
+    {
+      "path": "av\\M660Tav.wav",
+      "sha256": "70d3ea4f599b725966813e81b06150e7443b24758762fa1b0eb5f6ba1d6c2025",
+      "statuses": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "av\\M721Tav.wav",
+      "sha256": "2aa42f24db6d5a38ab09c279fca09fd27dad10dc448e04e2a72456125256e0ba",
+      "statuses": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "av\\M821Tav.wav",
+      "sha256": "65246bb8dbc57a64cb3137991c2ac3463a39f4467a83973131d9ff47392934c8",
+      "statuses": {
+        "ok": 156
+      }
+    },
+    {
+      "path": "av\\M912Tav.wav",
+      "sha256": "46ec272ffadb2ebeb14c9de84bfa458c491b871425a680e6bc82fc2c20c83fe3",
+      "statuses": {
+        "ok": 148
+      }
+    },
+    {
+      "path": "i\\F1047Ti.wav",
+      "sha256": "2b711cc38bb382420b3a5c4ab09ea7b8a4db665ddbf2030db4d85bffbbe97ea9",
+      "statuses": {
+        "ok": 147
+      }
+    },
+    {
+      "path": "i\\F147Ti.wav",
+      "sha256": "e6bb92b3cec3abc64825061697605286e1f51985e5a9eaf57483294d333a8d5a",
+      "statuses": {
+        "ok": 120,
+        "multiple_vowels": 6
+      }
+    },
+    {
+      "path": "i\\F29Ti.wav",
+      "sha256": "6c109d9dc0fb9c25367b3bda0209a2d37f6f1f836ae46c93080eed0b45dbda92",
+      "statuses": {
+        "multiple_vowels": 10,
+        "noisy_audio": 2,
+        "ok": 127
+      }
+    },
+    {
+      "path": "i\\F320Ti.wav",
+      "sha256": "4d2db9a90c88da95c5341ca739714cc22a0d17b71c16c0dd4cf87bfe723e5dbf",
+      "statuses": {
+        "ok": 122,
+        "multiple_vowels": 13
+      }
+    },
+    {
+      "path": "i\\F462Ti.wav",
+      "sha256": "3c26461ca6e612808cbd7f9b9e66962e7443c71a4801a79a32006a9f77c722c3",
+      "statuses": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "i\\F513Ti.wav",
+      "sha256": "3dc6fa94082d8343b37041c68ed426a35bab1874e7db720781a3cdc0c03f3c31",
+      "statuses": {
+        "ok": 180
+      }
+    },
+    {
+      "path": "i\\F643Ti.wav",
+      "sha256": "db0abd4e850f3b0e11200cc440c52f2146190e44988855fd6bfe05e0dd18628b",
+      "statuses": {
+        "ok": 166
+      }
+    },
+    {
+      "path": "i\\F711Ti.wav",
+      "sha256": "c0c686e632559b14d189b824f1980f74369e06816714f935e8927d54f5c0f8ae",
+      "statuses": {
+        "ok": 181
+      }
+    },
+    {
+      "path": "i\\F813Ti.wav",
+      "sha256": "0d4e8bdc319d8c9bad39042d8de36306f0980f1c03b414c9a56dd203ab62a809",
+      "statuses": {
+        "ok": 144
+      }
+    },
+    {
+      "path": "i\\F943Ti.wav",
+      "sha256": "bc78c16aaadecce8f9660cd728a1a1b59be1faaac83ebf7028d18402852b25e5",
+      "statuses": {
+        "ok": 150,
+        "noisy_audio": 1
+      }
+    },
+    {
+      "path": "i\\M1010Ti.wav",
+      "sha256": "d6c1839d28a32c5dcc88e25dae8377199031fd1ee8e7d3feba244350b75b931f",
+      "statuses": {
+        "ok": 131
+      }
+    },
+    {
+      "path": "i\\M13Ti.wav",
+      "sha256": "18ec22a706756b3fff94185a1a581efff99cd70043cdb494742ca718f04dd50e",
+      "statuses": {
+        "ok": 130,
+        "multiple_vowels": 3
+      }
+    },
+    {
+      "path": "i\\M221Ti.wav",
+      "sha256": "28f61018f245cc6dad0531f200178ba7a5cce6523b37e84d57713a3c2a0bd7a9",
+      "statuses": {
+        "ok": 167
+      }
+    },
+    {
+      "path": "i\\M327Ti.wav",
+      "sha256": "ea1ff6ef738be4b6564880b4fb77848ba4e02d32e736e1915aab772aac0a9b89",
+      "statuses": {
+        "ok": 191
+      }
+    },
+    {
+      "path": "i\\M413Ti.wav",
+      "sha256": "507402fb59e6f3d8d3bc3ad2eef636af73c5664b1175d83fb56d285b28f19118",
+      "statuses": {
+        "ok": 162
+      }
+    },
+    {
+      "path": "i\\M522Ti.wav",
+      "sha256": "343c37a93d3cbde8d858174b6ad228d58012b7c26c812a28f7644ddf56b24b30",
+      "statuses": {
+        "ok": 141,
+        "noisy_audio": 1
+      }
+    },
+    {
+      "path": "i\\M660Ti.wav",
+      "sha256": "3eaa6effeb462623611dac243189fcdcd625d10c6c4ed22a1f54c88f6a4ded70",
+      "statuses": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "i\\M721Ti.wav",
+      "sha256": "1026f8600acd00256193084f360d808db7ef8694a2718628098abe05e43becc7",
+      "statuses": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "i\\M821Ti.wav",
+      "sha256": "7ae55db5026e524f73a9e7688a133d97b962f5e4206d3c6449b6ebbf46172722",
+      "statuses": {
+        "ok": 152
+      }
+    },
+    {
+      "path": "i\\M912Ti.wav",
+      "sha256": "1962343c54359dfe187ed10f76ea102bbb9a7f5bfa464b6f72232cd14c682ede",
+      "statuses": {
+        "ok": 148
+      }
+    }
+  ],
+  "paired_artifact_sha256": "d34aa58dec90c764f82380918673d3f823f077928cf5bd4f4be667d4030d2cee",
+  "spectral_flatness_limit": 0.016738297632207497,
+  "partitions": {
+    "validation": {
+      "n": 1440,
+      "counts": {
+        "A": 240,
+        "I": 240,
+        "E": 240,
+        "O": 240,
+        "U": 240,
+        "AU": 120,
+        "AI": 120
+      },
+      "accuracy": 0.8159722222222222,
+      "classification_report": {
+        "A": {
+          "precision": 0.8014184397163121,
+          "recall": 0.9416666666666667,
+          "f1-score": 0.8659003831417624,
+          "support": 240.0
+        },
+        "AI": {
+          "precision": 0.8925619834710744,
+          "recall": 0.9,
+          "f1-score": 0.8962655601659751,
+          "support": 120.0
+        },
+        "AU": {
+          "precision": 0.63,
+          "recall": 0.525,
+          "f1-score": 0.5727272727272728,
+          "support": 120.0
+        },
+        "E": {
+          "precision": 0.9541284403669725,
+          "recall": 0.8666666666666667,
+          "f1-score": 0.9082969432314411,
+          "support": 240.0
+        },
+        "I": {
+          "precision": 0.9572649572649573,
+          "recall": 0.9333333333333333,
+          "f1-score": 0.9451476793248945,
+          "support": 240.0
+        },
+        "O": {
+          "precision": 0.7889908256880734,
+          "recall": 0.7166666666666667,
+          "f1-score": 0.7510917030567685,
+          "support": 240.0
+        },
+        "U": {
+          "precision": 0.651685393258427,
+          "recall": 0.725,
+          "f1-score": 0.6863905325443787,
+          "support": 240.0
+        },
+        "accuracy": 0.8159722222222222,
+        "macro avg": {
+          "precision": 0.8108642913951167,
+          "recall": 0.8011904761904762,
+          "f1-score": 0.8036885820274992,
+          "support": 1440.0
+        },
+        "weighted avg": {
+          "precision": 0.8191281746717133,
+          "recall": 0.8159722222222222,
+          "f1-score": 0.8152206096243115,
+          "support": 1440.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          226,
+          0,
+          10,
+          1,
+          0,
+          0,
+          3
+        ],
+        [
+          2,
+          108,
+          1,
+          1,
+          5,
+          0,
+          3
+        ],
+        [
+          36,
+          0,
+          63,
+          0,
+          1,
+          12,
+          8
+        ],
+        [
+          5,
+          8,
+          0,
+          208,
+          4,
+          4,
+          11
+        ],
+        [
+          0,
+          1,
+          0,
+          5,
+          224,
+          1,
+          9
+        ],
+        [
+          2,
+          2,
+          4,
+          1,
+          0,
+          172,
+          59
+        ],
+        [
+          11,
+          2,
+          22,
+          2,
+          0,
+          29,
+          174
+        ]
+      ],
+      "accepted": 1127,
+      "coverage": 0.7826388888888889,
+      "accepted_accuracy": 0.8979591836734694,
+      "accepted_correct_recall": {
+        "A": 0.9,
+        "AI": 0.7916666666666666,
+        "AU": 0.4166666666666667,
+        "E": 0.7291666666666666,
+        "I": 0.8833333333333333,
+        "O": 0.6,
+        "U": 0.5
+      }
+    },
+    "train": {
+      "n": 4320,
+      "counts": {
+        "A": 720,
+        "I": 720,
+        "E": 720,
+        "O": 720,
+        "U": 720,
+        "AU": 360,
+        "AI": 360
+      },
+      "accuracy": 0.999537037037037,
+      "classification_report": {
+        "A": {
+          "precision": 1.0,
+          "recall": 0.9972222222222222,
+          "f1-score": 0.9986091794158554,
+          "support": 720.0
+        },
+        "AI": {
+          "precision": 0.997229916897507,
+          "recall": 1.0,
+          "f1-score": 0.9986130374479889,
+          "support": 360.0
+        },
+        "AU": {
+          "precision": 0.997229916897507,
+          "recall": 1.0,
+          "f1-score": 0.9986130374479889,
+          "support": 360.0
+        },
+        "E": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 720.0
+        },
+        "I": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 720.0
+        },
+        "O": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 720.0
+        },
+        "U": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 720.0
+        },
+        "accuracy": 0.999537037037037,
+        "macro avg": {
+          "precision": 0.999208547685002,
+          "recall": 0.9996031746031745,
+          "f1-score": 0.9994050363302619,
+          "support": 4320.0
+        },
+        "weighted avg": {
+          "precision": 0.9995383194829178,
+          "recall": 0.999537037037037,
+          "f1-score": 0.999537036143974,
+          "support": 4320.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          718,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          360,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          360,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          720,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          720,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          720,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          720
+        ]
+      ],
+      "accepted": 4316,
+      "coverage": 0.9990740740740741,
+      "accepted_accuracy": 0.9997683039851715,
+      "accepted_correct_recall": {
+        "A": 0.9944444444444445,
+        "AI": 1.0,
+        "AU": 1.0,
+        "E": 1.0,
+        "I": 1.0,
+        "O": 0.9986111111111111,
+        "U": 1.0
+      }
+    },
+    "test": {
+      "n": 7316,
+      "counts": {
+        "A": 1154,
+        "I": 1213,
+        "E": 1212,
+        "O": 1262,
+        "U": 1237,
+        "AU": 639,
+        "AI": 599
+      },
+      "accuracy": 0.806178239475123,
+      "classification_report": {
+        "A": {
+          "precision": 0.9962049335863378,
+          "recall": 0.9098786828422877,
+          "f1-score": 0.9510869565217391,
+          "support": 1154.0
+        },
+        "AI": {
+          "precision": 0.9796296296296296,
+          "recall": 0.8831385642737897,
+          "f1-score": 0.9288849868305531,
+          "support": 599.0
+        },
+        "AU": {
+          "precision": 0.9164345403899722,
+          "recall": 0.514866979655712,
+          "f1-score": 0.6593186372745491,
+          "support": 639.0
+        },
+        "E": {
+          "precision": 0.8295454545454546,
+          "recall": 0.9636963696369637,
+          "f1-score": 0.8916030534351145,
+          "support": 1212.0
+        },
+        "I": {
+          "precision": 0.9586206896551724,
+          "recall": 0.8021434460016488,
+          "f1-score": 0.8734290843806104,
+          "support": 1213.0
+        },
+        "O": {
+          "precision": 0.6196202531645569,
+          "recall": 0.7757527733755943,
+          "f1-score": 0.6889514426460239,
+          "support": 1262.0
+        },
+        "U": {
+          "precision": 0.6397058823529411,
+          "recall": 0.7033144704931286,
+          "f1-score": 0.6700038505968425,
+          "support": 1237.0
+        },
+        "accuracy": 0.806178239475123,
+        "macro avg": {
+          "precision": 0.8485373404748664,
+          "recall": 0.793255898039875,
+          "f1-score": 0.8090397159550617,
+          "support": 7316.0
+        },
+        "weighted avg": {
+          "precision": 0.8288016998689239,
+          "recall": 0.806178239475123,
+          "f1-score": 0.8083112258174742,
+          "support": 7316.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1050,
+          0,
+          5,
+          2,
+          0,
+          91,
+          6
+        ],
+        [
+          2,
+          529,
+          2,
+          48,
+          8,
+          0,
+          10
+        ],
+        [
+          0,
+          0,
+          329,
+          1,
+          0,
+          159,
+          150
+        ],
+        [
+          1,
+          5,
+          0,
+          1168,
+          33,
+          3,
+          2
+        ],
+        [
+          1,
+          5,
+          0,
+          187,
+          973,
+          0,
+          47
+        ],
+        [
+          0,
+          0,
+          8,
+          0,
+          0,
+          979,
+          275
+        ],
+        [
+          0,
+          1,
+          15,
+          2,
+          1,
+          348,
+          870
+        ]
+      ],
+      "accepted": 5572,
+      "coverage": 0.7616183706943686,
+      "accepted_accuracy": 0.8919597989949749,
+      "accepted_correct_recall": {
+        "A": 0.8188908145580589,
+        "AI": 0.7946577629382304,
+        "AU": 0.4538341158059468,
+        "E": 0.8935643564356436,
+        "I": 0.686727122835944,
+        "O": 0.5768621236133122,
+        "U": 0.4971705739692805
+      }
+    }
+  },
+  "deployment_gate_passed": true,
+  "artifact_sha256": "6ee7b22ee294036f86a80db6ed1d9a5105557d37ef63b1a0d827845935d575fd",
+  "software_versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.13.0",
+    "scikit_learn": "1.4.2",
+    "joblib": "1.5.3"
+  }
+}

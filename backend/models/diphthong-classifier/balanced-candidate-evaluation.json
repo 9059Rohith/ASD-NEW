@@ -1,0 +1,507 @@
+{
+  "model_version": "tamil-diphthong-v2-balanced7-2026-09-06",
+  "protocol": {
+    "strategy": "seven-identity balanced ExtraTrees",
+    "n_estimators": 400,
+    "min_samples_leaf": 3,
+    "random_state": 260906,
+    "class_weight": "balanced",
+    "classes": [
+      "A",
+      "AI",
+      "AU",
+      "E",
+      "I",
+      "O",
+      "U"
+    ],
+    "confidence_threshold": 0.6,
+    "calibration": "sigmoid validation speakers",
+    "selection": "One predeclared balanced7 candidate; validation-only deployment gate",
+    "gate": "val macroF1>=.65, accepted accuracy>=.80, accepted-correct recall>=.40 for AI and AU",
+    "prior_visibility": "Baseline and first candidate historical test results seen. Iterative validation; no test-driven tuning."
+  },
+  "speaker_splits": {
+    "train": [
+      "F943",
+      "F711",
+      "F643",
+      "F513",
+      "F813",
+      "F29",
+      "M912",
+      "M660",
+      "M1010",
+      "M721",
+      "M221",
+      "M821"
+    ],
+    "validation": [
+      "F320",
+      "F462",
+      "M413",
+      "M13"
+    ],
+    "test": [
+      "F1047",
+      "F147",
+      "M522",
+      "M327"
+    ]
+  },
+  "source": "https://doi.org/10.17632/2dnxmvm22k.1",
+  "license": "CC BY 4.0",
+  "source_label_mapping": {
+    "i": "AI",
+    "av": "AU",
+    "all10paired": "OTHER"
+  },
+  "inventory": [
+    {
+      "path": "av\\F1047Tav.wav",
+      "sha256": "29d689062486a4c3db9284dc18c6943ec84ed0c37018afdcfc86f02693e0323e",
+      "statuses": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "av\\F147Tav.wav",
+      "sha256": "bcfe1be5c3a4d1118e4562f3b5251d53245f5dba6e50c05a25c0d12451e23987",
+      "statuses": {
+        "ok": 142,
+        "multiple_vowels": 5
+      }
+    },
+    {
+      "path": "av\\F29Tav.wav",
+      "sha256": "2843d8e90dccabed3261d20834a221f5d8ec316006bfc608b324e76c41347321",
+      "statuses": {
+        "multiple_vowels": 7,
+        "ok": 129
+      }
+    },
+    {
+      "path": "av\\F320Tav.wav",
+      "sha256": "24276bdafaaf8d90553aef7d02c21ea1f74eaf3c67999d89944c639651d38f02",
+      "statuses": {
+        "multiple_vowels": 9,
+        "ok": 124
+      }
+    },
+    {
+      "path": "av\\F462Tav.wav",
+      "sha256": "a30b7dc415a409726c0a43397e989c0adba1a7caf35d08b8da14267743f0ac83",
+      "statuses": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "av\\F513Tav.wav",
+      "sha256": "2137d9aaebd69e236792dee5836ca8cf3a5f0f292166ab1fcd26b6d0a4283e80",
+      "statuses": {
+        "ok": 215
+      }
+    },
+    {
+      "path": "av\\F643Tav.wav",
+      "sha256": "13acdb2c0d0c85ee8476458504c7c8d06e61f999f5790004600702c61768f976",
+      "statuses": {
+        "ok": 178
+      }
+    },
+    {
+      "path": "av\\F711Tav.wav",
+      "sha256": "eba3ff022bdac74cd2c3041e9a4d55132c12fbc3398e9c6a7c3c786fa2f1d7d3",
+      "statuses": {
+        "ok": 166
+      }
+    },
+    {
+      "path": "av\\F813Tav.wav",
+      "sha256": "69531caad3d37b25e97ecaa154627c18c7041c486a4644c92da00aac0306ee17",
+      "statuses": {
+        "ok": 153
+      }
+    },
+    {
+      "path": "av\\F943Tav.wav",
+      "sha256": "ef4bba24e5337a8fae3b917658fad3d4fffb6ec2dd31a6f355ffee2fc7151d0b",
+      "statuses": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "av\\M1010Tav.wav",
+      "sha256": "cebe3cf71ed87f5000b6eb025c84ba2bae4900ef621ad51c2dc1076fee6699b3",
+      "statuses": {
+        "ok": 117
+      }
+    },
+    {
+      "path": "av\\M13Tav.wav",
+      "sha256": "539d1fa2bcb48800c8cdb556976fce7d9c91cc9adc94a994b6ce77e93c1dfe1e",
+      "statuses": {
+        "multiple_vowels": 4,
+        "ok": 153,
+        "noisy_audio": 3
+      }
+    },
+    {
+      "path": "av\\M221Tav.wav",
+      "sha256": "e6043439edd67a0ddd6e07e9aec87c0c06a40dcbe726b955b5e3631776898da4",
+      "statuses": {
+        "ok": 195
+      }
+    },
+    {
+      "path": "av\\M327Tav.wav",
+      "sha256": "947987fc039d252e064209bc06e8f3d94acc47dd40ece861f35f9838a44f8233",
+      "statuses": {
+        "ok": 192
+      }
+    },
+    {
+      "path": "av\\M413Tav.wav",
+      "sha256": "5a21379082abe8b96b0b9336dd5669c6afdbd7a0bb53e1129f91bbd9f6ed7bad",
+      "statuses": {
+        "ok": 148,
+        "noisy_audio": 4
+      }
+    },
+    {
+      "path": "av\\M522Tav.wav",
+      "sha256": "104fd62aa0ff272ee943fce75e3a8e3409c65939b5c1372252616cdbaabc193a",
+      "statuses": {
+        "ok": 155
+      }
+    },
+    {
+      "path": "av\\M660Tav.wav",
+      "sha256": "70d3ea4f599b725966813e81b06150e7443b24758762fa1b0eb5f6ba1d6c2025",
+      "statuses": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "av\\M721Tav.wav",
+      "sha256": "2aa42f24db6d5a38ab09c279fca09fd27dad10dc448e04e2a72456125256e0ba",
+      "statuses": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "av\\M821Tav.wav",
+      "sha256": "65246bb8dbc57a64cb3137991c2ac3463a39f4467a83973131d9ff47392934c8",
+      "statuses": {
+        "ok": 156
+      }
+    },
+    {
+      "path": "av\\M912Tav.wav",
+      "sha256": "46ec272ffadb2ebeb14c9de84bfa458c491b871425a680e6bc82fc2c20c83fe3",
+      "statuses": {
+        "ok": 148
+      }
+    },
+    {
+      "path": "i\\F1047Ti.wav",
+      "sha256": "2b711cc38bb382420b3a5c4ab09ea7b8a4db665ddbf2030db4d85bffbbe97ea9",
+      "statuses": {
+        "ok": 147
+      }
+    },
+    {
+      "path": "i\\F147Ti.wav",
+      "sha256": "e6bb92b3cec3abc64825061697605286e1f51985e5a9eaf57483294d333a8d5a",
+      "statuses": {
+        "ok": 120,
+        "multiple_vowels": 6
+      }
+    },
+    {
+      "path": "i\\F29Ti.wav",
+      "sha256": "6c109d9dc0fb9c25367b3bda0209a2d37f6f1f836ae46c93080eed0b45dbda92",
+      "statuses": {
+        "multiple_vowels": 10,
+        "noisy_audio": 2,
+        "ok": 127
+      }
+    },
+    {
+      "path": "i\\F320Ti.wav",
+      "sha256": "4d2db9a90c88da95c5341ca739714cc22a0d17b71c16c0dd4cf87bfe723e5dbf",
+      "statuses": {
+        "ok": 122,
+        "multiple_vowels": 13
+      }
+    },
+    {
+      "path": "i\\F462Ti.wav",
+      "sha256": "3c26461ca6e612808cbd7f9b9e66962e7443c71a4801a79a32006a9f77c722c3",
+      "statuses": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "i\\F513Ti.wav",
+      "sha256": "3dc6fa94082d8343b37041c68ed426a35bab1874e7db720781a3cdc0c03f3c31",
+      "statuses": {
+        "ok": 180
+      }
+    },
+    {
+      "path": "i\\F643Ti.wav",
+      "sha256": "db0abd4e850f3b0e11200cc440c52f2146190e44988855fd6bfe05e0dd18628b",
+      "statuses": {
+        "ok": 166
+      }
+    },
+    {
+      "path": "i\\F711Ti.wav",
+      "sha256": "c0c686e632559b14d189b824f1980f74369e06816714f935e8927d54f5c0f8ae",
+      "statuses": {
+        "ok": 181
+      }
+    },
+    {
+      "path": "i\\F813Ti.wav",
+      "sha256": "0d4e8bdc319d8c9bad39042d8de36306f0980f1c03b414c9a56dd203ab62a809",
+      "statuses": {
+        "ok": 144
+      }
+    },
+    {
+      "path": "i\\F943Ti.wav",
+      "sha256": "bc78c16aaadecce8f9660cd728a1a1b59be1faaac83ebf7028d18402852b25e5",
+      "statuses": {
+        "ok": 150,
+        "noisy_audio": 1
+      }
+    },
+    {
+      "path": "i\\M1010Ti.wav",
+      "sha256": "d6c1839d28a32c5dcc88e25dae8377199031fd1ee8e7d3feba244350b75b931f",
+      "statuses": {
+        "ok": 131
+      }
+    },
+    {
+      "path": "i\\M13Ti.wav",
+      "sha256": "18ec22a706756b3fff94185a1a581efff99cd70043cdb494742ca718f04dd50e",
+      "statuses": {
+        "ok": 130,
+        "multiple_vowels": 3
+      }
+    },
+    {
+      "path": "i\\M221Ti.wav",
+      "sha256": "28f61018f245cc6dad0531f200178ba7a5cce6523b37e84d57713a3c2a0bd7a9",
+      "statuses": {
+        "ok": 167
+      }
+    },
+    {
+      "path": "i\\M327Ti.wav",
+      "sha256": "ea1ff6ef738be4b6564880b4fb77848ba4e02d32e736e1915aab772aac0a9b89",
+      "statuses": {
+        "ok": 191
+      }
+    },
+    {
+      "path": "i\\M413Ti.wav",
+      "sha256": "507402fb59e6f3d8d3bc3ad2eef636af73c5664b1175d83fb56d285b28f19118",
+      "statuses": {
+        "ok": 162
+      }
+    },
+    {
+      "path": "i\\M522Ti.wav",
+      "sha256": "343c37a93d3cbde8d858174b6ad228d58012b7c26c812a28f7644ddf56b24b30",
+      "statuses": {
+        "ok": 141,
+        "noisy_audio": 1
+      }
+    },
+    {
+      "path": "i\\M660Ti.wav",
+      "sha256": "3eaa6effeb462623611dac243189fcdcd625d10c6c4ed22a1f54c88f6a4ded70",
+      "statuses": {
+        "ok": 151
+      }
+    },
+    {
+      "path": "i\\M721Ti.wav",
+      "sha256": "1026f8600acd00256193084f360d808db7ef8694a2718628098abe05e43becc7",
+      "statuses": {
+        "ok": 150
+      }
+    },
+    {
+      "path": "i\\M821Ti.wav",
+      "sha256": "7ae55db5026e524f73a9e7688a133d97b962f5e4206d3c6449b6ebbf46172722",
+      "statuses": {
+        "ok": 152
+      }
+    },
+    {
+      "path": "i\\M912Ti.wav",
+      "sha256": "1962343c54359dfe187ed10f76ea102bbb9a7f5bfa464b6f72232cd14c682ede",
+      "statuses": {
+        "ok": 148
+      }
+    }
+  ],
+  "paired_artifact_sha256": "d34aa58dec90c764f82380918673d3f823f077928cf5bd4f4be667d4030d2cee",
+  "spectral_flatness_limit": 0.016738297632207497,
+  "partitions": {
+    "validation": {
+      "n": 6714,
+      "counts": {
+        "A": 1023,
+        "I": 1202,
+        "E": 1107,
+        "O": 1132,
+        "U": 1110,
+        "AU": 575,
+        "AI": 565
+      },
+      "accuracy": 0.789544235924933,
+      "classification_report": {
+        "A": {
+          "precision": 0.8116666666666666,
+          "recall": 0.9521016617790812,
+          "f1-score": 0.876293297345929,
+          "support": 1023.0
+        },
+        "AI": {
+          "precision": 0.7246376811594203,
+          "recall": 0.7079646017699115,
+          "f1-score": 0.7162041181736795,
+          "support": 565.0
+        },
+        "AU": {
+          "precision": 0.514218009478673,
+          "recall": 0.3773913043478261,
+          "f1-score": 0.4353059177532598,
+          "support": 575.0
+        },
+        "E": {
+          "precision": 0.8891170431211499,
+          "recall": 0.7822944896115628,
+          "f1-score": 0.8322921672272946,
+          "support": 1107.0
+        },
+        "I": {
+          "precision": 0.9242798353909465,
+          "recall": 0.9342762063227953,
+          "f1-score": 0.9292511377741002,
+          "support": 1202.0
+        },
+        "O": {
+          "precision": 0.7832558139534884,
+          "recall": 0.7438162544169611,
+          "f1-score": 0.763026733121885,
+          "support": 1132.0
+        },
+        "U": {
+          "precision": 0.6888714733542319,
+          "recall": 0.7918918918918919,
+          "f1-score": 0.7367979882648784,
+          "support": 1110.0
+        },
+        "accuracy": 0.789544235924933,
+        "macro avg": {
+          "precision": 0.7622923604463682,
+          "recall": 0.7556766300200043,
+          "f1-score": 0.7555959085230037,
+          "support": 6714.0
+        },
+        "weighted avg": {
+          "precision": 0.786708443699566,
+          "recall": 0.789544235924933,
+          "f1-score": 0.7851211793646428,
+          "support": 6714.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          974,
+          9,
+          24,
+          3,
+          2,
+          0,
+          11
+        ],
+        [
+          7,
+          400,
+          0,
+          78,
+          44,
+          0,
+          36
+        ],
+        [
+          149,
+          1,
+          217,
+          1,
+          1,
+          155,
+          51
+        ],
+        [
+          9,
+          130,
+          2,
+          866,
+          44,
+          23,
+          33
+        ],
+        [
+          2,
+          3,
+          1,
+          18,
+          1123,
+          4,
+          51
+        ],
+        [
+          17,
+          6,
+          51,
+          1,
+          0,
+          842,
+          215
+        ],
+        [
+          42,
+          3,
+          127,
+          7,
+          1,
+          51,
+          879
+        ]
+      ],
+      "accepted": 5097,
+      "coverage": 0.7591599642537981,
+      "accepted_accuracy": 0.8850304100451246,
+      "accepted_correct_recall": {
+        "A": 0.9315738025415444,
+        "AI": 0.4743362831858407,
+        "AU": 0.2417391304347826,
+        "E": 0.6639566395663956,
+        "I": 0.8785357737104825,
+        "O": 0.5980565371024735,
+        "U": 0.6153153153153154
+      }
+    }
+  },
+  "deployment_gate_passed": false,
+  "artifact_sha256": "60fbd2f5b8203728ef2dec8ebc979cb1948b71dbd0113133c3bd270cc3f437d3"
+}

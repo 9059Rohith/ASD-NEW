@@ -1,0 +1,15 @@
+{
+  "estimator": "ExtraTrees",
+  "n_estimators": 400,
+  "min_samples_leaf": 3,
+  "random_state": 260906,
+  "classes": [
+    "AI",
+    "AU",
+    "OTHER"
+  ],
+  "confidence_threshold": 0.6,
+  "calibration": "sigmoid on validation speakers",
+  "viability": "validation macroF1>=.65; accepted accuracy>=.80; AI and AU accepted-correct recall>=.40",
+  "test_visibility": "Prior baseline test audit seen; no tuning on this follow-up test."
+}

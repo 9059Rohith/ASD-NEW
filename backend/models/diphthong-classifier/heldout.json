@@ -1,0 +1,26 @@
+{
+  "ai": {
+    "path": "heldout/ai.wav",
+    "speaker": "F1047",
+    "source_file": "i\\F1047Ti.wav",
+    "source_start_sample": 42080,
+    "source_end_sample": 49120,
+    "boundary_sample_rate": 16000,
+    "license": "CC BY 4.0",
+    "attribution": "Revathi Arunachalam, Vijayakrishnan VK, Nandhakumar N, Akilan A (2025), DOI10.17632/2dnxmvm22k.1",
+    "modifications": "One repetition segmented from continuous human recording; resampled16kHz and PCM16 encoded.",
+    "selection": "Correctly classified representative fixture; NOT accuracy estimate."
+  },
+  "au": {
+    "path": "heldout/au.wav",
+    "speaker": "F1047",
+    "source_file": "av\\F1047Tav.wav",
+    "source_start_sample": 153120,
+    "source_end_sample": 158880,
+    "boundary_sample_rate": 16000,
+    "license": "CC BY 4.0",
+    "attribution": "Revathi Arunachalam, Vijayakrishnan VK, Nandhakumar N, Akilan A (2025), DOI10.17632/2dnxmvm22k.1",
+    "modifications": "One repetition segmented from continuous human recording; resampled16kHz and PCM16 encoded.",
+    "selection": "Correctly classified representative fixture; NOT accuracy estimate."
+  }
+}
