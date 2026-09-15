@@ -1,0 +1,122 @@
+{
+  "name": "py_core",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "libs/py_core/py_core",
+  "targets": {
+    "lock": {
+      "executor": "@nxlv/python:run-commands",
+      "options": {
+        "command": "poetry lock --no-update",
+        "cwd": "libs/py_core"
+      }
+    },
+    "add": {
+      "executor": "@nxlv/python:add",
+      "options": {}
+    },
+    "update": {
+      "executor": "@nxlv/python:update",
+      "options": {}
+    },
+    "remove": {
+      "executor": "@nxlv/python:remove",
+      "options": {}
+    },
+    "build": {
+      "executor": "@nxlv/python:build",
+      "outputs": ["{projectRoot}/dist"],
+      "options": {
+        "outputPath": "libs/py_core/dist",
+        "publish": false,
+        "lockedVersions": true,
+        "bundleLocalDependencies": true
+      }
+    },
+    "install": {
+      "executor": "@nxlv/python:install",
+      "options": {
+        "silent": false,
+        "args": "",
+        "cacheDir": ".cache/pypoetry",
+        "verbose": false,
+        "debug": false
+      }
+    },
+    "lint": {
+      "executor": "@nxlv/python:flake8",
+      "outputs": ["{workspaceRoot}/reports/libs/py_core/pylint.txt"],
+      "options": {
+        "outputFile": "reports/libs/py_core/pylint.txt"
+      }
+    },
+    "test": {
+      "executor": "@nxlv/python:run-commands",
+      "outputs": [
+        "{workspaceRoot}/reports/libs/py_core/unittests",
+        "{workspaceRoot}/coverage/libs/py_core"
+      ],
+      "options": {
+        "command": "poetry run pytest tests/",
+        "cwd": "libs/py_core"
+      }
+    },
+    "cli": {
+      "executor": "@nxlv/python:run-commands",
+      "options": {
+        "command": "poetry run python test_cli.py",
+        "cwd": "libs/py_core"
+      }
+    },
+    "inspect_card_translation": {
+      "executor": "@nxlv/python:run-commands",
+      "options": {
+        "command": "poetry run python py_core/processing_tools/inspect_card_translation.py",
+        "cwd": "libs/py_core"
+      }
+    },
+    "gen_card_desc": {
+      "executor": "@nxlv/python:run-commands",
+      "options": {
+        "command": "poetry run python py_core/processing_tools/generate_image_description.py",
+        "cwd": "libs/py_core"
+      }
+    },
+    "test_vector": {
+      "executor": "@nxlv/python:run-commands",
+      "options": {
+        "command": "poetry run python test_vector.py",
+        "cwd": "libs/py_core"
+      }
+    },
+    "test_card_image_retrieval": {
+      "executor": "@nxlv/python:run-commands",
+      "options": {
+        "command": "poetry run python test_card_image_retrieval.py",
+        "cwd": "libs/py_core"
+      }
+    },
+    "test_clova_voice": {
+      "executor": "@nxlv/python:run-commands",
+      "options": {
+        "command": "poetry run python test_clova_voice.py",
+        "cwd": "libs/py_core"
+      }
+    }, 
+    "test_asr": {
+      "executor": "@nxlv/python:run-commands",
+      "options": {
+        "command": "poetry run python test_asr.py",
+        "cwd": "libs/py_core"
+      }
+    },
+    "test_corpus_download": {
+      "executor": "@nxlv/python:run-commands",
+      "options": {
+        "command": "poetry run python test_corpus_download.py",
+        "cwd": "libs/py_core"
+      }
+    }
+  },
+  "tags": []
+}
