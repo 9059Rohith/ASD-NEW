@@ -1,0 +1,204 @@
+import API from '../../../api';
+import { LOGIN_SUCCESS, LOGOUT } from './Login.constants';
+import {
+  changeVoice,
+  changePitch,
+  changeRate,
+  changeElevenLabsApiKey,
+  getVoices
+} from '../../../providers/SpeechProvider/SpeechProvider.actions';
+import {
+  disableTour,
+  setUnloggedUserLocation,
+  updateUnloggedUserLocation,
+  enableAllTours,
+  updateNavigationSettings
+} from '../../App/App.actions';
+import { getVoiceURI } from '../../../i18n';
+import { isCordova, isElectron } from '../../../cordova-util';
+import tts from '../../../providers/SpeechProvider/tts';
+import { appInsights } from '../../../appInsights';
+
+export function loginSuccess(payload) {
+  return (dispatch) => {
+    dispatch({
+      type: LOGIN_SUCCESS,
+      payload
+    });
+    if (payload.isFirstLogin) firstLoginActions(dispatch, payload);
+
+    if (isCordova() && !isElectron()) {
+      try {
+        window.FirebasePlugin.setUserId(payload.id);
+      } catch (err) {
+        console.error(err);
+      }
+    }
+    if (!isCordova() && typeof window?.gtag === 'function')
+      window.gtag('set', { user_id: payload.id });
+
+    try {
+      appInsights.setAuthenticatedUserContext(payload.id);
+    } catch (err) {
+      console.error(err);
+    }
+  };
+}
+
+async function firstLoginActions(dispatch, payload) {
+  try {
+    await API.updateUser({ ...payload, isFirstLogin: false });
+  } catch (err) {
+    console.error(err);
+  }
+  dispatch(enableAllTours());
+}
+
+export function logout() {
+  if (isCordova() && !isElectron())
+    try {
+      window.FirebasePlugin.setUserId(undefined);
+    } catch (err) {
+      console.error(err);
+    }
+
+  if (!isCordova() && typeof window?.gtag === 'function') {
+    window.gtag('set', { user_id: null });
+  }
+
+  try {
+    appInsights.clearAuthenticatedUserContext();
+  } catch (err) {
+    console.error(err);
+  }
+
+  return async (dispatch) => {
+    dispatch(updateNavigationSettings({ improvePhraseActive: false }));
+    dispatch(setUnloggedUserLocation(null));
+    dispatch(updateUnloggedUserLocation());
+    dispatch(logoutSuccess());
+  };
+}
+
+function logoutSuccess() {
+  return {
+    type: LOGOUT
+  };
+}
+
+export function login({ email, password, activatedData }, type = 'local') {
+  const setAVoice = async ({ loginData, dispatch, getState }) => {
+    const elevenLabsApiKey = loginData?.settings?.speech?.elevenLabsApiKey;
+
+    if (elevenLabsApiKey) {
+      dispatch(changeElevenLabsApiKey(elevenLabsApiKey));
+      tts.initElevenLabsInstance(elevenLabsApiKey);
+      await dispatch(getVoices());
+    }
+
+    const {
+      language: { lang: appLang },
+      speech: {
+        voices,
+        options: { lang: deviceVoiceLang, voiceURI: deviceVoiceUri }
+      }
+    } = getState(); //ATENTION speech options on DB is under Speech directly. on state is under options
+    const emptyVoiceString = 'empty voices';
+    const appLanguageCode = appLang?.substring(0, 2);
+    const deviceVoiceLanguageCode = deviceVoiceLang?.substring(0, 2);
+
+    if (voices.length) {
+      const uris = voices.map((v) => {
+        return v.voiceURI;
+      });
+
+      if (loginData.settings?.speech) {
+        const userVoiceUri = loginData.settings.speech.voiceURI; //ATENTION speech options on DB is under Speech directly. on state is under options
+
+        const userVoiceLanguage = voices.filter(
+          (voice) => voice.voiceURI === userVoiceUri
+        )[0]?.lang;
+
+        const userVoiceLanguageCode = userVoiceLanguage?.substring(0, 2);
+
+        if (
+          userVoiceUri &&
+          appLanguageCode === userVoiceLanguageCode &&
+          uris.includes(userVoiceUri)
+        ) {
+          if (userVoiceUri !== deviceVoiceUri) {
+            dispatch(changeVoice(userVoiceUri, userVoiceLanguage));
+          }
+          if (loginData.settings.speech.pitch) {
+            dispatch(changePitch(loginData.settings.speech.pitch));
+          }
+          if (loginData.settings.speech.rate) {
+            dispatch(changeRate(loginData.settings.speech.rate));
+          }
+          return;
+        }
+      }
+
+      if (
+        deviceVoiceUri &&
+        deviceVoiceLanguageCode === appLanguageCode &&
+        uris.includes(deviceVoiceUri)
+      ) {
+        return;
+      }
+
+      const defaultVoiceUri = getVoiceURI(appLang, voices);
+
+      if (defaultVoiceUri === emptyVoiceString) {
+        dispatch(changeVoice(emptyVoiceString, ''));
+        return;
+      }
+      //if the api stored voice is unavailable. Set default voice
+      const defaultVoiceLanguage = voices.filter(
+        (voice) => voice.voiceURI === defaultVoiceUri
+      )[0]?.lang;
+      dispatch(changeVoice(defaultVoiceUri, defaultVoiceLanguage));
+      return;
+    }
+    if (deviceVoiceLang === null) {
+      dispatch(changeVoice(emptyVoiceString, ''));
+      return;
+    }
+  };
+
+  return async (dispatch, getState) => {
+    try {
+      const apiMethod = type === 'local' ? 'login' : 'oAuthLogin';
+      const loginData = activatedData
+        ? activatedData
+        : await API[apiMethod](email, password);
+
+      const hasRemoteCommunicators =
+        loginData.communicators && loginData.communicators.length > 0;
+      const discardLocalChanges = hasRemoteCommunicators;
+
+      if (type === 'local') {
+        dispatch(
+          disableTour({
+            isRootBoardTourEnabled: false,
+            isUnlockedTourEnabled: false,
+            isSettingsTourEnabled: false,
+            isAnalyticsTourEnabled: false,
+            isSymbolSearchTourEnabled: false
+          })
+        );
+      }
+      dispatch(loginSuccess({ ...loginData, discardLocalChanges }));
+      await setAVoice({ loginData, dispatch, getState });
+    } catch (e) {
+      console.error(e);
+      if (e.response != null) {
+        return Promise.reject(e.response.data);
+      }
+      var disonnected = {
+        message: 'Unable to contact server. Try in a moment'
+      };
+      return Promise.reject(disonnected);
+    }
+  };
+}

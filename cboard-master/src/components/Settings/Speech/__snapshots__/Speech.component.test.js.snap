@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Speech tests default renderer 1`] = `
+<Speech
+  classes={
+    Object {
+      "apiKeyInput": "Speech-apiKeyInput-2",
+      "container": "Speech-container-1",
+    }
+  }
+  isVoiceOpen={false}
+  voice={Object {}}
+/>
+`;

@@ -1,0 +1,147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About tests default renderer 1`] = `
+<WithStyles(FullScreenDialog)
+  onClose={[Function]}
+  open={true}
+  title={
+    <FormattedMessage
+      defaultMessage="About"
+      id="cboard.components.About.about"
+      values={Object {}}
+    />
+  }
+>
+  <WithStyles(ForwardRef(Paper))>
+    <FullScreenDialogContent>
+      <div
+        className="logo"
+      >
+        <CboardLogo
+          isViolet={true}
+        />
+      </div>
+      <WithStyles(ForwardRef(Typography))
+        gutterBottom={true}
+        variant="h6"
+      >
+        <FormattedMessage
+          values={Object {}}
+        />
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        variant="body1"
+      >
+        <FormattedMessage
+          defaultMessage="Cboard is an augmentative and alternative communication (AAC) web application, allowing people with speech and language impairments to communicate by symbols and text-to-speech."
+          id="cboard.components.About.intro"
+          values={Object {}}
+        />
+      </WithStyles(ForwardRef(Typography))>
+      <div
+        className="title"
+      >
+        <WithStyles(ForwardRef(Typography))
+          variant="h5"
+        >
+          <FormattedMessage
+            values={Object {}}
+          />
+        </WithStyles(ForwardRef(Typography))>
+      </div>
+      <WithStyles(ForwardRef(Typography))
+        component="div"
+        gutterBottom={true}
+        variant="body1"
+      >
+        <React.Fragment>
+          <FormattedMessage
+            values={Object {}}
+          />
+          <WithStyles(ForwardRef(Link))
+            href="https://github.com/cboard-org/cboard/"
+            target="_blank"
+          >
+             Cboard Github
+          </WithStyles(ForwardRef(Link))>
+        </React.Fragment>
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        variant="h5"
+      >
+        <FormattedMessage
+          defaultMessage="License"
+          id="cboard.components.About.license"
+          values={Object {}}
+        />
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        component="div"
+        variant="body1"
+      >
+        <ul>
+          <li>
+            Code -
+             
+            <WithStyles(ForwardRef(Link))
+              href="https://github.com/shayc/cboard/blob/master/LICENSE"
+              target="_blank"
+            >
+              GPLv3
+            </WithStyles(ForwardRef(Link))>
+          </li>
+          <li>
+            Mulberry Symbols -
+             
+            <WithStyles(ForwardRef(Link))
+              href="https://creativecommons.org/licenses/by-sa/2.0/uk/"
+              target="_blank"
+            >
+              CC BY-SA
+            </WithStyles(ForwardRef(Link))>
+          </li>
+          <li>
+            ARASAAC Symbols -
+             
+            <WithStyles(ForwardRef(Link))
+              href="https://arasaac.org/terms-of-use/"
+              target="_blank"
+            >
+              Creative Commons License BY-NC-SA
+            </WithStyles(ForwardRef(Link))>
+          </li>
+        </ul>
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        variant="h5"
+      >
+        <FormattedMessage
+          values={Object {}}
+        />
+      </WithStyles(ForwardRef(Typography))>
+      <WithStyles(ForwardRef(Typography))
+        component="div"
+        variant="body1"
+      >
+        <FormattedMessage
+          values={Object {}}
+        />
+      </WithStyles(ForwardRef(Typography))>
+      <div
+        className="imageContainer"
+      >
+        <img
+          alt="UNICEF"
+          className="imageItem"
+          src="/images/sponsers/unicef.png"
+        />
+        <img
+          alt="Microsoft"
+          className="imageItem"
+          src="/images/sponsers/microsoft.png"
+        />
+      </div>
+    </FullScreenDialogContent>
+  </WithStyles(ForwardRef(Paper))>
+</WithStyles(FullScreenDialog)>
+`;

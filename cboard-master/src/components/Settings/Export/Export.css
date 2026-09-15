@@ -1,0 +1,35 @@
+.Export__SelectContainer {
+  display: grid;
+  position: relative;
+  grid-gap: 8px;
+}
+
+.Export__SelectContainer__Select {
+  width: 110px;
+}
+
+.Export__ListItem {
+  min-height: 140px;
+  max-height: 100%;
+  align-items: flex-start;
+  padding-top: 16px;
+}
+
+.Export__ListItemText {
+  max-width: 75%;
+}
+
+.Export__SelectContainer--spinner {
+  vertical-align: middle;
+}
+
+.Export__section {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 4px 0;
+}
+
+.Export__List .MuiListSubheader-root {
+  line-height: 16px;
+  padding-top: 16px;
+}

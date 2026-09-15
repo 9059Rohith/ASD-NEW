@@ -1,0 +1,39 @@
+.Speech__ListItemText {
+  flex: 1 1 0%;
+  padding-right: 15px;
+}
+
+.Speech__HelpText {
+  padding: 18px 24px;
+  border-top: 1px solid #eee;
+  font-size: 0.875rem;
+  line-height: 1.46429rem;
+  color: #777;
+}
+
+.Speech__VoiceMenuItemText {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 100%;
+}
+
+.Speech__VoiceLabel:hover {
+  overflow: visible;
+  white-space: normal;
+  height: auto;
+}
+
+.Speech__VoiceLabel {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 20px;
+  white-space: nowrap;
+  max-width: 80%;
+}
+
+.Speech__VoiceChips {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}

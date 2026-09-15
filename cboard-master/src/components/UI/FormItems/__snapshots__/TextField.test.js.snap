@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField tests default renderer 1`] = `
+<WithStyles(ForwardRef(FormControl))
+  className=""
+  error={true}
+>
+  <WithStyles(ForwardRef(TextField))
+    InputProps={null}
+    error={true}
+  />
+  <WithStyles(ForwardRef(FormHelperText))>
+    myerror
+  </WithStyles(ForwardRef(FormHelperText))>
+</WithStyles(ForwardRef(FormControl))>
+`;

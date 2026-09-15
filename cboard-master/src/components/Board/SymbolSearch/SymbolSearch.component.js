@@ -1,0 +1,628 @@
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
+import { injectIntl, intlShape } from 'react-intl';
+import Autosuggest from 'react-autosuggest';
+import classNames from 'classnames';
+import isMobile from 'ismobilejs';
+import queryString from 'query-string';
+import debounce from 'lodash/debounce';
+import { IconButton, Tooltip } from '@material-ui/core';
+import BackspaceIcon from '@material-ui/icons/Backspace';
+
+import API from '../../../api';
+import {
+  searchCboardSymbols,
+  mapArasaacToCboardSkinTone
+} from '../../../api/cboard-symbols';
+import { ARASAAC_BASE_PATH_API } from '../../../constants';
+import { getArasaacDB } from '../../../idb/arasaac/arasaacdb';
+import FullScreenDialog from '../../UI/FullScreenDialog';
+import FilterBar from '../../UI/FilterBar';
+import Symbol from '../Symbol';
+import { LABEL_POSITION_BELOW } from '../../Settings/Display/Display.constants';
+import messages from './SymbolSearch.messages';
+import './SymbolSearch.css';
+import SymbolNotFound from './SymbolNotFound';
+import SymbolSearchTour from './SymbolSearchTour.component';
+import SkinToneSelect from '../../UI/ColorSelect/SkinToneSelect';
+import HairColorSelect from '../../UI/ColorSelect/HairColorSelect';
+
+const SymbolSets = {
+  mulberry: '0',
+  global: '1',
+  arasaac: '2',
+  cboard: '3'
+};
+
+const symbolSetsOptions = [
+  {
+    id: SymbolSets.mulberry,
+    text: 'Mulberry',
+    enabled: true
+  },
+  {
+    id: SymbolSets.global,
+    text: 'Global Symbols',
+    enabled: true
+  },
+  {
+    id: SymbolSets.arasaac,
+    text: 'ARASAAC',
+    enabled: true
+  },
+  {
+    id: SymbolSets.cboard,
+    text: 'Cboard Symbols',
+    enabled: true
+  }
+];
+
+const defaultSkin = 'white';
+const defaultHair = 'brown';
+
+export class SymbolSearch extends PureComponent {
+  static propTypes = {
+    intl: intlShape.isRequired,
+    open: PropTypes.bool,
+    autoFill: PropTypes.string,
+    maxSuggestions: PropTypes.number,
+    onChange: PropTypes.func.isRequired,
+    onClose: PropTypes.func.isRequired
+  };
+
+  static defaultProps = {
+    open: false,
+    maxSuggestions: 16,
+    autoFill: ''
+  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      openMirror: false,
+      isFetchingArasaac: false,
+      isFetchingGlobalsymbols: false,
+      isFetchingCboardSymbols: false,
+      value: '',
+      suggestions: [],
+      skin: defaultSkin,
+      hair: defaultHair,
+      symbolSets: symbolSetsOptions
+    };
+
+    this.symbols = [];
+  }
+
+  async componentDidMount() {
+    import('../../../api/mulberry-symbols.json').then(
+      ({ default: mulberrySymbols }) => {
+        this.symbols = this.translateSymbols(mulberrySymbols);
+      }
+    );
+  }
+
+  static getDerivedStateFromProps(nextProps, prevState) {
+    const { open, autoFill } = nextProps;
+    const { openMirror: wasOpen } = prevState;
+
+    if (open === true && wasOpen === false)
+      return { value: autoFill, openMirror: true };
+    if (open === false) return { openMirror: false };
+    return null;
+  }
+
+  get isSkinToneDisabled() {
+    const isArasaacEnabled = this.state.symbolSets.some(
+      (opt) => opt.id === SymbolSets.arasaac && opt.enabled
+    );
+    const isCboardEnabled = this.state.symbolSets.some(
+      (opt) => opt.id === SymbolSets.cboard && opt.enabled
+    );
+    return !isArasaacEnabled && !isCboardEnabled;
+  }
+
+  get isHairColorDisabled() {
+    const isArasaacEnabled = this.state.symbolSets.some(
+      (opt) => opt.id === SymbolSets.arasaac && opt.enabled
+    );
+    return !isArasaacEnabled;
+  }
+
+  translateSymbols(symbols = []) {
+    return symbols.map((symbol) => {
+      const translatedId = this.props.intl
+        .formatMessage({ id: symbol.id })
+        .replace(/[\u0591-\u05C7]/g, '') // todo: not on every locale - strip hebrew niqqud
+        .toLowerCase();
+
+      return { ...symbol, translatedId };
+    });
+  }
+
+  getSuggestionValue(suggestion) {
+    return suggestion.id;
+  }
+
+  getMulberrySuggestions(value) {
+    const { maxSuggestions } = this.props;
+    const inputValue = value.trim().toLowerCase();
+    const inputLength = inputValue.length;
+    let count = 0;
+
+    return this.symbols.filter((symbol) => {
+      if (count >= maxSuggestions) {
+        return false;
+      }
+      const translatedId = symbol.translatedId;
+      let keep = translatedId.slice(0, inputLength) === inputValue;
+
+      if (!keep) {
+        const words = translatedId.split(' ');
+
+        for (let i = 1; i < words.length; i += 1) {
+          keep = words[i].slice(0, inputLength) === inputValue;
+
+          if (keep) {
+            break;
+          }
+        }
+      }
+
+      if (keep) {
+        count += 1;
+      }
+      return keep;
+    });
+  }
+
+  fetchArasaacSuggestions = async (searchText) => {
+    const {
+      intl: { locale }
+    } = this.props;
+    const { skin, hair } = this.state;
+    if (!searchText) {
+      return [];
+    }
+    try {
+      this.setState({
+        isFetchingArasaac: true
+      });
+      const arasaacDB = await getArasaacDB();
+      const imagesFromDB = await arasaacDB.getImagesByKeyword(
+        searchText.trim()
+      );
+      if (imagesFromDB.length) {
+        const suggestions = [
+          ...this.state.suggestions.filter(
+            (suggestion) => !suggestion.fromArasaac
+          )
+        ];
+        const arasaacSuggestions = imagesFromDB.map(({ src, label, id }) => {
+          return {
+            id,
+            src: `${ARASAAC_BASE_PATH_API}pictograms/${id}?${queryString.stringify(
+              {
+                skin,
+                hair
+              }
+            )}`,
+            keyPath: id,
+            translatedId: label,
+            fromArasaac: true
+          };
+        });
+        this.setState({
+          suggestions: [...suggestions, ...arasaacSuggestions],
+          isFetchingArasaac: false
+        });
+      } else {
+        const data = await API.arasaacPictogramsSearch(locale, searchText);
+        if (data.length) {
+          const suggestions = [
+            ...this.state.suggestions.filter(
+              (suggestion) => !suggestion.fromArasaac
+            )
+          ];
+          const arasaacSuggestions = data.map(
+            ({ _id: idPictogram, keywords: [keyword] }) => {
+              return {
+                id: keyword.keyword,
+                src: `${ARASAAC_BASE_PATH_API}pictograms/${idPictogram}?${queryString.stringify(
+                  {
+                    skin: this.state.skin,
+                    hair: this.state.hair
+                  }
+                )}`,
+                translatedId: keyword.keyword,
+                fromArasaac: true
+              };
+            }
+          );
+          this.setState({
+            suggestions: [...suggestions, ...arasaacSuggestions],
+            isFetchingArasaac: false
+          });
+        }
+      }
+
+      return [];
+    } catch (err) {
+      return [];
+    } finally {
+      this.setState({
+        isFetchingArasaac: false
+      });
+    }
+  };
+
+  fetchGlobalsymbolsSuggestions = async (searchText) => {
+    const {
+      intl: { locale }
+    } = this.props;
+    try {
+      let language = locale !== 'me' ? locale : 'cnr';
+      this.setState({
+        isFetchingGlobalsymbols: true
+      });
+      const data = await API.globalsymbolsPictogramsSearch(
+        language,
+        searchText
+      );
+      if (data.length) {
+        const suggestions = [
+          ...this.state.suggestions.filter(
+            (suggestion) => !suggestion.fromGlobalsymbols
+          )
+        ];
+        let globalsymbolsSuggestions = [];
+        data.forEach(function (element) {
+          const fixEspecialCharacters = (text) => {
+            if (!text) return '';
+            const utf8String = text
+              .replace(/Ã¡/g, '\u00E1') // Replace á
+              .replace(/Ã©/g, '\u00E9') // Replace é
+              .replace(/Ã­/g, '\u00ED') // Replace í
+              .replace(/Ã³/g, '\u00F3') // Replace ó
+              .replace(/Ãº/g, '\u00FA') // Replace ú
+              .replace(/Ã±/g, '\u00F1') // Replace ñ
+              .replace(/Ã‘/g, '\u00D1') // Replace Ñ
+              .replace(/Ã€/g, '\u00C0') // Replace À
+              .replace(/Ãˆ/g, '\u00C8') // Replace È
+              .replace(/ÃŒ/g, '\u00CC') // Replace Ì
+              .replace(/Ã’/g, '\u00D2') // Replace Ò
+              .replace(/Ã™/g, '\u00D9') // Replace Ù
+              .replace(/Ã¤/g, '\u00E4') // Replace ä
+              .replace(/Ã«/g, '\u00EB') // Replace ë
+              .replace(/Ã¯/g, '\u00EF') // Replace ï
+              .replace(/Ã¶/g, '\u00F6') // Replace ö
+              .replace(/Ã¼/g, '\u00FC') // Replace ü
+              .replace(/Ã„/g, '\u00C4') // Replace Ä
+              .replace(/Ã‹/g, '\u00CB') // Replace Ë
+              .replace(/Ã�/g, '\u00CF') // Replace Ï
+              .replace(/Ã–/g, '\u00D6') // Replace Ö
+              .replace(/Ãœ/g, '\u00DC'); // Replace Ü
+
+            return utf8String;
+          };
+          const symbolText = fixEspecialCharacters(element.text);
+          globalsymbolsSuggestions.push({
+            id: symbolText,
+            src: element.picto.image_url,
+            translatedId: symbolText,
+            fromGlobalsymbols: true
+          });
+        });
+        this.setState({
+          suggestions: [...suggestions, ...globalsymbolsSuggestions],
+          isFetchingGlobalsymbols: false
+        });
+      }
+      return [];
+    } catch (err) {
+      return [];
+    } finally {
+      this.setState({
+        isFetchingGlobalsymbols: false
+      });
+    }
+  };
+
+  fetchCboardSymbolsSuggestions = async (searchText) => {
+    const {
+      intl: { locale }
+    } = this.props;
+    const { skin } = this.state;
+
+    if (!searchText) {
+      return [];
+    }
+
+    try {
+      this.setState({
+        isFetchingCboardSymbols: true
+      });
+
+      // Map ARASAAC skin tone to Cboard skin tone format
+      const cboardSkinTone = mapArasaacToCboardSkinTone(skin);
+
+      const data = await searchCboardSymbols(locale, searchText);
+
+      if (data.length) {
+        const suggestions = [
+          ...this.state.suggestions.filter(
+            (suggestion) => !suggestion.fromCboardSymbols
+          )
+        ];
+
+        const cboardSuggestions = data.map((pictogram) => {
+          // Select appropriate variant based on synced skin tone
+          const variant = pictogram.variants?.find(
+            (v) => v.skinTone === cboardSkinTone
+          );
+          const imageUrl = variant?.url || pictogram.url;
+
+          // Get localized concept for display
+          const languageCode = locale.slice(0, 2);
+          const translation = pictogram.translations?.[languageCode];
+          const label = translation?.concept || searchText;
+
+          return {
+            id: pictogram._id,
+            src: imageUrl,
+            keyPath: `cboard_${pictogram._id}`,
+            translatedId: label.toLowerCase(),
+            fromCboardSymbols: true
+          };
+        });
+
+        this.setState({
+          suggestions: [...suggestions, ...cboardSuggestions],
+          isFetchingCboardSymbols: false
+        });
+      }
+
+      return [];
+    } catch (err) {
+      console.error('Error fetching Cboard Symbols:', err);
+      return [];
+    } finally {
+      this.setState({
+        isFetchingCboardSymbols: false
+      });
+    }
+  };
+
+  getSuggestions(value) {
+    this.setState({
+      suggestions: []
+    });
+    if (this.state.symbolSets[SymbolSets.global].enabled) {
+      this.fetchGlobalsymbolsSuggestions(value);
+    }
+    if (this.state.symbolSets[SymbolSets.arasaac].enabled) {
+      this.fetchArasaacSuggestions(value);
+    }
+    if (this.state.symbolSets[SymbolSets.cboard].enabled) {
+      this.fetchCboardSymbolsSuggestions(value);
+    }
+    if (this.state.symbolSets[SymbolSets.mulberry].enabled) {
+      this.setState({
+        suggestions: this.getMulberrySuggestions(value)
+      });
+    }
+  }
+
+  debouncedGetSuggestions = debounce(this.getSuggestions, 300);
+
+  handleSuggestionsFetchRequested = async ({ value, reason }) => {
+    if (reason === 'suggestion-selected') return;
+    this.debouncedGetSuggestions(value);
+  };
+
+  handleSuggestionsClearRequested = () => {};
+
+  handleSuggestionSelected = async (event, { suggestion }) => {
+    const { onChange, onClose, autoFill } = this.props;
+    this.setState({ value: '' });
+
+    const label = autoFill.length ? autoFill : suggestion.translatedId;
+
+    const fetchArasaacImageUrl = async () => {
+      const suggestionImageReq = `${suggestion.src}&url=true`;
+      const imageArasaacUrl =
+        await API.arasaacPictogramsGetImageUrl(suggestionImageReq);
+
+      // return static url when cannot retrive the image from arasaac server
+      if (!imageArasaacUrl.length && suggestion.keyPath)
+        return `https://static.arasaac.org/pictograms/${suggestion.keyPath}/${
+          suggestion.keyPath
+        }_500.png`;
+
+      return imageArasaacUrl.length ? imageArasaacUrl : suggestion.src;
+    };
+
+    // Cboard Symbols already have the correct URL, no need to fetch
+    const symbolImage = suggestion.fromArasaac
+      ? await fetchArasaacImageUrl()
+      : suggestion.src;
+
+    const keyPath = suggestion.keyPath ? suggestion.keyPath : undefined;
+
+    onChange({
+      image: symbolImage,
+      keyPath: keyPath,
+      label: label,
+      labelKey: undefined
+    }).then(() => onClose());
+  };
+
+  handleChange = (event, { newValue }) => {
+    this.setState({
+      value: newValue
+    });
+  };
+
+  renderSuggestion(suggestion, { query, isHighlighted }) {
+    const suggestionClassName = classNames('SymbolSearch__Suggestion', {
+      'SymbolSearch__Suggestion--highlighted': isHighlighted
+    });
+
+    return (
+      <div className={suggestionClassName}>
+        <Symbol
+          label={suggestion.translatedId}
+          image={suggestion.src}
+          keyPath={suggestion.keyPath}
+          labelpos={LABEL_POSITION_BELOW}
+        />
+      </div>
+    );
+  }
+
+  renderSuggestionsContainer(options) {
+    const { containerProps, children } = options;
+    return <div {...containerProps}>{children}</div>;
+  }
+
+  handleChangeOption = (opt) => {
+    const newSymbolSets = this.state.symbolSets.map((option) => {
+      if (option.id === opt.id) {
+        return { ...option, enabled: !option.enabled };
+      }
+      return option;
+    });
+    this.setState(
+      {
+        symbolSets: newSymbolSets
+      },
+      () => {
+        this.getSuggestions(this.state.value);
+      }
+    );
+  };
+
+  handleSkinToneChange = (event) => {
+    const newSkin = event ? event.target.value : defaultSkin;
+    this.setState(
+      {
+        skin: newSkin
+      },
+      () => {
+        this.getSuggestions(this.state.value);
+      }
+    );
+  };
+
+  handleHairColorChange = (event) => {
+    const newHair = event ? event.target.value : defaultHair;
+    this.setState(
+      {
+        hair: newHair
+      },
+      () => {
+        this.getSuggestions(this.state.value);
+      }
+    );
+  };
+
+  handleClearSuggest() {
+    this.setState({ value: '' });
+  }
+
+  render() {
+    const { disableTour, intl, isSymbolSearchTourEnabled, open, onClose } =
+      this.props;
+
+    const clearButton =
+      this.state.value.length > 0 ? (
+        <div className="react-autosuggest__clear">
+          <Tooltip
+            title={intl.formatMessage(messages.clearText)}
+            aria-label={intl.formatMessage(messages.clearText)}
+          >
+            <IconButton
+              label={intl.formatMessage(messages.clearText)}
+              onClick={this.handleClearSuggest.bind(this)}
+            >
+              <BackspaceIcon style={{ color: 'white' }} />
+            </IconButton>
+          </Tooltip>
+        </div>
+      ) : null;
+    const skinOptions = (
+      <SkinToneSelect
+        selectedColor={this.state.skin}
+        onChange={this.handleSkinToneChange}
+        disabled={this.isSkinToneDisabled}
+      />
+    );
+    const hairOptions = (
+      <HairColorSelect
+        selectedColor={this.state.hair}
+        onChange={this.handleHairColorChange}
+        disabled={this.isHairColorDisabled}
+      />
+    );
+    const autoSuggest = (
+      <div className="react-autosuggest__container more-options">
+        <Autosuggest
+          aria-label="Search auto-suggest"
+          alwaysRenderSuggestions={true}
+          suggestions={this.state.suggestions}
+          focusInputOnSuggestionClick={!isMobile.any}
+          onSuggestionsFetchRequested={this.handleSuggestionsFetchRequested}
+          onSuggestionsClearRequested={this.handleSuggestionsClearRequested}
+          onSuggestionSelected={this.handleSuggestionSelected}
+          renderSuggestionsContainer={this.renderSuggestionsContainer}
+          getSuggestionValue={this.getSuggestionValue}
+          renderSuggestion={this.renderSuggestion}
+          highlightFirstSuggestion={true}
+          inputProps={{
+            autoFocus: true,
+            placeholder: intl.formatMessage(messages.searchSymbolLibrary),
+            label: intl.formatMessage(messages.searchSymbolLibrary),
+            value: this.state.value,
+            onChange: this.handleChange
+          }}
+        />
+        {skinOptions}
+        {hairOptions}
+        {clearButton}
+      </div>
+    );
+    const symbolNotFound =
+      !this.state.isFetchingArasaac &&
+      !this.state.isFetchingGlobalsymbols &&
+      !this.state.isFetchingCboardSymbols &&
+      this.state.value.trim() !== '' &&
+      this.state.suggestions.length === 0 ? (
+        <SymbolNotFound />
+      ) : null;
+
+    return (
+      <div>
+        <FullScreenDialog
+          open={open}
+          buttons={autoSuggest}
+          transition="fade"
+          onClose={onClose}
+        >
+          <FilterBar
+            options={this.state.symbolSets}
+            onChange={this.handleChangeOption}
+          />
+          {symbolNotFound}
+          {isSymbolSearchTourEnabled && (
+            <SymbolSearchTour
+              disableTour={disableTour}
+              intl={intl}
+              isSymbolSearchTourEnabled={isSymbolSearchTourEnabled}
+            />
+          )}
+        </FullScreenDialog>
+      </div>
+    );
+  }
+}
+
+export default injectIntl(SymbolSearch);

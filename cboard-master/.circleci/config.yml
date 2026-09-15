@@ -1,0 +1,158 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2.1
+orbs:
+  discord: antonioned/discord@0.1.0
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      - image: cimg/node:22.23.2
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            # when lock file changes, use increasingly general patterns to restore cache
+            - npm-packages-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+            - npm-packages-v1-{{ .Branch }}-
+            - npm-packages-v1-
+      # Install dependencies and save the npm cache
+      - run: HUSKY=0 npm ci
+      - save_cache:
+          paths:
+            - ~/.npm
+          key: npm-packages-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+      - run:
+          name: Check formatting
+          command: npm run format:check
+      # run tests
+      - run:
+          name: Run Unit Tests
+          command: npm test -- --silent --updateSnapshot --runInBand --no-watchman --testPathPattern="/Board|Communicator|App|Settings|Account|UI/"
+  image:
+    docker:
+      # specify the version you desire here
+      - image: cimg/node:22.23.2
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            # when lock file changes, use increasingly general patterns to restore cache
+            - npm-packages-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+            - npm-packages-v1-{{ .Branch }}-
+            - npm-packages-v1-
+      # Install dependencies and save the npm cache
+      - run: HUSKY=0 npm ci
+      - save_cache:
+          paths:
+            - ~/.npm
+          key: npm-packages-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+      # Build Docker Image
+      # https://circleci.com/docs/2.0/building-docker-images/#overview
+      - setup_remote_docker: # (2)
+          version: default
+          docker_layer_caching: false # (3)
+      # build and push Docker image
+      - run:
+          name: Build Docker Image
+          command: |
+            TAG=0.1.$CIRCLE_BUILD_NUM
+            echo $TAG > ./public/version
+            docker build -t cboard/cboard:$TAG -t cboard/cboard:latest .
+            docker login -u $DOCKER_USER -p $DOCKER_PASS
+            docker push cboard/cboard:latest
+            docker push cboard/cboard:$TAG
+  deploy-qa:
+    machine:
+      image: ubuntu-2204:2024.11.1
+    steps:
+      - run:
+          name: Deploy Over SSH
+          command: |
+            echo 'cboard-qa06.westus.cloudapp.azure.com \
+            AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBK9FTOTcgK0KgvdqdUhPLfvnDhzbViGnvtaXWg1XKgq2LEzgUTaHwyDsV5lZ3NnXimwptzF6GvO3u1ySlR2C19s=' >> ~/.ssh/known_hosts
+            ssh $SSH_USERNAME@$SSH_SERVER 'bash -ic \
+            "docker image prune -f && \
+            docker run --rm -v /var/run/docker.sock:/var/run/docker.sock cboard/cboard-bootstrap pull && \
+            docker run --rm -v /var/run/docker.sock:/var/run/docker.sock cboard/cboard-bootstrap stop cboard && \
+            docker run --rm -v /var/run/docker.sock:/var/run/docker.sock cboard/cboard-bootstrap kill cboard && \
+            docker run --rm -v /var/run/docker.sock:/var/run/docker.sock --env-file /home/sharedFolder/env.qa cboard/cboard-bootstrap up -d --no-deps cboard \
+            " && exit'
+      - discord/status:
+          fail_only: false
+          failure_message: "**${CIRCLE_USERNAME}**'s Cboard deploy to QA: **${CIRCLE_JOB}** failed."
+          webhook: '${DISCORD_STATUS_WEBHOOK}'
+          success_message: '**${CIRCLE_USERNAME}** deployed Cboard to QA!!.'
+  e2e-qa:
+    docker:
+      - image: mcr.microsoft.com/playwright:v1.53.0-jammy
+    working_directory: ~/repo
+    steps:
+      - checkout
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            # when lock file changes, use increasingly general patterns to restore cache
+            - npm-packages-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+            - npm-packages-v1-{{ .Branch }}-
+            - npm-packages-v1-
+      # Install dependencies and save the npm cache
+      - run:
+          name: Install dependencies
+          command: HUSKY=0 npm ci
+      - save_cache:
+          paths:
+            - ~/.npm
+          key: npm-packages-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+      # run tests
+      - run:
+          name: Run E2E Tests
+          command: |
+            npm run test:e2e-browserstack
+          when: always
+      - discord/status:
+          fail_only: false
+          failure_message: '**${CIRCLE_USERNAME}** Cboard E2E Tests FAILED: **${CIRCLE_JOB}** failed.'
+          webhook: '${DISCORD_STATUS_WEBHOOK}'
+          success_message: '**${CIRCLE_USERNAME}** Cboard E2E Tests PASSED on QA!!.'
+      # Store test results for CircleCI test insights
+      - store_test_results:
+          path: test-results
+      # Store Playwright HTML report
+      - store_artifacts:
+          path: ./playwright-report
+          destination: playwright-report
+      # Store test results XML files
+      - store_artifacts:
+          path: ./test-results
+          destination: test-results
+workflows:
+  build_image_deploy_e2e-qa:
+    jobs:
+      - build:
+          context: azure
+      - image:
+          context: azure
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
+      - deploy-qa:
+          context: azure
+          requires:
+            - image
+          filters:
+            branches:
+              only: master
+      - e2e-qa:
+          context: azure
+          requires:
+            - deploy-qa
+          filters:
+            branches:
+              only: master
