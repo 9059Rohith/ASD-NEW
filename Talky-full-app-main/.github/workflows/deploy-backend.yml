@@ -1,0 +1,61 @@
+name: Deploy Backend
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'server/**'
+      - '!server/.venv/**'
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Deploy to EC2
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@068c0c7a4e59a5ae12fb7cb454b05735d830c82b
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script_stop: true
+          script: |
+            set -euo pipefail
+            cd ~/Talky-full-app
+
+            # Pull latest changes
+            git fetch origin main
+            PREV=$(git rev-parse HEAD)
+            git pull origin main
+            NEW=$(git rev-parse HEAD)
+
+            # Only reinstall packages when requirements.txt changed
+            if git diff "$PREV" "$NEW" --name-only | grep -q 'server/requirements.txt'; then
+              echo "requirements.txt changed — reinstalling packages"
+              source venv/bin/activate
+              pip install -r server/requirements.txt -q
+            fi
+
+            # Restart service (reload units first in case talky.service changed)
+            sudo systemctl daemon-reload
+            sudo systemctl restart talky
+
+            # Poll until the app is up — torch/transformers imports can take
+            # well over a minute on a small instance before the port is bound
+            for i in $(seq 1 30); do
+              if curl -sf http://localhost:8080/health > /dev/null; then
+                echo "Deploy succeeded — service is healthy"
+                exit 0
+              fi
+              if ! systemctl is-active --quiet talky; then
+                echo "Service crashed during startup"
+                break
+              fi
+              sleep 5
+            done
+            echo "Health check failed"
+            sudo systemctl status talky --no-pager
+            sudo journalctl -u talky --no-pager -n 50
+            exit 1

@@ -1,0 +1,10 @@
+.env
+.env*
+*.env
+
+talky-key.pem
+*.wav
+
+__pycache__/
+
+venv/

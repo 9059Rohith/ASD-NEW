@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  background-color: #0b1021;
+  background-image:
+  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: transparent;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.slider-shell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 380px;
+  padding: 24px 24px;
+}
+
+.dashboard-shell {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-align: left;
+}
+
+.dashboard-main {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.dashboard-lessons {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-lessons .slider-shell {
+  flex: 1 1 auto;
+  height: auto;
+  min-height: 0;
+  padding: 8px 16px;
+}
+
+.dashboard-lessons .slider-row {
+  height: 100%;
+  padding: 14px 0;
+}
+
+.dashboard-lessons .lesson-slide {
+  flex: 0 0 calc((100% - 3 * 16px) / 4);
+  min-width: 0;
+}
+
+@media (max-width: 767px) {
+  .dashboard-lessons .lesson-slide {
+    flex: 0 0 240px;
+  }
+}
+
+.dashboard-lessons .lesson-card {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 1.25rem;
+}
+
+.dashboard-lessons .lesson-card img {
+  flex: 0 1 auto;
+  min-height: 0;
+}
+
+.dashboard-explore {
+  flex: 0 0 auto;
+}
+
+.slider-row {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  align-items: center;
+  padding: 16px 0;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.card-container {
+  display: grid;
+  padding: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.search-container {
+  border: 2px  solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.search-button {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  height: 30px;
+}
+.search-button:hover {
+  background-color: lightgray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}

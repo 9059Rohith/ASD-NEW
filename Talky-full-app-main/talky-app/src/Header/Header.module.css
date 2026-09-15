@@ -1,0 +1,170 @@
+.header {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  width: 100%;
+  padding: 0 1.25rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+
+  background: transparent;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid #fff;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    padding: 0 1.875rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    padding: 0 2.5rem;
+  }
+}
+
+.logoLink {
+  display: block;
+  width: 12rem;
+  flex-shrink: 0;
+}
+
+.logo {
+  display: block;
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  margin: 0 auto;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navItem {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 32px 24px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  transition: opacity 200ms linear;
+  white-space: nowrap;
+
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  font-family: inherit;
+}
+
+@media (min-width: 1280px) {
+  .navLink {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .logoLink,
+  .actions {
+    width: auto;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .navLink {
+    padding: 32px 10px;
+  }
+}
+
+.navLink:hover {
+  opacity: 0.75;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  width: 12rem;
+  flex-shrink: 0;
+}
+
+.viewToggle {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: inherit;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  transition: opacity 200ms linear, background 200ms linear;
+}
+
+.viewToggle:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 1rem 1.25rem;
+    gap: 0.5rem;
+  }
+
+  .logoLink {
+    width: auto;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .nav {
+    margin: 0;
+    width: 100%;
+  }
+
+  .navList {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navLink {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .actions {
+    width: auto;
+  }
+}
