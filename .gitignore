@@ -1,0 +1,68 @@
+# Local tools and editors
+.claude/
+.vscode/
+.idea/
+*.iml
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Python / backend
+.venv/
+backend/.venv*/
+backend/venv/
+backend/.env
+backend/uploads/
+uploads/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/test-results/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+npm-debug.log*
+.qa-screenshots/
+.runlogs/
+backend/.tmp-word-audio/
+
+# Android / Gradle
+SpeakEasyAndroid/.gradle/
+SpeakEasyAndroid/local.properties
+SpeakEasyAndroid/.idea/
+SpeakEasyAndroid/build/
+SpeakEasyAndroid/app/build/
+SpeakEasyAndroid/captures/
+SpeakEasyAndroid/.externalNativeBuild/
+SpeakEasyAndroid/.cxx/
+*.apk
+*.aab
+
+# Local machine-learning checkpoints
+*.nemo
+backend/.runtime/
+backend/models/*
+!backend/models/vowel-classifier/
+backend/models/vowel-classifier/*
+!backend/models/vowel-classifier/classifier.joblib
+!backend/models/vowel-classifier/*.json
+!backend/models/vowel-classifier/ATTRIBUTION.md
+!backend/models/vowel-classifier/confusion-matrices.png
+!backend/models/vowel-classifier/references/
+!backend/models/vowel-classifier/heldout/
+!backend/models/diphthong-classifier/
+backend/models/diphthong-classifier/*
+!backend/models/diphthong-classifier/classifier.joblib
+!backend/models/diphthong-classifier/*.json
+!backend/models/diphthong-classifier/ATTRIBUTION.md
+!backend/models/diphthong-classifier/references/
+!backend/models/diphthong-classifier/heldout/

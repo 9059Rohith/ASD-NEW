@@ -1,0 +1,7 @@
+[submodule "LiveTalk-Unity"]
+	path = LiveTalk-Unity
+	url = https://github.com/arghyasur1991/LiveTalk-Unity.git
+[submodule "gandeeva"]
+	path = gandeeva
+	url = https://github.com/9059Rohith/Gandeeva-voice.git
+	branch = codex/deployment-ready

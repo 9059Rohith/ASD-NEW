@@ -1,0 +1,35 @@
+services:
+  - type: web
+    name: speakeasy-asd-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    healthCheckPath: /health/live
+    autoDeploy: true
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: DB_NAME
+        value: speakeasy_asd
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: COOKIE_SAMESITE
+        value: none
+      - key: TRUSTED_HOSTS
+        value: speakeasy-asd-api.onrender.com
+      - key: CORS_ORIGINS
+        sync: false
+      - key: MONGODB_URL
+        sync: false
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: CLOUDINARY_CLOUD_NAME
+        sync: false
+      - key: CLOUDINARY_API_KEY
+        sync: false
+      - key: CLOUDINARY_API_SECRET
+        sync: false
