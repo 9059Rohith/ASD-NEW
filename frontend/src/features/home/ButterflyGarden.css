@@ -1,0 +1,6 @@
+.app-butterfly-garden{position:fixed;inset:0;z-index:2;overflow:hidden;pointer-events:none;contain:layout paint}
+.app-butterfly{position:absolute;left:var(--start-x);top:var(--start-y);width:var(--butterfly-size);aspect-ratio:239.488/148.477;opacity:.72;filter:drop-shadow(0 5px 7px #234a2b30);will-change:transform;animation:app-butterfly-flight var(--flight-time) var(--flight-delay) ease-in-out infinite}
+.app-butterfly-garden[data-playing=false] *{animation-play-state:paused!important}
+@keyframes app-butterfly-flight{0%,100%{transform:translate3d(0,0,0) rotate(-8deg)}25%{transform:translate3d(var(--dx-1),var(--dy-1),0) rotate(12deg)}52%{transform:translate3d(var(--dx-2),var(--dy-2),0) rotate(-11deg)}77%{transform:translate3d(var(--dx-3),var(--dy-3),0) rotate(9deg)}}
+@media(max-width:700px){.app-butterfly{width:calc(var(--butterfly-size) * .72);opacity:.64}.app-butterfly:nth-child(n+5){display:none}}
+@media(prefers-reduced-motion:reduce){.app-butterfly{animation:none!important;will-change:auto}}

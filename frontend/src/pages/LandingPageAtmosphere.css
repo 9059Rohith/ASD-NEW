@@ -1,0 +1,165 @@
+.voice-home [data-parallax-background] {
+  position: relative;
+  overflow: hidden;
+}
+
+/* The generic page-enter transform would trap all content below the fixed butterflies. */
+.voice-home #voice-main {
+  animation: none;
+  transform: none;
+}
+
+.voice-home [data-parallax-background]::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  inset: -34px 0;
+  background-image: var(--home-background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: translate3d(0, var(--home-bg-shift, 0px), 0);
+  pointer-events: none;
+  will-change: transform;
+}
+
+.voice-home [data-parallax-background] > * {
+  position: relative;
+  z-index: 3;
+}
+
+.voice-home .voice-home-steps,
+.voice-home .voice-footer {
+  position: relative;
+  z-index: 3;
+  background-color: #f8f5ec;
+}
+
+.voice-home [data-parallax-background='sky'] {
+  --home-background-image: url('/assets/backgrounds/ivory-floral-content.png');
+}
+
+.voice-home [data-parallax-background='ivory'] {
+  --home-background-image: url('/assets/backgrounds/ivory-floral-content.png');
+  background-color: #f8f5ec;
+}
+
+.voice-home [data-parallax-background='forest'] {
+  --home-background-image: linear-gradient(90deg, rgba(9, 36, 30, .86), rgba(9, 36, 30, .77) 45%, rgba(9, 36, 30, .86)), url('/assets/backgrounds/ivory-floral-content.png');
+  background-color: #143c31;
+}
+
+.voice-home .voice-home-care {
+  --home-background-image: linear-gradient(rgba(248, 245, 236, .58), rgba(248, 245, 236, .58)), url('/assets/backgrounds/ivory-floral-content.png');
+}
+
+.voice-home .voice-home-hero::before {
+  background-position: center bottom;
+}
+
+.voice-home .home-slide-vowels .home-slide-scene > img {
+  border-radius: 50%;
+  mix-blend-mode: normal;
+}
+
+.voice-home #meet-the-vowels::before,
+.voice-home .voice-home-care::before {
+  background-position: center bottom;
+}
+
+.voice-home .voice-home-copy h1 {
+  animation: none;
+}
+
+.voice-home .voice-home-copy h1 > span {
+  display: inline-block;
+  animation: home-word-rise .8s cubic-bezier(.18, .75, .18, 1) both;
+}
+
+.voice-home .voice-home-copy h1 > span:nth-of-type(2) {
+  animation-delay: .12s;
+}
+
+.voice-home .voice-home-copy h1 > em {
+  animation-delay: .24s;
+}
+
+.voice-home .home-revealed h2,
+.voice-home .home-revealed.voice-home-care h3 {
+  animation: home-heading-rise .85s cubic-bezier(.18, .75, .18, 1) both;
+}
+
+.voice-home .home-revealed .voice-section-heading p,
+.voice-home .home-revealed.voice-home-how > div > p,
+.voice-home .home-revealed.voice-home-checkin > div > p {
+  animation: home-copy-rise .8s .14s ease-out both;
+}
+
+.voice-home .home-revealed.voice-home-how li {
+  animation: home-copy-rise .65s ease-out both;
+}
+
+.voice-home .home-revealed.voice-home-how li:nth-child(2) { animation-delay: .1s; }
+.voice-home .home-revealed.voice-home-how li:nth-child(3) { animation-delay: .2s; }
+
+.voice-home .home-revealed.voice-home-care > div {
+  animation: home-copy-rise .72s ease-out both;
+}
+
+.voice-home .home-revealed.voice-home-care > div:nth-child(2) {
+  animation-delay: .12s;
+}
+
+@keyframes home-word-rise {
+  from { opacity: 0; transform: translateY(.18em); clip-path: inset(100% 0 0); }
+  to { opacity: 1; transform: translateY(0); clip-path: inset(0); }
+}
+
+@keyframes home-heading-rise {
+  from { opacity: 0; transform: translateY(24px); clip-path: inset(100% 0 0); }
+  to { opacity: 1; transform: translateY(0); clip-path: inset(0); }
+}
+
+@keyframes home-copy-rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 700px) {
+  .voice-home [data-parallax-background]::before {
+    background-position: center bottom;
+  }
+
+  .voice-home .voice-home-hero::before {
+    background-position: 48% bottom;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .voice-home [data-parallax-background]::before {
+    transform: none !important;
+    will-change: auto;
+  }
+}
+
+.voice-home-calm [data-parallax-background]::before {
+  transform: none !important;
+  will-change: auto;
+}
+
+.voice-home-calm *,
+.voice-home-calm *::before,
+.voice-home-calm *::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+.voice-home-calm .voice-home-copy h1 > span,
+.voice-home-calm .voice-home-copy h1 > em,
+.voice-home-calm .home-revealed h2,
+.voice-home-calm .home-revealed p,
+.voice-home-calm .home-revealed li {
+  opacity: 1;
+  transform: none;
+  clip-path: none;
+}

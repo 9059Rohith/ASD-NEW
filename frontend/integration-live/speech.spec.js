@@ -1,0 +1,63 @@
+import { test, expect } from '@playwright/test'
+
+test('real registration, browser microphone capture, acoustic IPA, persistence and reports', async ({ page }) => {
+  // No API routes or MediaRecorder calls are mocked. Chromium feeds a known
+  // human speech WAV through getUserMedia; this is not a physical-mic test.
+  const email = `speech-qa-${Date.now()}@example.com`
+  const errors = []
+  page.on('pageerror', error => errors.push(error.message))
+  await page.goto('/register')
+  console.info('Live QA: registration page loaded')
+  await page.getByLabel('Parent / Guardian Name').fill('Speech QA Parent')
+  await page.getByLabel("Child's Name").fill('QA Learner')
+  await page.getByLabel("Child's Age").fill('7')
+  await page.getByRole('button', { name: 'Continue' }).click()
+  await page.getByLabel('Email Address').fill(email)
+  await page.getByLabel('Password', { exact: true }).fill('TestingSpeech123!')
+  await page.getByLabel('Confirm Password').fill('TestingSpeech123!')
+  await page.getByRole('checkbox').check()
+  await page.getByRole('button', { name: 'Create Account' }).click()
+  await expect(page).toHaveURL(/\/dashboard$/)
+  console.info('Live QA: account created')
+  await page.goto('/therapy/1')
+  await page.getByRole('button', { name: /Next/ }).click()
+  await page.getByRole('button', { name: "I'm Ready!" }).click()
+  const evaluated = page.waitForResponse(response => response.url().includes('/evaluate/speech') && response.request().method() === 'POST', { timeout: 120000 })
+  const saved = page.waitForResponse(response => response.url().includes('/progress/save') && response.status() === 200, { timeout: 120000 })
+  await page.getByRole('button', { name: 'Start recording' }).click()
+  await expect(page.getByRole('button', { name: 'Stop recording' })).toBeVisible()
+  await page.waitForTimeout(4000) // Actual capture time; not a synchronization workaround.
+  await page.getByRole('button', { name: 'Stop recording' }).click()
+  console.info('Live QA: captured browser microphone audio')
+  const response = await evaluated
+  expect(response.status()).toBe(200)
+  const result = await response.json()
+  console.info('Live QA: acoustic result', result.validation_status, result.actual_phonemes)
+  expect(result.scorable, JSON.stringify(result)).toBe(true)
+  expect(result.validation_source).toBe('acoustic_phoneme_model')
+  expect(result.actual_phonemes.length).toBeGreaterThan(0)
+  expect(result.phoneme_alignment.length).toBeGreaterThan(0)
+  expect(result.accuracy).toBeGreaterThanOrEqual(0)
+  expect(result.accuracy).toBeLessThanOrEqual(100)
+  await saved
+  await expect(page.getByRole('region', { name: 'Phoneme analysis' })).toBeVisible()
+  await page.screenshot({ path: '../.runlogs/browser-phoneme-result.png', fullPage: true })
+  const history = await (await page.request.get('/api/progress/history/me')).json()
+  expect(history.total).toBe(1)
+  expect(history.items[0].actual_phonemes).toEqual(result.actual_phonemes)
+  // A retry is idempotent, and client-edited scores cannot replace evidence.
+  const replay = await page.request.post('/api/progress/save', { data: { evaluation_receipt: result.evaluation_receipt, accuracy: 100 } })
+  expect(replay.status()).toBe(200)
+  const after = await (await page.request.get('/api/progress/history/me')).json()
+  expect(after.total).toBe(1)
+  expect(after.items[0].accuracy).toBe(result.accuracy)
+  const forged = await page.request.post('/api/progress/save', { data: { accuracy: 100, lesson_id: 1 } })
+  expect(forged.status()).toBe(422)
+  await page.goto('/speech-analysis')
+  await expect(page.getByRole('heading', { name: 'Recent phoneme results' })).toBeVisible()
+  await page.goto('/reports')
+  await expect(page.getByRole('cell', { name: 'a', exact: true })).toBeVisible()
+  await page.setViewportSize({ width: 390, height: 844 })
+  await page.screenshot({ path: '../.runlogs/browser-reports-mobile.png', fullPage: true })
+  expect(errors).toEqual([])
+})

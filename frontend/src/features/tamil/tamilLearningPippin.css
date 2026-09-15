@@ -1,0 +1,35 @@
+.tamil-learning-intro .tamil-learning-pippin {
+  width: clamp(300px, 30vw, 400px);
+  flex: 0 0 auto;
+  margin: -14px 20px -18px 0;
+  filter: drop-shadow(0 18px 15px rgba(91, 62, 43, .13));
+}
+
+.tamil-learning-pippin .pippin-story-scene {
+  width: 100%;
+}
+
+.tamil-learning-pippin .pippin-story-scene[data-motion="full"] {
+  transform-origin: 50% 90%;
+  animation: tamil-guide-float 5.2s ease-in-out infinite;
+}
+
+@media (max-width: 760px) {
+  .tamil-learning-intro {
+    flex-direction: column-reverse;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .tamil-learning-intro .tamil-learning-pippin {
+    width: min(72vw, 270px);
+    align-self: center;
+    margin: -8px auto -12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tamil-learning-pippin .pippin-story-scene {
+    animation: none !important;
+  }
+}

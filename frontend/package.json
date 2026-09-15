@@ -1,0 +1,59 @@
+{
+  "name": "speakeasy-asd-frontend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "@tanstack/react-query": "^5.20.0",
+    "axios": "^1.6.7",
+    "framer-motion": "^11.0.5",
+    "howler": "^2.2.4",
+    "lucide-react": "^0.344.0",
+    "react": "^18.2.0",
+    "react-confetti": "^6.1.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.50.0",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^7.18.2",
+    "react-scroll": "^1.9.3",
+    "recharts": "^2.12.0",
+    "three": "^0.163.0",
+    "zod": "^3.22.4",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^6.0.5",
+    "autoprefixer": "^10.4.17",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "playwright": "^1.61.0",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^8.2.0",
+    "vitest": "^4.1.10"
+  },
+  "overrides": {
+    "three-stdlib": {
+      "fflate": "0.6.11"
+    },
+    "@types/three": {
+      "fflate": "0.8.3"
+    }
+  }
+}

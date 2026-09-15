@@ -1,0 +1,79 @@
+.moth-wings {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+.moth-wing-panel {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.moth-wing-panel-left {
+  left: 0;
+  transform-origin: right center;
+  animation: moth-left-wing-flap 1.15s ease-in-out infinite;
+}
+
+.moth-wing-panel-right {
+  right: 0;
+  transform-origin: left center;
+  animation: moth-right-wing-flap 1.15s ease-in-out infinite;
+}
+
+.moth-wing {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  backface-visibility: visible;
+}
+
+.moth-wing-right { transform: scaleX(-1); }
+
+.moth-body {
+  position: absolute;
+  z-index: 2;
+  top: 17%;
+  left: 50%;
+  width: 7%;
+  height: 68%;
+  transform: translateX(-50%);
+  border-radius: 50% 50% 55% 55%;
+  background: linear-gradient(#483544, #70545d);
+  box-shadow: 0 1px 2px #251d2799;
+}
+
+.moth-body::before {
+  content: '';
+  position: absolute;
+  top: -8%;
+  left: 50%;
+  width: 110%;
+  aspect-ratio: 1;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: #483544;
+}
+
+@keyframes moth-left-wing-flap {
+  0%, 100% { transform: perspective(320px) rotateY(7deg); }
+  50% { transform: perspective(320px) rotateY(48deg); }
+}
+
+@keyframes moth-right-wing-flap {
+  0%, 100% { transform: perspective(320px) rotateY(-7deg); }
+  50% { transform: perspective(320px) rotateY(-48deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .moth-wing-panel { animation: none !important; will-change: auto; }
+  .moth-wing-panel-left { transform: perspective(320px) rotateY(14deg); }
+  .moth-wing-panel-right { transform: perspective(320px) rotateY(-14deg); }
+}

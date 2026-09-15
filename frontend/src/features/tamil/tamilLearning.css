@@ -1,0 +1,562 @@
+.tamil-world{--tamil-ink:#143c31;--tamil-muted:#617064;--tamil-line:#dedfce;--tamil-lime:#d6ee88;--tamil-font:'Noto Sans Tamil','Latha',sans-serif}.voice-world.tamil-world h1,.voice-world.tamil-world h2,.voice-world.tamil-world h3{font-family:var(--tamil-font);letter-spacing:normal;line-height:1.55;font-weight:500}.tamil-world [lang=ta]{font-family:var(--tamil-font);letter-spacing:normal}.tamil-learning-page,.tamil-practice-page{max-width:1400px;margin:auto;padding:48px 55px 65px;color:var(--tamil-ink)}.tamil-world button,.tamil-world input{font:inherit}.tamil-world button:disabled{opacity:.5;cursor:not-allowed}.tamil-world :focus-visible{outline:3px solid #b05438;outline-offset:5px}.tamil-overline{font-size:11px;letter-spacing:.07em;color:var(--tamil-muted);margin:0 0 18px}.tamil-learning-intro{display:flex;justify-content:space-between;align-items:center;gap:45px;margin-bottom:35px}.tamil-world .tamil-learning-intro h1{font-size:47px;margin:0 0 20px}.tamil-learning-intro p[lang=ta]{font-size:17px;line-height:1.95;margin:0}.tamil-learning-intro .tamil-english-intro{font-size:14px;color:var(--tamil-muted);margin:15px 0 0}.tamil-learning-intro>img{width:215px;height:260px;object-fit:contain;margin-right:55px}.tamil-catalog-controls{border-bottom:1px solid var(--tamil-line);display:flex;justify-content:space-between;align-items:center;gap:28px;padding:8px 0 18px}.tamil-tabs{display:flex;gap:10px}.tamil-tabs button{display:flex;flex-direction:column;gap:6px;padding:14px 23px;border:1px solid transparent;border-radius:10px;color:var(--tamil-ink);background:transparent;text-align:left;min-height:70px;cursor:pointer}.tamil-tabs button[aria-selected=true]{border-color:#b3c27f;background:#e9efda}.tamil-tabs button:hover{background:#edf0e3}.tamil-tabs button>span{font-size:16px}.tamil-tabs button small{font-size:11px;color:var(--tamil-muted)}.tamil-hint-toggle{display:flex;align-items:center;gap:10px;cursor:pointer;font-size:11px;min-height:44px}.tamil-hint-toggle input{width:16px;height:16px;accent-color:var(--tamil-ink)}.tamil-hint-toggle small{display:block;font-family:Inter,Arial,sans-serif;font-size:10px;margin-top:7px;color:var(--tamil-muted)}.tamil-catalog-panel{padding-top:28px;outline:none}.tamil-category-heading{display:flex;justify-content:space-between;align-items:center;gap:28px;margin-bottom:22px}.tamil-world .tamil-category-heading h2{font-size:23px;margin:0 0 12px}.tamil-category-heading p{font-size:12px;line-height:1.85;margin:5px 0}.tamil-muted{color:var(--tamil-muted);font-size:12px;line-height:1.9}.tamil-kind-progress{text-align:right;display:flex;flex-direction:column;align-items:flex-end;flex-shrink:0}.tamil-kind-progress b{font:400 35px Inter,Arial,sans-serif;color:var(--tamil-ink);margin-bottom:5px}.tamil-kind-progress span{font-size:10px}.tamil-kind-progress small{font-size:10px;color:var(--tamil-muted)}.tamil-alphabet-note{font-size:12px;line-height:1.9;padding:14px 18px;background:#edf0df;border-radius:8px;margin-bottom:27px}.tamil-alphabet-note small{display:block;font-size:11px;color:var(--tamil-muted);margin-top:7px}.tamil-catalog-grid{display:grid;gap:18px}.tamil-grid-vowel{grid-template-columns:repeat(6,minmax(0,1fr))}.tamil-grid-word{grid-template-columns:repeat(4,minmax(0,1fr))}.tamil-grid-sentence{grid-template-columns:repeat(2,minmax(0,1fr))}.tamil-learning-card{display:flex;flex-direction:column;align-items:flex-start;min-width:0;border:1px solid var(--tamil-line);border-radius:16px;padding:20px;transition:background .2s,transform .2s;min-height:180px}.tamil-learning-card:hover{background:#eef1df;transform:translateY(-3px)}.tamil-card-meta{display:flex;align-items:center;justify-content:space-between;width:100%;color:var(--tamil-muted);font-size:9px;margin-bottom:13px}.tamil-world .tamil-learning-card h3{font-size:46px;margin:4px 0 13px;overflow-wrap:anywhere}.tamil-world .tamil-grid-word h3{font-size:28px}.tamil-world .tamil-grid-sentence h3{font-size:25px;line-height:1.8}.tamil-transliteration{font-size:12px;font-style:italic;margin:0 0 12px;color:var(--tamil-muted);text-transform:none}.tamil-card-meaning{font-size:11px;color:var(--tamil-muted);margin:0 0 19px;line-height:1.65}.tamil-card-action{font-size:10px;margin-top:auto;color:#637737}.tamil-loading,.tamil-empty{padding:32px 0;font-size:13px;line-height:1.9;color:var(--tamil-muted)}.tamil-loading{max-width:1280px;margin:30px auto;min-height:180px}.tamil-notice{padding:18px 20px;background:#f0e3d7;color:#85452f;border-radius:10px;font-size:13px;line-height:1.8}.tamil-notice p{margin:0 0 12px}.tamil-button,.tamil-text-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;border:1px solid var(--tamil-ink);border-radius:9px;padding:12px 20px;background:var(--tamil-ink);color:#f8f5ec!important;font-size:12px!important;text-decoration:none;cursor:pointer}.tamil-button-quiet{background:transparent;color:var(--tamil-ink)!important;border-color:var(--tamil-line)}.tamil-button:hover:not(:disabled){background:#254f40;color:#fff!important}.tamil-button-quiet:hover:not(:disabled){background:#e7ecd5;color:var(--tamil-ink)!important}.tamil-button-english{font-size:10px;opacity:.8}.tamil-text-button{border:0;padding:9px 0;background:transparent;color:var(--tamil-ink)!important;font-size:12px!important;justify-content:flex-start}.tamil-text-button:hover{color:#647c37!important}.tamil-saved-progress{border-top:1px solid var(--tamil-line);margin-top:48px;padding-top:30px}.tamil-world .tamil-saved-progress h2{font-size:24px;margin:0 0 7px}.tamil-saved-progress>div>p{font-size:12px;color:var(--tamil-muted)}.tamil-progress-numbers{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;max-width:740px;margin:28px 0}.tamil-progress-numbers dt{font-size:11px;line-height:1.8;color:var(--tamil-muted)}.tamil-progress-numbers dd{font-size:32px;margin:8px 0 0;font-variant-numeric:tabular-nums}.tamil-recent-attempts{list-style:none;max-width:750px;padding:0;margin:20px 0}.tamil-recent-attempts li{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid var(--tamil-line);padding:10px 0;font-size:12px}.tamil-recent-attempts a{display:flex;align-items:center;gap:15px;min-height:44px;font-size:14px}.tamil-recent-attempts li>span{white-space:nowrap;color:var(--tamil-muted)}.tamil-progress-error p{font-size:12px;line-height:1.8}
+.tamil-practice-toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:30px}.tamil-practice-toolbar>span{font-size:12px;color:var(--tamil-muted)}.tamil-practice-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(350px,1fr);gap:85px;align-items:start}.tamil-world .tamil-example h1{margin:5px 0 12px;font-size:55px;overflow-wrap:anywhere}.tamil-world .tamil-example h1.tamil-prompt-vowel{font-size:95px;line-height:1.4}.tamil-world .tamil-example h1.tamil-prompt-sentence{font-size:37px;line-height:1.85}.tamil-pronunciation-aid{margin:12px 0 22px;font-size:11px;color:var(--tamil-muted)}.tamil-pronunciation-aid summary{cursor:pointer;min-height:44px;display:list-item;align-content:center}.tamil-pronunciation-aid p{font-size:15px;font-style:italic;margin:0 0 14px}.tamil-example-meaning{font-size:17px;color:var(--tamil-muted);margin:0 0 25px}.tamil-grammar-label{font-size:12px;margin:12px 0 20px}.tamil-instruction{font-size:14px;line-height:2;margin:15px 0 8px}.tamil-example>.tamil-muted{font-size:12px}.tamil-example-audio{margin-top:25px}.tamil-voice-unavailable{font-size:10px;line-height:1.9;margin-top:15px;color:var(--tamil-muted)}.tamil-voice-unavailable small{display:block;font-size:11px;margin-top:6px}.tamil-pippin{display:flex;align-items:center;gap:20px;max-width:470px;margin-top:34px}.tamil-pippin img{width:105px;height:140px;object-fit:contain;transform-origin:50% 90%}.tamil-pippin p{font-size:12px;line-height:1.9;margin:0 0 9px}.tamil-pippin small{font-size:11px;color:var(--tamil-muted)}.tamil-pippin-listening img{animation:tamil-listening 2.4s ease-in-out infinite}.tamil-pippin-thinking img{animation:tamil-listening 3.5s ease-in-out infinite reverse}.tamil-pippin-happy img{animation:tamil-hop .8s ease-in-out 2}.tamil-recording-stage{text-align:center;padding-top:8px;min-width:0}.tamil-record-orbit{width:320px;max-width:100%;aspect-ratio:1;border:1px solid #d0dba6;outline:1px solid #e0e3cd;outline-offset:12px;border-radius:50%;box-shadow:0 0 0 22px #e6ead425;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;margin:20px auto 15px;background:radial-gradient(circle,#e5edcd44,transparent 69%)}.tamil-mic-symbol{width:82px;height:82px;border-radius:50%;display:grid;place-items:center;background:var(--tamil-ink);color:#f8f5ec}.tamil-clock{font-size:43px;font-variant-numeric:tabular-nums;line-height:1;font-weight:300}.tamil-clock small{font-size:17px;color:var(--tamil-muted);margin-left:5px}.tamil-record-orbit>p{font-size:11px;margin:0;color:var(--tamil-muted)}.tamil-level-meter{width:80px;height:4px;overflow:hidden;border-radius:3px;background:#d8dfc3;visibility:hidden}.tamil-level-meter>span{display:block;width:100%;height:100%;background:#6d8837;transform-origin:left;transform:scaleX(var(--tamil-audio-level,0))}.tamil-practice-page[data-state=RECORDING] .tamil-level-meter{visibility:visible}.tamil-practice-page[data-state=RECORDING] .tamil-record-orbit{outline-color:#b2c47c;border-color:#869f43}.tamil-waveform{display:block;width:min(90%,360px);height:55px;margin:22px auto 15px}.tamil-record-buttons{display:flex;flex-direction:column;align-items:center}.tamil-record-buttons>.tamil-button{min-width:260px}.tamil-record-instruction{font-size:11px;line-height:1.85;margin:18px 0 0;max-width:365px}.tamil-record-buttons>.tamil-muted{font-size:11px;max-width:350px;margin:10px 0 0}.tamil-recording-privacy{font-size:10px;line-height:1.8;color:var(--tamil-muted);max-width:370px;margin:27px auto 0}.tamil-status{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}.tamil-bottom-links{display:flex;gap:25px;flex-wrap:wrap;border-top:1px solid var(--tamil-line);padding-top:22px;margin-top:40px}.tamil-bottom-links a{font-size:11px;min-height:44px;display:inline-flex;gap:10px;align-items:center}.tamil-result{text-align:left;animation:tamil-reveal .4s ease-out}.tamil-world .tamil-result h2{font-size:25px;margin:0 0 21px}.tamil-score{display:flex;align-items:center;gap:23px;margin-bottom:22px}.tamil-score>strong{font-size:55px;font-weight:400;white-space:nowrap;line-height:1.25}.tamil-score>strong small{font-size:17px;color:var(--tamil-muted)}.tamil-score>div{display:flex;flex-direction:column;gap:7px}.tamil-score b{font-size:12px;font-weight:500}.tamil-score span{font-size:11px;color:var(--tamil-muted)}.tamil-unscored{font-size:12px;line-height:1.95;padding:15px;background:#edf0e0;border-radius:8px}.tamil-result-feedback{font-size:13px;line-height:1.85;margin:19px 0}.tamil-phoneme-comparison{display:grid;grid-template-columns:1fr 1fr;gap:20px;border-top:1px solid var(--tamil-line);border-bottom:1px solid var(--tamil-line);padding:18px 0}.tamil-world .tamil-phoneme-comparison h3{font-size:11px;line-height:1.8;margin:0 0 10px}.tamil-phoneme-comparison small{display:block;font:11px Inter,Arial,sans-serif;color:var(--tamil-muted);margin-top:7px}.tamil-phoneme-comparison p{font-size:18px;line-height:1.8;margin:0;overflow-wrap:anywhere;color:var(--tamil-ink)}.tamil-method-note,.tamil-confidence{font-size:11px;line-height:1.85;color:var(--tamil-muted);margin:15px 0}.tamil-alignment{margin:18px 0}.tamil-alignment summary{font-size:11px;line-height:1.8;cursor:pointer;min-height:44px;align-content:center}.tamil-table-wrap{overflow-x:auto}.tamil-alignment table{border-collapse:collapse;width:100%;font-size:12px;text-align:left}.tamil-alignment th,.tamil-alignment td{padding:10px;border-bottom:1px solid var(--tamil-line)}.tamil-alignment th{font-size:10px;color:var(--tamil-muted);font-weight:500}.tamil-alignment td:last-child{font-size:10px}.tamil-alignment td small{display:block;font-size:9px;color:var(--tamil-muted);margin-top:5px}.tamil-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.tamil-saved-note{font-size:11px;line-height:1.9;text-align:left;border-top:1px solid var(--tamil-line);padding-top:18px;margin-top:25px;color:var(--tamil-muted)}
+@keyframes tamil-listening{50%{transform:rotate(-3deg)}}@keyframes tamil-hop{50%{transform:translateY(-9px)}}@keyframes tamil-reveal{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:1100px){.tamil-learning-page,.tamil-practice-page{padding:35px 30px 50px}.tamil-learning-intro>img{margin-right:15px;width:185px;height:230px}.tamil-grid-vowel{grid-template-columns:repeat(4,minmax(0,1fr))}.tamil-grid-word{grid-template-columns:repeat(3,minmax(0,1fr))}.tamil-practice-grid{gap:40px}.tamil-world .tamil-example h1{font-size:46px}.tamil-world .tamil-example h1.tamil-prompt-sentence{font-size:29px}.tamil-catalog-controls{gap:15px}.tamil-tabs button{padding:12px 17px}.tamil-tabs button>span{font-size:14px}.tamil-hint-toggle{font-size:10px}.tamil-phoneme-comparison{gap:13px}}
+@media(max-width:760px){.tamil-learning-page,.tamil-practice-page{padding:28px 22px 40px}.tamil-learning-intro{gap:15px;margin-bottom:25px}.tamil-world .tamil-learning-intro h1{font-size:31px;margin-bottom:15px}.tamil-learning-intro p[lang=ta]{font-size:12px;line-height:1.95}.tamil-learning-intro .tamil-english-intro{font-size:11px;line-height:1.7}.tamil-learning-intro>img{width:115px;height:155px;margin:0}.tamil-catalog-controls{align-items:flex-start;flex-direction:column;gap:13px}.tamil-tabs{width:100%;gap:4px}.tamil-tabs button{padding:12px 10px;flex:1;min-height:66px}.tamil-tabs button>span{font-size:12px}.tamil-tabs button small{font-size:10px}.tamil-hint-toggle{align-self:flex-end}.tamil-category-heading{gap:15px}.tamil-world .tamil-category-heading h2{font-size:21px}.tamil-category-heading p{font-size:11px}.tamil-kind-progress b{font-size:26px}.tamil-kind-progress span{font-size:9px}.tamil-alphabet-note{font-size:10px;padding:13px 15px}.tamil-alphabet-note small{font-size:10px;line-height:1.8}.tamil-catalog-grid{gap:12px}.tamil-grid-vowel{grid-template-columns:repeat(3,minmax(0,1fr))}.tamil-grid-word{grid-template-columns:repeat(2,minmax(0,1fr))}.tamil-grid-sentence{grid-template-columns:1fr}.tamil-learning-card{padding:16px 14px;min-height:160px;border-radius:12px}.tamil-world .tamil-learning-card h3{font-size:36px}.tamil-world .tamil-grid-word h3{font-size:25px}.tamil-world .tamil-grid-sentence h3{font-size:24px}.tamil-card-meaning{font-size:10px}.tamil-card-meta{font-size:8px}.tamil-card-meta svg{width:15px}.tamil-card-action{font-size:9px}.tamil-progress-numbers{gap:14px}.tamil-progress-numbers dt{font-size:9px}.tamil-progress-numbers dd{font-size:28px}.tamil-world .tamil-saved-progress h2{font-size:22px}.tamil-practice-grid{grid-template-columns:1fr;gap:30px}.tamil-practice-toolbar{margin-bottom:23px}.tamil-world .tamil-example h1{font-size:45px}.tamil-world .tamil-example h1.tamil-prompt-vowel{font-size:78px}.tamil-world .tamil-example h1.tamil-prompt-sentence{font-size:32px}.tamil-example-meaning{font-size:15px;margin-bottom:20px}.tamil-instruction{font-size:12px}.tamil-example-audio{margin-top:18px}.tamil-pippin{margin-top:20px;gap:16px}.tamil-pippin img{width:78px;height:105px}.tamil-pippin p{font-size:10px}.tamil-pippin small{font-size:10px}.tamil-recording-stage{padding-top:10px;border-top:1px solid var(--tamil-line)}.tamil-record-orbit{width:275px;gap:15px;margin-top:27px}.tamil-mic-symbol{width:72px;height:72px}.tamil-clock{font-size:38px}.tamil-record-orbit>p{font-size:10px}.tamil-waveform{height:45px;margin:25px auto 8px}.tamil-record-buttons>.tamil-button{min-width:270px}.tamil-record-instruction{font-size:10px}.tamil-result{padding-top:20px}.tamil-world .tamil-result h2{font-size:24px}.tamil-score>strong{font-size:49px}.tamil-score{gap:17px}.tamil-score b{font-size:10px}.tamil-result-feedback{font-size:12px}.tamil-world .tamil-phoneme-comparison h3{font-size:10px}.tamil-phoneme-comparison p{font-size:16px}.tamil-actions .tamil-button{font-size:10px!important;padding:12px 15px}.tamil-actions{gap:8px}.tamil-bottom-links{gap:12px}.tamil-bottom-links a{font-size:10px}}
+@media(max-width:420px){.tamil-learning-intro>img{display:none}.tamil-world .tamil-learning-intro h1{font-size:32px}.tamil-tabs button{padding:11px 7px}.tamil-tabs button>span{font-size:10px}.tamil-grid-vowel{gap:9px}.tamil-grid-vowel .tamil-learning-card{padding:12px 10px;min-height:158px}.tamil-world .tamil-learning-card h3{font-size:34px}.tamil-world .tamil-grid-word h3{font-size:23px}.tamil-world .tamil-grid-sentence h3{font-size:23px}.tamil-kind-progress{max-width:95px}.tamil-kind-progress span{font-size:8px}.tamil-recent-attempts a{font-size:11px}.tamil-recent-attempts li>span{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.tamil-world *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.tamil-example-source{font-size:9px;line-height:1.9;color:var(--tamil-muted);margin:12px 0}.tamil-example-source small{display:block;font-size:10px;margin-top:4px}
+.tamil-tabs button em,.tamil-level-label{font:600 9px Inter,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#758747;font-style:normal;margin:0}.tamil-kind-progress progress{width:115px;height:6px;margin-top:9px;accent-color:#718738}.tamil-learning-card.is-complete{border-color:#9caf65;background:#f2f5e8}.tamil-learning-card.is-complete .tamil-card-action{color:#466321}.tamil-section-complete,.tamil-final-completion{display:flex;align-items:center;gap:14px;background:#e7efd0;border:1px solid #bdce83;border-radius:12px;padding:15px 18px;margin:0 0 24px;animation:tamil-reveal .4s ease-out}.tamil-section-complete span,.tamil-section-complete b{font-size:11px}.tamil-section-complete .tamil-text-button{margin-left:auto}.tamil-final-completion{padding:22px 25px;margin:0 0 32px}.tamil-final-completion>svg{width:34px;height:34px;color:#667f2d;flex:none}.tamil-final-completion>div{flex:1}.tamil-final-completion p{font-size:10px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 7px;color:var(--tamil-muted)}.tamil-world .tamil-final-completion h2{font-size:22px;margin:0 0 6px}.tamil-final-completion span{font-size:11px;color:var(--tamil-muted)}.tamil-verdict{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:8px 13px;margin:0 0 18px;font-size:11px}.tamil-verdict strong{font-weight:600}.tamil-verdict.is-correct{background:#dcecb8;color:#31551c}.tamil-verdict.is-retry{background:#f2dfd2;color:#7a3c29}.tamil-detected-vowel{font-size:12px;line-height:1.9;padding:12px 14px;background:#edf0df;border-radius:8px}.tamil-detected-vowel strong{font-size:22px;margin-left:5px}
+.tamil-recognized-text{border-block:1px solid var(--tamil-line);padding:16px 0}.tamil-recognized-text span{font-size:10px;color:var(--tamil-muted)}.tamil-recognized-text p{font-size:22px;line-height:1.8;margin:8px 0 0}
+@media(max-width:760px){.tamil-final-completion{align-items:flex-start;flex-wrap:wrap}.tamil-final-completion .tamil-button{width:100%}.tamil-section-complete{flex-wrap:wrap}.tamil-section-complete .tamil-text-button{width:100%;margin-left:0}.tamil-kind-progress progress{width:90px}.tamil-tabs button em{font-size:8px}}
+.tamil-tabs{min-width:0;overflow-x:auto;scrollbar-width:thin}.tamil-tabs button{flex:none;white-space:nowrap}
+.tamil-grid-consonant,.tamil-grid-uyirmei{grid-template-columns:repeat(6,minmax(0,1fr))}
+.tamil-base-picker{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 24px;font-size:12px}
+.tamil-base-picker select{min-height:44px;min-width:170px;border:1px solid var(--tamil-line);border-radius:8px;background:#fffdf5;color:var(--tamil-ink);padding:8px 12px}
+.tamil-base-picker span{color:var(--tamil-muted);font-size:11px}
+@media(max-width:1100px){.tamil-grid-consonant,.tamil-grid-uyirmei{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:760px){.tamil-tabs button{flex:none;min-width:116px}.tamil-grid-consonant,.tamil-grid-uyirmei{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.tamil-quiz{border:1px solid var(--tamil-line);border-radius:16px;background:#fafaf2;padding:24px;min-width:0}
+.tamil-practice-page>.tamil-quiz{margin-top:36px}
+.tamil-world .tamil-quiz h2{font:500 clamp(18px,2vw,25px)/1.45 Inter,Arial,sans-serif;margin:0 0 12px}
+.tamil-quiz-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}
+.tamil-quiz-sentence .tamil-quiz-choices{grid-template-columns:1fr}
+.tamil-quiz-choice{min-height:66px;border:1px solid #cbd3b7;border-radius:10px;background:#fffdf8;color:var(--tamil-ink);font-size:25px!important;cursor:pointer;transition:background .2s,transform .2s}
+.tamil-quiz-choice:hover:not(:disabled),.tamil-quiz-choice.is-selected{background:#e5eecf;transform:translateY(-2px)}
+.tamil-quiz-feedback{border-radius:10px;padding:16px;background:#e5efcf;font-size:13px;line-height:1.8}
+.tamil-quiz-feedback.is-retry{background:#f2e1d6}
+.tamil-quiz-feedback strong,.tamil-quiz-feedback span{display:block}
+.tamil-quiz-feedback span b{font-size:24px;margin-left:6px}
+.tamil-study-note{font-size:11px;line-height:1.9;color:var(--tamil-muted);margin-top:28px}
+.tamil-letter-equation{display:flex;align-items:center;gap:13px;flex-wrap:wrap;border-radius:12px;background:#edf2dd;padding:13px 18px;margin:12px 0 23px;color:var(--tamil-ink)}
+.tamil-letter-equation span,.tamil-letter-equation strong{font-size:30px;font-weight:500}
+.tamil-letter-equation b{font:500 17px Inter,Arial,sans-serif;color:var(--tamil-muted)}
+@media(max-width:760px){.tamil-quiz{padding:18px}.tamil-quiz-choices{gap:9px}.tamil-quiz-choice{min-height:58px;font-size:21px!important}}
+.tamil-transcript-practice{border-top:1px solid var(--tamil-line);margin-top:28px;padding-top:26px}
+.tamil-world .tamil-transcript-practice h2{font:500 19px/1.5 Inter,Arial,sans-serif;margin:0 0 12px}
+.tamil-transcript-practice>p[role=status]{font-size:12px;line-height:1.8}
+.tamil-transcript-result{border:1px solid #cbd8ac;border-radius:10px;background:#f0f5e3;padding:15px;margin-top:20px;display:flex;flex-direction:column;gap:7px;font-size:11px}
+.tamil-transcript-result p{font-size:24px;line-height:1.7;margin:0}
+.tamil-transcript-result small{color:var(--tamil-muted)}
+.tamil-quiz-launch{border:1px solid var(--tamil-line);border-radius:16px;background:#fafaf2;padding:24px;margin-top:30px}
+.tamil-practice-grid .tamil-quiz-launch{margin-top:0}
+.tamil-world .tamil-quiz-launch h2{font:500 22px/1.45 Inter,Arial,sans-serif;margin:0 0 10px}
+.tamil-quiz-launch p:not(.tamil-overline){font-size:12px;color:var(--tamil-muted);line-height:1.8;margin:0 0 18px}
+.tamil-quiz-page{max-width:780px;min-height:calc(100vh - 160px)}
+.tamil-quiz-page>.tamil-text-button{margin-bottom:28px}
+.tamil-quiz-context{color:var(--tamil-muted);font-size:12px;margin:0 0 14px}
+.tamil-mastery-note { margin: 0.8rem 0 1rem; color: var(--text-muted, #526075); font-size: 0.9rem; }
+.tamil-mastery-badge { display: inline-flex; align-self: flex-start; padding: 0.25rem 0.55rem; border-radius: 999px; background: #e8f7ee; color: #176038; font-size: 0.75rem; font-weight: 700; }
+.tamil-quiz-modes { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.75rem 0; }
+.tamil-quiz-modes button { border: 1px solid #b8c7d2; border-radius: 999px; padding: 0.55rem 0.9rem; background: #fff; color: #234358; font: inherit; font-weight: 700; cursor: pointer; }
+.tamil-quiz-modes button[aria-pressed="true"] { border-color: #176b65; background: #e8f7f3; color: #13554f; }
+.tamil-quiz-modes button:focus-visible { outline: 3px solid #d18945; outline-offset: 2px; }
+.tamil-quiz-audio { display: block; width: min(100%, 28rem); margin: 0.75rem 0 1rem; }
+.tamil-quiz-target { font-size: clamp(1.8rem, 5vw, 3.2rem); line-height: 1.5; overflow-wrap: anywhere; margin: 0.5rem 0 1rem; }
+.tamil-quiz-meaning-choices .tamil-quiz-choice { font: 600 1rem/1.45 Inter, Arial, sans-serif !important; padding: 0.8rem; }
+.tamil-quiz-build { display: flex; flex-wrap: wrap; align-items: end; gap: 0.8rem; margin: 1.2rem 0; }
+.tamil-quiz-build label { display: grid; gap: 0.4rem; font-size: 0.85rem; font-weight: 600; }
+.tamil-quiz-build select { min-width: 9rem; min-height: 3rem; border: 1px solid #b8c7d2; border-radius: 0.6rem; background: #fff; padding: 0.5rem; color: var(--tamil-ink); font: 1.3rem sans-serif; }
+.tamil-quiz-build .tamil-button { min-height: 3rem; }
+.tamil-quiz-order { display: grid; gap: 0.65rem; margin: 1rem 0; }
+.tamil-quiz-order p { margin: 0.4rem 0 0; font-size: 0.8rem; color: var(--tamil-muted); }
+.tamil-quiz-word-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; min-height: 3.5rem; padding: 0.55rem; border: 1px dashed #aebd9a; border-radius: 0.7rem; }
+.tamil-quiz-word-row button { min-height: 2.6rem; padding: 0.45rem 0.8rem; border: 1px solid #b8c7d2; border-radius: 0.55rem; background: #fff; color: var(--tamil-ink); font-size: 1.1rem; cursor: pointer; }
+.tamil-quiz-word-row button:hover:not(:disabled) { background: #e5eecf; }
+.tamil-quiz-word-row span { font-size: 0.85rem; color: var(--tamil-muted); }
+.tamil-quiz-order > .tamil-button { justify-self: start; }
+.tamil-quiz-writing { display: grid; gap: 0.7rem; max-width: 32rem; margin: 1.2rem 0; }
+.tamil-quiz-writing label { font-size: 0.85rem; font-weight: 600; }
+.tamil-quiz-writing input, .tamil-quiz-writing textarea { width: 100%; min-height: 3.2rem; border: 1px solid #b8c7d2; border-radius: 0.65rem; background: #fff; padding: 0.7rem 0.9rem; color: var(--tamil-ink); font: 1.3rem/1.6 sans-serif; }
+.tamil-quiz-writing textarea { resize: vertical; }
+.tamil-quiz-writing .tamil-button { justify-self: start; }
+.tamil-review-due { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 1.5rem; margin: 2rem 0; padding: 1.5rem; border: 1px solid #b9ca9f; border-radius: 1rem; background: #f2f6e9; }
+.tamil-world .tamil-review-due h2 { margin: 0.3rem 0 0.5rem; font-size: clamp(1.2rem, 2vw, 1.7rem); }
+.tamil-review-due p:not(.tamil-overline) { color: var(--tamil-muted); font-size: 0.85rem; line-height: 1.6; }
+.tamil-review-due ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; list-style: none; margin: 0; padding: 0; }
+.tamil-review-due a { display: flex; justify-content: space-between; align-items: center; gap: 0.5rem; min-height: 3.3rem; padding: 0.5rem 0.75rem; border: 1px solid #d1dfc1; border-radius: 0.65rem; background: #fffdf8; }
+.tamil-review-due a > span:first-child { font-size: 1.3rem; }
+.tamil-review-due a > span:last-child { display: flex; align-items: center; gap: 0.2rem; white-space: nowrap; font-size: 0.75rem; }
+@media (max-width: 760px) { .tamil-review-due { grid-template-columns: 1fr; } .tamil-review-due ul { grid-template-columns: 1fr; } }
+
+/* Motion follows the lesson: reveal, listen, speak, then respond. */
+.tamil-duration-rule{display:flex;flex-wrap:wrap;gap:8px;margin:-5px 0 21px;max-width:440px}
+.tamil-duration-rule span{display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid var(--tamil-line);border-radius:999px;background:#f7f8ef;color:var(--tamil-muted);font:600 11px Inter,Arial,sans-serif}
+.tamil-duration-rule span b{font-weight:500;color:var(--tamil-ink)}
+.tamil-duration-rule span.is-target{border-color:#86a344;background:#e6f0c8;box-shadow:0 3px 12px #6d88371b}
+.tamil-duration-rule small{flex-basis:100%;font-size:10px;line-height:1.65;color:var(--tamil-muted)}
+@media(min-width:1101px){.tamil-catalog-controls{flex-wrap:wrap;row-gap:2px}.tamil-tabs{width:100%;overflow:visible}.tamil-tabs button{flex:1;min-width:0;padding:12px 14px;white-space:normal}.tamil-tabs button>span{font-size:14px}.tamil-hint-toggle{margin-left:auto}}
+.tamil-learning-page,.tamil-practice-page{animation:tamil-page-arrive .52s cubic-bezier(.2,.8,.2,1) both}
+.tamil-learning-intro>img{transform-origin:50% 90%;animation:tamil-guide-float 4s ease-in-out infinite}
+.tamil-catalog-panel{animation:tamil-panel-arrive .38s ease-out both}
+.tamil-tabs button{position:relative;transition:background .2s ease,transform .22s ease,box-shadow .22s ease}
+.tamil-tabs button:hover{transform:translateY(-2px)}
+.tamil-tabs button[aria-selected=true]{box-shadow:0 8px 20px #536c2920}
+.tamil-tabs button[aria-selected=true]::after{content:'';position:absolute;left:18px;right:18px;bottom:5px;height:3px;border-radius:3px;background:#708d32;animation:tamil-underline .3s ease-out both}
+.tamil-learning-card{position:relative;overflow:hidden;animation:tamil-card-arrive .48s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(min(var(--card-index,0),12) * 35ms);box-shadow:0 2px 8px #193c3009;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease,background .22s ease}
+.tamil-learning-card:nth-child(12n + 1){--card-index:0}.tamil-learning-card:nth-child(12n + 2){--card-index:1}.tamil-learning-card:nth-child(12n + 3){--card-index:2}.tamil-learning-card:nth-child(12n + 4){--card-index:3}.tamil-learning-card:nth-child(12n + 5){--card-index:4}.tamil-learning-card:nth-child(12n + 6){--card-index:5}.tamil-learning-card:nth-child(12n + 7){--card-index:6}.tamil-learning-card:nth-child(12n + 8){--card-index:7}.tamil-learning-card:nth-child(12n + 9){--card-index:8}.tamil-learning-card:nth-child(12n + 10){--card-index:9}.tamil-learning-card:nth-child(12n + 11){--card-index:10}.tamil-learning-card:nth-child(12n + 12){--card-index:11}
+.tamil-learning-card::before{content:'';position:absolute;inset:0 0 auto;height:4px;background:linear-gradient(90deg,#86a344,#d6ee88);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.tamil-learning-card:hover,.tamil-learning-card:focus-visible{transform:translateY(-5px);border-color:#a4bb68;box-shadow:0 15px 30px #193c301b}
+.tamil-learning-card:hover::before,.tamil-learning-card:focus-visible::before{transform:scaleX(1)}
+.tamil-learning-card h3{transition:transform .25s cubic-bezier(.2,1.4,.4,1)}
+.tamil-learning-card:hover h3,.tamil-learning-card:focus-visible h3{transform:scale(1.07)}
+.tamil-kind-progress progress{transition:width .35s ease;animation:tamil-progress-arrive .6s ease both}
+.tamil-section-complete>svg,.tamil-final-completion>svg{animation:tamil-reward-pop .65s cubic-bezier(.18,1.6,.35,1) both}
+.tamil-world .tamil-example h1{transform-origin:20% 50%;animation:tamil-letter-arrive .6s cubic-bezier(.16,1.35,.35,1) both}
+.tamil-example-audio.is-playing .tamil-button svg{animation:tamil-audio-beat .55s ease-in-out infinite alternate}
+.tamil-example-audio.is-playing .tamil-button{border-color:#789940;box-shadow:0 0 0 5px #d6ee8860}
+.tamil-practice-page[data-state=GETTING_READY] .tamil-record-orbit,.tamil-practice-page[data-state=PROCESSING] .tamil-record-orbit{animation:tamil-orbit-breathe 1.3s ease-in-out infinite}
+.tamil-practice-page[data-state=RECORDING] .tamil-record-orbit{animation:tamil-orbit-breathe 1.7s ease-in-out infinite;border-width:2px;background:radial-gradient(circle,#d6ee8866,transparent 70%)}
+.tamil-practice-page[data-state=RECORDING] .tamil-mic-symbol{animation:tamil-mic-live .9s ease-in-out infinite alternate}
+.tamil-practice-page[data-state=RECORDING] .tamil-level-meter>span{transition:transform .08s linear}
+.tamil-quiz-choice.is-selected{animation:tamil-choice-pop .3s cubic-bezier(.2,1.4,.4,1)}
+.tamil-quiz-feedback.is-correct,.tamil-verdict.is-correct{animation:tamil-reward-pop .55s cubic-bezier(.18,1.6,.35,1) both}
+.tamil-quiz-feedback.is-retry,.tamil-verdict.is-retry{animation:tamil-gentle-nudge .42s ease-out both}
+.tamil-result .tamil-score>strong{animation:tamil-score-rise .6s cubic-bezier(.2,1.2,.4,1) both}
+.tamil-quiz-launch,.tamil-review-due{animation:tamil-panel-arrive .5s ease-out both}
+@keyframes tamil-page-arrive{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes tamil-panel-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes tamil-card-arrive{from{opacity:0;transform:translateY(15px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes tamil-guide-float{50%{transform:translateY(-7px) rotate(-2deg)}}
+@keyframes tamil-underline{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes tamil-progress-arrive{from{opacity:.35;transform:scaleX(.2);transform-origin:left}to{opacity:1;transform:scaleX(1);transform-origin:left}}
+@keyframes tamil-letter-arrive{from{opacity:0;transform:translateY(12px) scale(.78)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes tamil-audio-beat{to{transform:scale(1.15) rotate(8deg)}}
+@keyframes tamil-orbit-breathe{50%{box-shadow:0 0 0 30px #d6ee8848;transform:scale(1.018)}}
+@keyframes tamil-mic-live{to{transform:scale(1.08);box-shadow:0 0 0 12px #77913b30}}
+@keyframes tamil-choice-pop{50%{transform:scale(1.035)}}
+@keyframes tamil-reward-pop{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:scale(1)}}
+@keyframes tamil-gentle-nudge{35%{transform:translateX(-4px)}70%{transform:translateX(3px)}to{transform:translateX(0)}}
+@keyframes tamil-score-rise{from{opacity:0;transform:translateY(15px) scale(.85)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){.tamil-world .tamil-learning-page,.tamil-world .tamil-practice-page,.tamil-world .tamil-learning-card,.tamil-world .tamil-learning-intro>img,.tamil-world .tamil-example h1,.tamil-world .tamil-quiz-feedback,.tamil-world .tamil-verdict,.tamil-world .tamil-record-orbit,.tamil-world .tamil-mic-symbol,.tamil-world .tamil-catalog-panel,.tamil-world .tamil-quiz-launch,.tamil-world .tamil-review-due{animation:none!important}.tamil-world .tamil-learning-card:hover,.tamil-world .tamil-learning-card:focus-visible,.tamil-world .tamil-tabs button:hover{transform:none}}
+.tamil-primary-sections{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:28px 0 24px}
+.tamil-primary-sections button{min-height:148px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:4px;padding:20px 24px;border:1px solid #d5ddc6;border-radius:24px;background:#faf9ec;color:#173f32;text-align:left;box-shadow:0 8px 18px #173f320b;cursor:pointer;transition:transform .22s ease,box-shadow .22s ease,background .22s ease}
+.tamil-primary-sections button:hover{transform:translateY(-4px);box-shadow:0 16px 30px #173f321b}
+.tamil-primary-sections button[aria-current=page]{background:#d9eda9;border-color:#9eba70;box-shadow:inset 0 0 0 2px #c0d984}
+.tamil-primary-sections button:focus-visible{outline:3px solid #e09863;outline-offset:3px}
+.tamil-primary-sections [lang=ta]{font-size:clamp(23px,2.5vw,34px);line-height:1.5}
+.tamil-primary-sections strong{font-size:17px}.tamil-primary-sections small{font-size:12px;color:#52705e}
+@media(max-width:700px){.tamil-primary-sections{grid-template-columns:1fr;gap:8px}.tamil-primary-sections button{min-height:80px;padding:10px 16px;gap:0}.tamil-primary-sections [lang=ta]{font-size:20px}.tamil-primary-sections strong{font-size:14px}.tamil-primary-sections small{display:none}}
+@media(prefers-reduced-motion:reduce){.tamil-primary-sections button{transition:none}.tamil-primary-sections button:hover{transform:none}}
+.tamil-learning-card .tamil-letter-scene,.tamil-learning-card .tamil-lesson-picture{width:min(100%,116px);height:94px;margin:2px auto 9px;flex:none;border-radius:15px}.tamil-grid-word .tamil-learning-card .tamil-lesson-picture,.tamil-grid-sentence .tamil-learning-card .tamil-lesson-picture{width:min(100%,170px);height:116px}.tamil-example>.tamil-letter-scene.is-large,.tamil-example>.tamil-lesson-picture.is-large{width:min(100%,250px);height:auto;margin:0 auto 13px}
+
+/* Learn Tamil: one readable lesson rhythm across letters, words, and sentences. */
+.tamil-world .tamil-learning-page,
+.tamil-world .tamil-practice-page {
+  max-width: 1600px;
+  padding: clamp(20px, 2.4vw, 38px) clamp(18px, 2.8vw, 44px) 60px;
+}
+
+.tamil-world .tamil-learning-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(210px, 23vw, 300px);
+  align-items: center;
+  gap: clamp(24px, 5vw, 68px);
+  padding: 12px 0 32px;
+}
+
+.tamil-learning-pippin {
+  width: 100%;
+  justify-self: end;
+}
+
+.tamil-learning-pippin .pippin-story-scene[data-transparent="true"] {
+  width: 100%;
+}
+
+.tamil-world .tamil-catalog-grid {
+  gap: clamp(14px, 1.6vw, 22px);
+}
+
+.tamil-world .tamil-grid-vowel,
+.tamil-world .tamil-grid-consonant,
+.tamil-world .tamil-grid-aytham,
+.tamil-world .tamil-grid-uyirmei {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.tamil-world .tamil-grid-word {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.tamil-world .tamil-grid-sentence {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tamil-world .tamil-learning-card {
+  min-height: 215px;
+  padding: 20px 22px;
+  border-radius: 22px;
+  background: rgba(255, 253, 247, .86);
+  box-shadow: 0 8px 28px rgba(20, 60, 49, .06);
+}
+
+.tamil-world .tamil-learning-card.is-complete {
+  background: rgba(242, 247, 230, .94);
+}
+
+.tamil-world .tamil-card-meta,
+.tamil-world .tamil-card-action,
+.tamil-world .tamil-card-meaning,
+.tamil-world .tamil-transliteration {
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.tamil-world .tamil-grid-sentence .tamil-learning-card h3 {
+  font-size: clamp(23px, 2vw, 30px);
+  line-height: 1.65;
+}
+
+.tamil-world .tamil-practice-toolbar {
+  margin-bottom: 16px;
+}
+
+.tamil-world .tamil-practice-toolbar > span,
+.tamil-world .tamil-practice-toolbar .tamil-text-button {
+  font-size: 14px !important;
+}
+
+.tamil-world .tamil-practice-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: clamp(14px, 1.6vw, 24px);
+}
+
+.tamil-world .tamil-practice-grid > .tamil-example,
+.tamil-world .tamil-practice-grid > .tamil-recording-stage,
+.tamil-world .tamil-study-actions,
+.tamil-world .tamil-pippin-card {
+  min-width: 0;
+  padding: clamp(20px, 1.7vw, 26px);
+  border: 1px solid rgba(185, 199, 174, .72);
+  border-radius: 28px;
+  background: rgba(255, 253, 248, .84);
+  box-shadow: 0 12px 40px rgba(20, 60, 49, .07);
+}
+
+.tamil-world .tamil-practice-grid > .tamil-example,
+.tamil-world .tamil-practice-grid > .tamil-recording-stage,
+.tamil-world .tamil-study-actions,
+.tamil-world .tamil-pippin-card {
+  box-sizing: border-box;
+  min-height: min(680px, calc(100vh - 160px));
+}
+
+.tamil-world .tamil-study-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tamil-world .tamil-study-actions .tamil-quiz-launch {
+  margin: 0;
+}
+
+.tamil-world .tamil-example h1 {
+  font-size: clamp(44px, 4vw, 64px);
+  line-height: 1.5;
+}
+
+.tamil-world .tamil-example h1.tamil-prompt-sentence {
+  font-size: clamp(25px, 2.3vw, 36px);
+  line-height: 1.72;
+}
+
+.tamil-world .tamil-example .tamil-instruction {
+  font-size: clamp(13px, 1.05vw, 16px);
+  line-height: 1.8;
+}
+
+.tamil-world .tamil-example > .tamil-muted,
+.tamil-world .tamil-example-meaning {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.tamil-world .tamil-example-source,
+.tamil-world .tamil-example-source small,
+.tamil-world .tamil-recording-privacy,
+.tamil-world .tamil-record-instruction {
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.tamil-world .tamil-pippin {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(18px, 2vw, 28px);
+  max-width: none;
+  margin: 0;
+  padding: 8px 0 0;
+  background: transparent;
+  text-align: center;
+}
+
+.tamil-world .tamil-pippin .pippin-story-scene[data-compact="true"] {
+  width: min(100%, 300px);
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.tamil-world .tamil-pippin .pippin-story-scene svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.tamil-world .tamil-pippin-copy {
+  max-width: 34ch;
+}
+
+.tamil-world .tamil-pippin-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #517357;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.tamil-world .tamil-pippin p {
+  margin: 0 0 7px;
+  font-size: clamp(17px, 1.45vw, 22px);
+  line-height: 1.75;
+  color: var(--tamil-ink);
+}
+
+.tamil-world .tamil-pippin small {
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.tamil-world .tamil-pippin-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.tamil-world .tamil-pippin-card > .tamil-overline,
+.tamil-world .tamil-recording-stage > .tamil-overline,
+.tamil-world .tamil-study-actions > .tamil-overline {
+  align-self: stretch;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+@media (min-width: 1101px) {
+  .tamil-world .tamil-example > .tamil-letter-scene.is-large,
+  .tamil-world .tamil-example > .tamil-lesson-picture.is-large {
+    width: min(100%, 210px);
+    max-height: 170px;
+  }
+
+  .tamil-world .tamil-pronunciation-aid {
+    margin: 8px 0 14px;
+  }
+
+  .tamil-world .tamil-instruction {
+    margin: 10px 0 5px;
+  }
+
+  .tamil-world .tamil-example-audio {
+    margin-top: 14px;
+  }
+
+  .tamil-world .tamil-study-note {
+    margin-top: 16px;
+  }
+
+  .tamil-world .tamil-record-orbit {
+    width: 285px;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="vowel"] .tamil-example > .tamil-letter-scene.is-large,
+  .tamil-world .tamil-practice-page[data-kind="vowel"] .tamil-example > .tamil-lesson-picture.is-large {
+    width: min(100%, 175px);
+    max-height: 142px;
+    margin-bottom: 5px;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="vowel"] .tamil-example h1.tamil-prompt-vowel {
+    margin: 0 0 2px;
+    font-size: 72px;
+    line-height: 1.25;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="vowel"] .tamil-pronunciation-aid {
+    margin: 0 0 6px;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="vowel"] .tamil-pronunciation-aid summary {
+    min-height: 34px;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="vowel"] .tamil-example-meaning,
+  .tamil-world .tamil-practice-page[data-kind="vowel"] .tamil-grammar-label {
+    margin: 4px 0 8px;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="vowel"] .tamil-duration-rule {
+    margin: 0 0 8px;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="vowel"] .tamil-duration-rule span {
+    padding: 6px 9px;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="vowel"] .tamil-instruction {
+    margin: 5px 0 2px;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="vowel"] .tamil-example-audio {
+    margin-top: 8px;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="vowel"] .tamil-example-source {
+    margin: 6px 0 0;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="uyirmei"] .tamil-example > .tamil-letter-scene.is-large,
+  .tamil-world .tamil-practice-page[data-kind="uyirmei"] .tamil-example > .tamil-lesson-picture.is-large {
+    width: min(100%, 175px);
+    max-height: 142px;
+    margin-bottom: 5px;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="uyirmei"] .tamil-example h1 {
+    margin: 0 0 2px;
+    font-size: 54px;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="uyirmei"] .tamil-letter-equation {
+    gap: 10px;
+    margin: 6px 0 10px;
+    padding: 8px 12px;
+  }
+
+  .tamil-world .tamil-practice-page[data-kind="uyirmei"] .tamil-letter-equation span,
+  .tamil-world .tamil-practice-page[data-kind="uyirmei"] .tamil-letter-equation strong {
+    font-size: 25px;
+  }
+}
+
+.tamil-world .tamil-follow-up {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(18px, 2.5vw, 32px);
+  margin-top: 28px;
+}
+
+.tamil-world .tamil-follow-up:has(> .tamil-quiz-launch:only-child) {
+  grid-template-columns: 1fr;
+}
+
+.tamil-world .tamil-follow-up > .tamil-quiz-launch,
+.tamil-world .tamil-follow-up > .tamil-transcript-practice {
+  margin: 0;
+  padding: clamp(24px, 2.8vw, 36px);
+  border: 1px solid var(--tamil-line);
+  border-radius: 24px;
+  background: rgba(255, 253, 248, .86);
+}
+
+.tamil-world .tamil-follow-up > .tamil-transcript-practice {
+  border-top: 1px solid var(--tamil-line);
+}
+
+.tamil-world .tamil-quiz-launch h2 {
+  font-size: clamp(22px, 2vw, 27px);
+}
+
+.tamil-world .tamil-quiz-launch p:not(.tamil-overline) {
+  font-size: 14px;
+}
+
+@media (max-width: 1100px) {
+  .tamil-world .tamil-practice-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tamil-world .tamil-practice-grid > .tamil-example,
+  .tamil-world .tamil-practice-grid > .tamil-recording-stage,
+  .tamil-world .tamil-study-actions,
+  .tamil-world .tamil-pippin-card {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .tamil-world .tamil-learning-intro {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .tamil-world .tamil-learning-pippin {
+    width: 160px;
+    justify-self: center;
+  }
+
+  .tamil-world .tamil-grid-vowel,
+  .tamil-world .tamil-grid-consonant,
+  .tamil-world .tamil-grid-aytham,
+  .tamil-world .tamil-grid-uyirmei,
+  .tamil-world .tamil-grid-word {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .tamil-world .tamil-grid-sentence,
+  .tamil-world .tamil-follow-up {
+    grid-template-columns: 1fr;
+  }
+
+  .tamil-world .tamil-learning-card {
+    min-height: 190px;
+    padding: 16px;
+  }
+
+  .tamil-world .tamil-practice-grid > .tamil-example,
+  .tamil-world .tamil-practice-grid > .tamil-recording-stage,
+  .tamil-world .tamil-study-actions,
+  .tamil-world .tamil-pippin-card {
+    padding: 22px;
+    border-radius: 22px;
+  }
+
+  .tamil-world .tamil-pippin {
+    display: grid;
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 16px;
+    padding: 4px 0 18px;
+  }
+
+  .tamil-world .tamil-pippin p {
+    font-size: 17px;
+  }
+
+  .tamil-world .tamil-pippin small {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .tamil-world .tamil-pippin {
+    grid-template-columns: 108px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .tamil-world .tamil-pippin-label {
+    font-size: 9px;
+  }
+
+  .tamil-world .tamil-pippin p {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,41 @@
+import { afterEach, describe, expect, it, vi } from 'vitest'
+import { createSlideshowClock, HOME_SLIDE_INTERVAL } from './slideshowClock'
+
+afterEach(() => vi.useRealTimers())
+describe('home slideshow reading time', () => {
+  it('waits a complete interval and advances only once until the next slide schedules it', () => {
+    vi.useFakeTimers()
+    const next = vi.fn(), clock = createSlideshowClock(next)
+    clock.update(true)
+    vi.advanceTimersByTime(HOME_SLIDE_INTERVAL - 1)
+    expect(next).not.toHaveBeenCalled()
+    vi.advanceTimersByTime(1)
+    expect(next).toHaveBeenCalledTimes(1)
+    vi.advanceTimersByTime(HOME_SLIDE_INTERVAL * 3)
+    expect(next).toHaveBeenCalledTimes(1)
+  })
+  it('pauses without advancing and grants a full interval after resuming', () => {
+    vi.useFakeTimers()
+    const next = vi.fn(), clock = createSlideshowClock(next)
+    clock.update(true)
+    vi.advanceTimersByTime(7000)
+    clock.update(false)
+    vi.advanceTimersByTime(30000)
+    expect(next).not.toHaveBeenCalled()
+    clock.update(true)
+    vi.advanceTimersByTime(7999)
+    expect(next).not.toHaveBeenCalled()
+    vi.advanceTimersByTime(1)
+    expect(next).toHaveBeenCalledTimes(1)
+  })
+  it('cancels replaced timers and releases the timer on unmount', () => {
+    vi.useFakeTimers()
+    const next = vi.fn(), clock = createSlideshowClock(next)
+    clock.update(true); clock.update(true)
+    expect(vi.getTimerCount()).toBe(1)
+    clock.dispose()
+    expect(vi.getTimerCount()).toBe(0)
+    vi.advanceTimersByTime(30000)
+    expect(next).not.toHaveBeenCalled()
+  })
+})

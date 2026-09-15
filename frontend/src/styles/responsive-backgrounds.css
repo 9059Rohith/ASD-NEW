@@ -1,0 +1,103 @@
+/* Keep the artwork's aspect ratio at every window size. The pale overlay
+   protects lesson text, while the original flowers remain visible at edges. */
+.voice-world:not(.voice-home):not(.voice-auth) #voice-main,
+.care-world main {
+  background-color: #f8f5ec;
+  background-image:
+    linear-gradient(180deg, rgba(248, 245, 236, .3), rgba(248, 245, 236, .78) 75%, #f8f5ec),
+    url('/assets/backgrounds/ivory-floral-content.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%, min(100%, 1672px) auto;
+}
+
+/* Use the same garden throughout; increase the wash behind recording controls. */
+.voice-world:not(.voice-home):not(.voice-auth).voice-practice-page #voice-main,
+.voice-world:not(.voice-home):not(.voice-auth).tamil-world:has(.tamil-practice-page) #voice-main {
+  background-image:
+    linear-gradient(180deg, rgba(248, 245, 236, .62), rgba(248, 245, 236, .9) 78%, #f8f5ec),
+    url('/assets/backgrounds/ivory-floral-content.png');
+}
+
+/* Tamil lessons keep one garden scene in the viewport while content scrolls. */
+.voice-world.tamil-world {
+  position: relative;
+  isolation: isolate;
+}
+
+.voice-world.tamil-world::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: #f8f5ec;
+  background-image:
+    linear-gradient(180deg, rgba(248, 245, 236, .68), rgba(248, 245, 236, .84)),
+    url('/assets/backgrounds/ivory-floral-content.png');
+  background-position: center, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.voice-world.tamil-world:has(.tamil-practice-page)::before {
+  background-image:
+    linear-gradient(180deg, rgba(248, 245, 236, .66), rgba(248, 245, 236, .82)),
+    url('/assets/backgrounds/ivory-floral-content.png');
+}
+
+.voice-world:not(.voice-home):not(.voice-auth).tamil-world #voice-main,
+.voice-world:not(.voice-home):not(.voice-auth).tamil-world:has(.tamil-practice-page) #voice-main {
+  background: transparent;
+}
+
+/* Keep butterflies present on Tamil lessons while protecting reading contrast. */
+body:has(.voice-world.tamil-world) .app-butterfly-garden {
+  opacity: .24;
+}
+
+.voice-auth .voice-auth-art {
+  background-color: #e8edd8;
+  background-image:
+    linear-gradient(rgba(232, 237, 216, .55), rgba(232, 237, 216, .72)),
+    url('/assets/backgrounds/ivory-floral-content.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.dark .care-world main {
+  background-color: #141f1a;
+  background-image:
+    linear-gradient(180deg, rgba(20, 31, 26, .91), rgba(20, 31, 26, .97)),
+    url('/assets/backgrounds/ivory-floral-content.png');
+}
+
+@media (max-width: 700px) {
+  .voice-world:not(.voice-home):not(.voice-auth) #voice-main,
+  .care-world main {
+    /* A bounded image height retains visible flowers without stretching
+       a 16:9 asset across a tall, narrow lesson page. */
+    background-size: 100% 100%, auto 540px;
+  }
+
+  .voice-auth {
+    background-image:
+      linear-gradient(rgba(248, 245, 236, .88), rgba(248, 245, 236, .96)),
+      url('/assets/backgrounds/ivory-floral-content.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%, auto 540px;
+  }
+
+  .voice-auth > div:not(.voice-auth-art) {
+    background: transparent;
+  }
+}
+
+@media (max-width: 420px) {
+  .tamil-world #voice-main h1[lang='ta'],
+  .tamil-world #voice-main h2[lang='ta'] {
+    overflow-wrap: anywhere;
+  }
+}

@@ -1,0 +1,80 @@
+.interactive-bunny {
+  --bunny-ease: cubic-bezier(.4, 0, .2, 1);
+  position: relative;
+  width: min(100%, 430px);
+  min-height: 240px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  isolation: isolate;
+}
+
+.interactive-bunny__float {
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 92%;
+  animation: bunny-breathe 3.8s var(--bunny-ease) infinite;
+}
+
+.interactive-bunny svg { width: 100%; height: 100%; overflow: visible; }
+.bunny-body, .bunny-head { transform-origin: center; }
+.bunny-ear, .bunny-arm, .bunny-eyelid, .bunny-mouth { transform-box: fill-box; }
+.bunny-ear--left { transform-origin: 70% 100%; animation: bunny-ear-left 4.6s var(--bunny-ease) infinite; }
+.bunny-ear--right { transform-origin: 30% 100%; animation: bunny-ear-right 4.6s var(--bunny-ease) infinite; }
+.bunny-arm--left { transform-origin: 70% 25%; animation: bunny-hand-left 3.6s var(--bunny-ease) infinite; }
+.bunny-arm--right { transform-origin: 30% 25%; animation: bunny-wave 3.6s var(--bunny-ease) infinite; }
+.bunny-eyelid { transform-origin: center bottom; transform: scaleY(0); animation: bunny-blink 5.2s ease-in-out infinite; }
+.bunny-eye--right .bunny-eyelid { animation-delay: .04s; }
+.bunny-mouth { transform-origin: center; transform: scaleY(calc(1 + var(--bunny-audio) * .65)); }
+.bunny-ground { transform-origin: center; animation: bunny-shadow-pulse 3.8s var(--bunny-ease) infinite; }
+.bunny-flower { animation: bunny-flower-sway 4.6s var(--bunny-ease) infinite; transform-origin: center; transform-box: fill-box; }
+
+.interactive-bunny__bubble {
+  position: absolute;
+  z-index: 2;
+  top: 4%;
+  left: -7%;
+  max-width: 205px;
+  padding: .85rem 1rem;
+  border: 1px solid rgba(255,255,255,.7);
+  border-radius: 20px 20px 20px 6px;
+  background: rgba(255,255,255,.94);
+  color: #244238;
+  box-shadow: 0 14px 38px rgba(13,47,35,.2);
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.35;
+  backdrop-filter: blur(12px);
+  animation: bunny-bubble-in .6s cubic-bezier(.2,.8,.2,1) both;
+}
+
+.interactive-bunny--listen .bunny-ear--right,
+.interactive-bunny--thinking .bunny-ear--right { transform: rotate(8deg); }
+.interactive-bunny--thinking .bunny-head { transform: rotate(-3deg); }
+.interactive-bunny--celebrate .bunny-arm--left { animation-name: bunny-wave-left; animation-duration: 1.25s; }
+.interactive-bunny--celebrate .bunny-arm--right { animation-duration: 1.25s; }
+.interactive-bunny:hover .bunny-arm--right { animation-duration: 1.15s; }
+
+@keyframes bunny-breathe { 0%,100% { transform: translateY(2px) rotate(-.3deg); } 50% { transform: translateY(-8px) rotate(.5deg); } }
+@keyframes bunny-shadow-pulse { 0%,100% { transform: scaleX(1); opacity: .18; } 50% { transform: scaleX(.9); opacity: .12; } }
+@keyframes bunny-ear-left { 0%,65%,100% { transform: rotate(0); } 72% { transform: rotate(-5deg); } 80% { transform: rotate(2deg); } }
+@keyframes bunny-ear-right { 0%,62%,100% { transform: rotate(0); } 70% { transform: rotate(6deg); } 80% { transform: rotate(-2deg); } }
+@keyframes bunny-hand-left { 0%,100% { transform: rotate(0); } 50% { transform: rotate(-3deg); } }
+@keyframes bunny-wave { 0%,42%,100% { transform: rotate(0); } 52% { transform: translate(5px,-8px) rotate(-20deg); } 62% { transform: translate(5px,-8px) rotate(15deg); } 72% { transform: translate(3px,-5px) rotate(-12deg); } 82% { transform: rotate(0); } }
+@keyframes bunny-wave-left { 0%,100% { transform: rotate(0); } 35% { transform: translate(-4px,-8px) rotate(18deg); } 70% { transform: translate(-3px,-5px) rotate(-12deg); } }
+@keyframes bunny-blink { 0%,43%,47%,78%,82%,100% { transform: scaleY(0); } 44.5%,45.5%,79.5%,80.5% { transform: scaleY(1.18); } }
+@keyframes bunny-flower-sway { 0%,100% { transform: rotate(-3deg); } 50% { transform: rotate(4deg); } }
+@keyframes bunny-bubble-in { from { opacity: 0; transform: translate(10px,8px) scale(.94); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 1200px) {
+  .interactive-bunny__bubble { left: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .interactive-bunny *, .interactive-bunny *::before, .interactive-bunny *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .interactive-bunny__float, .bunny-ear, .bunny-arm, .bunny-eyelid, .bunny-ground, .bunny-flower { transform: none; }
+  .bunny-eyelid { transform: scaleY(0); }
+}

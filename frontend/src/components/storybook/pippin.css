@@ -1,0 +1,29 @@
+.pippin-story-scene{overflow:hidden;border:4px solid #fff;border-radius:38px;background:#fff4e7;box-shadow:0 20px 50px rgba(103,70,60,.16)}
+.pippin-story-scene svg{display:block;width:100%;height:auto}
+.pippin-story-scene[data-transparent="true"]{overflow:visible;border:0;border-radius:0;background:transparent;box-shadow:none}
+.pippin-story-scene[data-compact="true"]{width:clamp(84px,11vw,150px);flex:0 0 auto;border-width:0;border-radius:32% 32% 24% 24%;box-shadow:none;background:transparent}
+.pippin-character,.pippin-head,.pippin-body,.pippin-tail,.pippin-ears,.pippin-paws{transform-box:fill-box}
+.pippin-character{transform-origin:center bottom}
+.pippin-body{transform-origin:center bottom;animation:pippin-breathe 3.8s ease-in-out infinite alternate}
+.pippin-body[data-state="listening"]{animation-duration:4.8s}.pippin-body[data-state="thinking"]{animation:pippin-think 1.6s ease-in-out infinite alternate}
+.pippin-body[data-state="celebrating"]{animation:pippin-celebrate .62s ease-in-out 3}.pippin-body[data-state="encouraging"]{animation-duration:5.4s}
+.pippin-body[data-state="talking"],.pippin-body[data-state="singing"],.pippin-body[data-state="teaching"]{animation:pippin-talk-body .55s ease-in-out infinite alternate}
+.pippin-head{transform-origin:center}.pippin-tail{transform-origin:22% 78%;animation:pippin-tail 2.1s ease-in-out infinite alternate}.pippin-tail[data-state="slow"]{animation-duration:3.8s}.pippin-tail[data-state="happy"]{animation-duration:.85s}.pippin-tail[data-state="fast"]{animation-duration:.48s}
+.pippin-ears{transform-origin:center bottom;transition:transform .35s ease}.pippin-ears[data-state="forward"]{transform:translateY(-2px) scaleY(1.04)}.pippin-ears[data-state="perked"]{animation:pippin-ear .72s ease-in-out infinite alternate}.pippin-ears[data-state="soft"]{transform:translateY(4px) scaleY(.94)}
+.pippin-story-scene .pippin-eyes{animation:none}.pippin-open-eyes{transform-box:fill-box;transform-origin:center;transition:transform 70ms ease,opacity 70ms ease}.pippin-closed-eyes{opacity:0;transition:opacity 70ms ease}.pippin-eyes[data-blink="closed"] .pippin-open-eyes{transform:scaleY(.04);opacity:0}.pippin-eyes[data-blink="closed"] .pippin-closed-eyes{opacity:1}
+.pippin-talk-mouth{opacity:0;transform-box:fill-box;transform-origin:center}.pippin-mouth[data-state="speaking"] .pippin-smile{opacity:0}.pippin-mouth[data-state="speaking"] .pippin-talk-mouth{opacity:1;animation:pippin-mouth .24s ease-in-out infinite alternate}.pippin-mouth[data-state="wide-smile"] .pippin-smile{transform:scale(1.12) translateY(-2px);transform-box:fill-box;transform-origin:center}
+.pippin-cheeks{transition:opacity .25s ease}.pippin-cheeks[data-state="focused"],.pippin-cheeks[data-state="curious"]{opacity:.42}.pippin-cheeks[data-state="wide-smile"],.pippin-cheeks[data-state="soft-smile"]{opacity:1}
+.pippin-paws{transform-origin:center bottom}.pippin-paws[data-state="bounce"]{animation:pippin-paws .5s ease-in-out infinite alternate}.pippin-paws[data-state="dance"]{animation:pippin-paws-dance .34s ease-in-out infinite alternate}
+.pippin-stars,.pippin-notes{opacity:0}.pippin-stars{fill:none;stroke:#e66f7d;stroke-width:8;stroke-linecap:round}.pippin-stars[data-active="true"],.pippin-notes[data-active="true"]{opacity:1;animation:pippin-spark .75s ease-in-out infinite alternate}
+svg[data-mood="listening"] .pippin-character{animation:pippin-listen-head 1.35s ease-in-out infinite alternate}svg[data-mood="success"] .pippin-character,svg[data-mood="dance"] .pippin-character{animation:pippin-celebrate .62s ease-in-out 3}
+@keyframes pippin-breathe{to{transform:scaleY(1.018) translateY(-2px)}}@keyframes pippin-tail{to{transform:rotate(8deg)}}@keyframes pippin-think{to{transform:translateY(-2px) rotate(1deg)}}@keyframes pippin-talk-body{to{transform:scaleY(1.012) translateY(-3px)}}@keyframes pippin-mouth{to{transform:scaleY(1.75) scaleX(.85)}}@keyframes pippin-ear{to{transform:translateY(-4px) scaleY(1.06) rotate(1.5deg)}}@keyframes pippin-paws{to{transform:translateY(-4px)}}@keyframes pippin-paws-dance{from{transform:rotate(-2deg)}to{transform:rotate(2deg) translateY(-7px)}}@keyframes pippin-spark{to{opacity:.35;transform:scale(1.08) translateY(-8px)}}@keyframes pippin-listen-head{to{transform:rotate(1.5deg) translateY(-3px)}}@keyframes pippin-celebrate{0%,100%{transform:translateY(0) rotate(0)}45%{transform:translateY(-13px) rotate(2deg)}}
+@media(prefers-reduced-motion:reduce){.pippin-story-scene *{animation:none!important;transition:none!important}}
+.pippin-story-scene[data-motion="minimal"] *{animation:none!important;transition:none!important}
+.pippin-story-scene[data-animation-paused="true"] *{animation-play-state:paused!important}
+.pippin-story-scene .pippin-eyelids{animation:none!important}
+.pippin-story-scene[data-motion="reduced"] .pippin-character,.pippin-story-scene[data-motion="reduced"] .pippin-paws,.pippin-story-scene[data-motion="reduced"] .pippin-ears{animation:none!important}
+.vowel-pippin .pippin-story-scene[data-compact="true"]{width:100%;max-width:320px}
+.tamil-pippin .pippin-story-scene[data-compact="true"]{width:105px;height:140px}
+@media(min-width:1450px){.vowel-pippin .pippin-story-scene[data-compact="true"]{max-width:350px}}
+@media(max-width:1100px){.vowel-pippin .pippin-story-scene[data-compact="true"]{width:125px;height:145px}}
+@media(max-width:700px){.vowel-pippin .pippin-story-scene[data-compact="true"]{width:85px;height:110px}.tamil-pippin .pippin-story-scene[data-compact="true"]{width:78px;height:105px}}
