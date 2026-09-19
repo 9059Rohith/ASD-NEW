@@ -9,7 +9,7 @@ The core product is technically strong, but the public submission is not fully r
 | Area | Current status | Evidence / next action |
 |---|---|---|
 | Public Vercel frontend | Verified working | `https://speakeasy-asd.vercel.app/` returned HTTP 200 on 2026-09-19. |
-| Public Render API | Not verified working | The documented Render hostname still returns HTTP 404 for `/`, `/health/live`, and `/health/ready`. |
+| Public Render API | Not verified working | The documented Render hostname returns Render `502 Bad Gateway` / `x-render-routing: no-deploy`, meaning the service exists but has no successful deployment yet. |
 | Production E2E | Not proven | Blocked until the public backend health route responds. Run the speech-analysis workflow after Render is fixed. |
 | License | Repo-side notice added | Root `LICENSE` is present as all-rights-reserved. Replace it only if the team chooses an open-source license. |
 | Imported/reference projects | Present and documented | They are excluded from the final runtime scope in `REFERENCE_PROJECTS.md`; removal should be a dedicated cleanup decision. |
@@ -19,12 +19,12 @@ The core product is technically strong, but the public submission is not fully r
 
 ### Public Backend Health
 
-The configured Render hostname currently returns 404:
+The configured Render hostname currently returns Render `502 Bad Gateway` with `x-render-routing: no-deploy`:
 
 ```text
-https://speakeasy-asd-api.onrender.com/
-https://speakeasy-asd-api.onrender.com/health/live
-https://speakeasy-asd-api.onrender.com/health/ready
+https://asd-new-1.onrender.com/
+https://asd-new-1.onrender.com/health/live
+https://asd-new-1.onrender.com/health/ready
 ```
 
 Expected:
@@ -41,7 +41,7 @@ or, for readiness:
 
 This likely requires Render dashboard access. Confirm that:
 
-- The Render service exists and is named/hosted at `speakeasy-asd-api.onrender.com`.
+- The Render service exists and is named/hosted at `asd-new-1.onrender.com`.
 - The service is linked to this repository and branch.
 - The service uses `render.yaml` or the equivalent Docker settings.
 - Required environment variables are set: `MONGODB_URL`, `CORS_ORIGINS`, `ADMIN_EMAIL`, `ADMIN_PASSWORD`, and generated/secure `JWT_SECRET_KEY`.

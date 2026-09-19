@@ -15,12 +15,12 @@ The Docker image also copies the vowel and diphthong classifier artifacts from `
 1. Create a MongoDB Atlas database and allow the Render outbound network access.
 2. Create a Cloudinary account for durable audio/avatar uploads.
 3. In Render, create a Blueprint from this repository. The Blueprint creates
-   `speakeasy-asd-api` and its `/health/live` health check.
+   `asd-new-1` and its `/health/live` health check.
 4. Set `CORS_ORIGINS` to the exact Vercel production origin, for example
    `https://speakeasy-asd.vercel.app` (comma-separate additional preview origins
    only when needed).
 5. Fill the synced MongoDB, admin, and Cloudinary secrets. Do not commit them.
-6. Confirm `https://speakeasy-asd-api.onrender.com/health/ready` returns
+6. Confirm `https://asd-new-1.onrender.com/health/ready` returns
    `{"status":"ready","database":"ok"}`.
 
 Production startup now fails fast if the database is local, the admin address is
@@ -41,7 +41,7 @@ has not been provisioned yet, not that the API health route is ready.
    browser security headers.
 
 The checked-in rewrite targets the Blueprint service name
-`speakeasy-asd-api.onrender.com`. If Render assigns a different hostname, update
+`asd-new-1.onrender.com`. If Render assigns a different hostname, update
 both `frontend/vercel.json` and the Android release `backendUrl`, then redeploy.
 A `404` from the documented Vercel hostname means that the Vercel project has
 not been imported or assigned that domain yet.
@@ -54,14 +54,14 @@ cd SpeakEasyAndroid
 ```
 
 Release builds reject non-HTTPS backend URLs. Use
-`-PbackendUrl=https://speakeasy-asd-api.onrender.com/` when testing a different
+`-PbackendUrl=https://asd-new-1.onrender.com/` when testing a different
 Render service. Sign the resulting release APK/AAB in the distribution system;
 signing keys are intentionally not stored in this repository.
 
 ## Smoke test
 
 ```powershell
-./scripts/smoke-test.ps1 -WebUrl https://speakeasy-asd.vercel.app -ApiUrl https://speakeasy-asd-api.onrender.com
+./scripts/smoke-test.ps1 -WebUrl https://speakeasy-asd.vercel.app -ApiUrl https://asd-new-1.onrender.com
 ```
 
 ## Tamil learning and caregiver reports

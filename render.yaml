@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: speakeasy-asd-api
+    name: asd-new-1
     runtime: docker
     branch: main
     dockerfilePath: ./backend/Dockerfile
@@ -26,7 +26,7 @@ services:
       - key: WEB_CONCURRENCY
         value: "1"
       - key: TRUSTED_HOSTS
-        value: speakeasy-asd-api.onrender.com
+        value: asd-new-1.onrender.com
       - key: CORS_ORIGINS
         sync: false
       - key: MONGODB_URL

@@ -29,7 +29,7 @@ android {
         }
         release {
             val backendUrl = (project.findProperty("backendUrl") as String?)
-                ?: "https://speakeasy-asd-api.onrender.com/"
+                ?: "https://asd-new-1.onrender.com/"
             require(backendUrl.startsWith("https://")) { "Release backendUrl must use HTTPS" }
             buildConfigField("String", "BASE_URL", "\"$backendUrl\"")
             isMinifyEnabled = true

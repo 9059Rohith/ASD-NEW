@@ -61,7 +61,7 @@ SpeakEasy ASD is a final-year engineering project from **Team 96, Amrita Vishwa 
 
 [**Try the deployed frontend**](https://speakeasy-asd.vercel.app/)
 
-Verification note: the Vercel frontend responded successfully on **2026-09-19**. The configured Render API hostname (`speakeasy-asd-api.onrender.com`) returned `404` for public health routes during the same check, so backend-dependent live workflows may require the Render service to be reviewed or run locally.
+Verification note: the Vercel frontend responded successfully on **2026-09-19**. The configured Render API hostname is now `asd-new-1.onrender.com`; during the latest check it returned Render `502 Bad Gateway` with `x-render-routing: no-deploy`, so the Render service exists but does not yet have a successful backend deployment.
 
 For the current deployment blocker and final submit checklist, see [Submission Readiness](docs/SUBMISSION_READINESS.md).
 
@@ -405,7 +405,7 @@ Frontend variables are documented in [frontend/.env.example](frontend/.env.examp
 - Hosted target: Render Docker web service
 - Config: [render.yaml](render.yaml)
 - Health path in config: `/health/live`
-- Public verification on **2026-09-19**: `https://speakeasy-asd-api.onrender.com/health/live` returned `404`.
+- Public verification on **2026-09-19**: `https://asd-new-1.onrender.com/health/live` returned Render `502 Bad Gateway` with `x-render-routing: no-deploy`.
 
 Because the frontend is live but the public backend health route was not reachable during verification, evaluators should use the local setup for backend-dependent scoring if the hosted API is still unavailable.
 
@@ -421,7 +421,7 @@ Latest local verification on **2026-09-19**:
 | Frontend production build | `npm run build` passed with Vite chunk-size warnings only. |
 | Live frontend link | `https://speakeasy-asd.vercel.app/` returned HTTP 200. |
 | Demo video link | Google Drive demo URL returned HTTP 200. |
-| Public backend health | Not verified: Render URL returned 404 during verification. |
+| Public backend health | Not verified: Render URL returned `502 Bad Gateway` / `x-render-routing: no-deploy` during verification. |
 | Production E2E | Not proven: blocked until public backend health is restored. |
 
 ## Security & Privacy
