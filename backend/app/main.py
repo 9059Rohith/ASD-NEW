@@ -72,8 +72,18 @@ app = FastAPI(
     lifespan=lifespan
 )
 
+
+def _trusted_hosts_for_runtime() -> list[str]:
+    """Allow Render's public hostname and internal probes through TrustedHost."""
+    hosts = settings.trusted_hosts or ["*"]
+    render_host = os.getenv("RENDER_EXTERNAL_HOSTNAME", "").strip()
+    render_hosts = [render_host] if render_host else []
+    internal_probe_hosts = ["localhost", "127.0.0.1"]
+    return list(dict.fromkeys([*hosts, *render_hosts, *internal_probe_hosts]))
+
+
 app.add_middleware(SecurityHeadersMiddleware)
-app.add_middleware(TrustedHostMiddleware, allowed_hosts=settings.trusted_hosts or ["*"])
+app.add_middleware(TrustedHostMiddleware, allowed_hosts=_trusted_hosts_for_runtime())
 
 # CORS middleware
 app.add_middleware(
