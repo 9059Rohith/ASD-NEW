@@ -41,3 +41,5 @@ Before a final hackathon or portfolio submission, either:
 2. Move/remove unused references in a dedicated cleanup branch after confirming licensing and provenance.
 
 Do not present reference/imported projects as original runtime code for SpeakEasy ASD.
+
+For a strict final-submission repository, option 2 is cleaner, but it should be done as an explicit cleanup commit because more than 5,000 tracked files are involved and the backend currently exposes `LiveTalk-Unity` as avatar-coach metadata. If those folders are removed, update that metadata and re-run the backend/frontend tests before submission.

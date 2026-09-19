@@ -334,7 +334,7 @@ Progress aggregates update and the learner receives gentle feedback
 
 The current product runtime is centered on `frontend/`, `backend/`, `SpeakEasyAndroid/`, `docs/`, and `scripts/`.
 
-Reference/imported projects such as `Talky-full-app-main/`, `TalkingPet/`, `aacesstalk-monorepo-main/`, `cboard-master/`, `LiveTalk-Unity/`, and `gandeeva/` are present in the repository, but they are not required to run the primary browser application. Their current role and submodule status are documented in [Reference And Imported Project Scope](docs/REFERENCE_PROJECTS.md).
+Reference/imported projects such as `Talky-full-app-main/`, `TalkingPet/`, `aacesstalk-monorepo-main/`, `cboard-master/`, `LiveTalk-Unity/`, and `gandeeva/` are present in the repository, but they are not required to run the primary browser application. Their current role, submodule status, and submission cleanup guidance are documented in [Reference And Imported Project Scope](docs/REFERENCE_PROJECTS.md).
 
 ## Run Locally
 
@@ -421,7 +421,8 @@ Latest local verification on **2026-09-19**:
 | Frontend production build | `npm run build` passed with Vite chunk-size warnings only. |
 | Live frontend link | `https://speakeasy-asd.vercel.app/` returned HTTP 200. |
 | Demo video link | Google Drive demo URL returned HTTP 200. |
-| Public backend health | Render URL returned 404 during verification. |
+| Public backend health | Not verified: Render URL returned 404 during verification. |
+| Production E2E | Not proven: blocked until public backend health is restored. |
 
 ## Security & Privacy
 
@@ -445,7 +446,7 @@ Implemented security/privacy mechanisms visible in the codebase:
 - Duration scoring estimates voiced vowel duration and cannot prove every articulation detail of a held sound.
 - Optional services such as Cloudinary, SMTP, WhatsApp, Azure Speech, IndicConformer, and OpenAI transcription require server-side credentials and configuration.
 - Some repository folders are reference/imported projects and are not part of the primary browser runtime.
-- No root `LICENSE` file is present.
+- A root `LICENSE` notice is present as all-rights-reserved. Replace it with a team-approved open-source license only if public reuse is intended.
 
 ## Roadmap
 
@@ -454,8 +455,9 @@ Implemented security/privacy mechanisms visible in the codebase:
 - [x] Local vowel, diphthong, and phoneme-analysis services
 - [x] Vercel frontend deployment
 - [x] Render backend deployment configuration
+- [x] Add root ownership/license notice
 - [ ] Restore/verify public backend health endpoint on Render
-- [ ] Add a root open-source license file if the team intends public reuse
+- [ ] Replace the all-rights-reserved notice with a root open-source license if the team intends public reuse
 - [ ] Add deployment status monitoring and README badge once the hosted backend is stable
 - [ ] Expand validated Tamil word/sentence acoustic benchmarks
 - [ ] Document production operations runbook for model artifacts and environment setup
@@ -498,4 +500,4 @@ Implemented security/privacy mechanisms visible in the codebase:
 
 ## License
 
-No root license file is currently present in this repository. Until a license is added by the project owners, reuse rights are not granted beyond normal GitHub viewing/forking behavior.
+This repository currently uses a root [all-rights-reserved notice](LICENSE). It is available for academic review and demonstration, but reuse rights are not granted unless the project owners replace the notice with a chosen open-source license.

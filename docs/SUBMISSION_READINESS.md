@@ -6,6 +6,15 @@ Last checked from the repository workspace on 2026-09-19.
 
 The core product is technically strong, but the public submission is not fully ready until the production backend is verified end-to-end.
 
+| Area | Current status | Evidence / next action |
+|---|---|---|
+| Public Vercel frontend | Verified working | `https://speakeasy-asd.vercel.app/` returned HTTP 200 on 2026-09-19. |
+| Public Render API | Not verified working | The documented Render hostname still returns HTTP 404 for `/`, `/health/live`, and `/health/ready`. |
+| Production E2E | Not proven | Blocked until the public backend health route responds. Run the speech-analysis workflow after Render is fixed. |
+| License | Repo-side notice added | Root `LICENSE` is present as all-rights-reserved. Replace it only if the team chooses an open-source license. |
+| Imported/reference projects | Present and documented | They are excluded from the final runtime scope in `REFERENCE_PROJECTS.md`; removal should be a dedicated cleanup decision. |
+| Submission readiness | Not 100% yet | Main blocker is the unreachable public backend, followed by production E2E evidence. |
+
 ## P0 Blocker
 
 ### Public Backend Health
@@ -60,7 +69,8 @@ Record the result in the README only after it is actually verified.
 
 - Reference/imported folders are documented in [REFERENCE_PROJECTS.md](REFERENCE_PROJECTS.md).
 - `.gitmodules` is documented and optional for the browser/API runtime.
-- No root `LICENSE` file exists yet; add one only after the owners choose a license.
+- Root `LICENSE` exists as all-rights-reserved so the repository has an explicit default ownership notice.
+- If public reuse is intended, the project owners still need to choose and commit a standard open-source license.
 - Root `SECURITY.md` documents private vulnerability reporting and secret-handling expectations.
 
 ## Final Submission Tasks
@@ -71,5 +81,6 @@ Record the result in the README only after it is actually verified.
 - [ ] Review open GitHub issues and close/label anything stale.
 - [ ] Confirm repository name/description/topics match final branding.
 - [ ] Decide whether to keep, move, or remove imported reference projects.
-- [ ] Add a license if public reuse is intended.
+- [x] Add a root license/ownership notice.
+- [ ] Replace the all-rights-reserved notice with an open-source license if public reuse is intended.
 - [ ] Update README deployment/testing status with fresh verified dates.
