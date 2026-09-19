@@ -19,6 +19,7 @@ SpeakEasy ASD is a final-year engineering project from **Team 96, Amrita Vishwa 
 [Demo Video](https://drive.google.com/file/d/197BPWe0lJUPVj7FZEGVJoeGsAxcJABX7/view?usp=sharing) ·
 [GitHub](https://github.com/9059Rohith/ASD-NEW) ·
 [Architecture](docs/CURRENT_ARCHITECTURE.md) ·
+[Submission Readiness](docs/SUBMISSION_READINESS.md) ·
 [Application Audit](docs/APPLICATION_AUDIT_2026-09-14.md)
 
 </div>
@@ -43,6 +44,7 @@ SpeakEasy ASD is a final-year engineering project from **Team 96, Amrita Vishwa 
 - [Technology Stack](#technology-stack)
 - [Technical Deep Dive](#technical-deep-dive)
 - [Project Structure](#project-structure)
+- [Repository Scope](#repository-scope)
 - [Run Locally](#run-locally)
 - [Environment Variables](#environment-variables)
 - [Deployment](#deployment)
@@ -60,6 +62,8 @@ SpeakEasy ASD is a final-year engineering project from **Team 96, Amrita Vishwa 
 [**Try the deployed frontend**](https://speakeasy-asd.vercel.app/)
 
 Verification note: the Vercel frontend responded successfully on **2026-09-19**. The configured Render API hostname (`speakeasy-asd-api.onrender.com`) returned `404` for public health routes during the same check, so backend-dependent live workflows may require the Render service to be reviewed or run locally.
+
+For the current deployment blocker and final submit checklist, see [Submission Readiness](docs/SUBMISSION_READINESS.md).
 
 ## Demo Video
 
@@ -326,7 +330,11 @@ Progress aggregates update and the learner receives gentle feedback
 └── README.md
 ```
 
-Reference/imported projects such as `Talky-full-app-main/`, `TalkingPet/`, `aacesstalk-monorepo-main/`, `cboard-master/`, `LiveTalk-Unity/`, and `gandeeva/` are present in the repository, but the current browser product is centered on `frontend/`, `backend/`, `SpeakEasyAndroid/`, and `docs/`.
+## Repository Scope
+
+The current product runtime is centered on `frontend/`, `backend/`, `SpeakEasyAndroid/`, `docs/`, and `scripts/`.
+
+Reference/imported projects such as `Talky-full-app-main/`, `TalkingPet/`, `aacesstalk-monorepo-main/`, `cboard-master/`, `LiveTalk-Unity/`, and `gandeeva/` are present in the repository, but they are not required to run the primary browser application. Their current role and submodule status are documented in [Reference And Imported Project Scope](docs/REFERENCE_PROJECTS.md).
 
 ## Run Locally
 
@@ -470,6 +478,8 @@ Implemented security/privacy mechanisms visible in the codebase:
 
 - [Current Architecture](docs/CURRENT_ARCHITECTURE.md)
 - [Application Audit](docs/APPLICATION_AUDIT_2026-09-14.md)
+- [Submission Readiness Checklist](docs/SUBMISSION_READINESS.md)
+- [Reference And Imported Project Scope](docs/REFERENCE_PROJECTS.md)
 - [Deployment Notes](docs/DEPLOYMENT.md)
 - [Tamil Learning API](docs/TAMIL_LEARNING_API.md)
 - [Tamil Language Research](docs/TAMIL_LANGUAGE_RESEARCH.md)
