@@ -183,16 +183,34 @@ async def root():
     }
 
 
+@app.head("/")
+async def root_head():
+    """Allow platform HEAD probes on the root route."""
+    return None
+
+
 @app.get("/health")
 async def health_check():
     """Backward-compatible alias for the liveness probe."""
     return {"status": "ok", "service": "speakeasy-api"}
 
 
+@app.head("/health")
+async def health_check_head():
+    """Allow platform HEAD probes on the health alias."""
+    return None
+
+
 @app.get("/health/live")
 async def health_live():
     """Cheap process liveness probe used by Render."""
     return {"status": "ok", "service": "speakeasy-api"}
+
+
+@app.head("/health/live")
+async def health_live_head():
+    """Allow platform HEAD probes on the liveness route."""
+    return None
 
 
 @app.get("/health/ready")
