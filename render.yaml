@@ -2,10 +2,12 @@ services:
   - type: web
     name: speakeasy-asd-api
     runtime: docker
+    branch: main
     dockerfilePath: ./backend/Dockerfile
     dockerContext: ./backend
     healthCheckPath: /health/live
-    autoDeploy: true
+    autoDeployTrigger: commit
+    renderSubdomainPolicy: enabled
     envVars:
       - key: APP_ENV
         value: production
