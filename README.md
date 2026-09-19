@@ -31,6 +31,7 @@ SpeakEasy ASD is a final-year engineering project from **Team 96, Amrita Vishwa 
 
 - [Live Demo](#live-demo)
 - [Demo Video](#demo-video)
+- [Final UI Demo](#final-ui-demo)
 - [Screenshots](#screenshots)
 - [Problem](#problem)
 - [Solution](#solution)
@@ -65,6 +66,22 @@ Verification note: the Vercel frontend responded successfully on **2026-09-19**.
 [![Watch the SpeakEasy ASD demo](docs/assets/banner.jpg)](https://drive.google.com/file/d/197BPWe0lJUPVj7FZEGVJoeGsAxcJABX7/view?usp=sharing)
 
 The supplied Google Drive demo link responded successfully on **2026-09-19**.
+
+## Final UI Demo
+
+These are the latest captured UI states from `images_final_ui_demo/`, including the butterfly animation layer and final Tamil learning flow.
+
+| Home Experience With Butterfly Layer | Learn Tamil Letters |
+|---|---|
+| ![Final UI home experience with butterfly animation layer](images_final_ui_demo/01_home_experience.png) | ![Final UI Learn Tamil letters](images_final_ui_demo/02_learn_tamil_letters.png) |
+
+| Tamil Words | Tamil Sentences |
+|---|---|
+| ![Final UI Tamil words section](images_final_ui_demo/03_learn_tamil_words.png) | ![Final UI Tamil sentences section](images_final_ui_demo/04_learn_tamil_sentences.png) |
+
+| Recognition Challenge | Pronunciation Score |
+|---|---|
+| ![Final UI recognition challenge correct answer](images_final_ui_demo/05_recognition_challenge_correct.png) | ![Final UI pronunciation score with Pippin and butterfly layer](images_final_ui_demo/06_pronunciation_score_97.png) |
 
 ## Screenshots
 
