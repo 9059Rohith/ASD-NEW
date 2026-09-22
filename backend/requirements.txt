@@ -9,7 +9,7 @@ python-multipart==0.0.9
 librosa==0.10.1
 torchaudio==2.2.2
 torch==2.2.2
-transformers==4.40.1
+transformers==5.17.0
 mediapipe==0.10.11
 opensmile==2.5.0
 scikit-learn==1.4.2
