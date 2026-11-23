@@ -1,3 +1,5 @@
+> **Deployment verified — 23 November 2026:** [Open VaakMitra](https://ajeya95-researchcopilot.hf.space) · [Database readiness](https://ajeya95-researchcopilot.hf.space/health/ready) · [Speech models](https://ajeya95-researchcopilot.hf.space/health/speech). The hosted application has ready Tamil ASR, acoustic phoneme, vowel and diphthong models. Child, parent and therapist synthetic demo logins, the 265-item catalog, real reference-audio processing and saved speech history pass hosted checks. This deployment uses a fresh isolated database; existing therapy records were not migrated. Free CPU hosting can sleep when idle and does not guarantee uninterrupted uptime.
+
 <div align="center">
 
 ![SpeakEasy ASD project poster](docs/assets/banner.jpg)
@@ -15,7 +17,7 @@ SpeakEasy ASD is a final-year engineering project from **Team 96, Amrita Vishwa 
 ![MongoDB](https://img.shields.io/badge/MongoDB-6%2B-47A248?logo=mongodb&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)
 
-[Live App](https://speakeasy-asd.vercel.app/) ·
+[Live App](https://ajeya95-researchcopilot.hf.space/) ·
 [Demo Video](https://drive.google.com/file/d/197BPWe0lJUPVj7FZEGVJoeGsAxcJABX7/view?usp=sharing) ·
 [GitHub](https://github.com/9059Rohith/ASD-NEW) ·
 [Architecture](docs/CURRENT_ARCHITECTURE.md) ·
@@ -59,11 +61,11 @@ SpeakEasy ASD is a final-year engineering project from **Team 96, Amrita Vishwa 
 
 ## Live Demo
 
-[**Try the deployed frontend**](https://speakeasy-asd.vercel.app/)
+[**Try the deployed frontend**](https://ajeya95-researchcopilot.hf.space/)
 
-Verification note: the Vercel frontend responded successfully on **2026-09-19**. The configured Render API hostname is now `asd-new-1.onrender.com`; during the latest check it returned Render `502 Bad Gateway` with `x-render-routing: no-deploy`, so the Render service exists but does not yet have a successful backend deployment.
+Current verification: the combined free CPU application and database readiness endpoint return HTTP 200. Runtime models are mounted read-only from a private repository at an immutable revision; the two large model checksums were verified before startup. Choose **Try the full demo** and then the Child, Parent or Therapist demo. Use fictional data in these shared demonstration accounts. The former Vercel and Render deployments are not the current live service.
 
-For the current deployment blocker and final submit checklist, see [Submission Readiness](docs/SUBMISSION_READINESS.md).
+The exact deployed web/API source is inspectable in the [hosting source tree](https://huggingface.co/spaces/Ajeya95/ResearchCopilot/tree/main/vaakmitra_release). It captures the tested local release and may differ from the GitHub default branch. Historical submission notes remain in [Submission Readiness](docs/SUBMISSION_READINESS.md).
 
 ## Demo Video
 
@@ -396,7 +398,7 @@ Frontend variables are documented in [frontend/.env.example](frontend/.env.examp
 ### Frontend
 
 - Hosted target: Vercel
-- Verified URL: [https://speakeasy-asd.vercel.app/](https://speakeasy-asd.vercel.app/)
+- Verified URL: [https://ajeya95-researchcopilot.hf.space/](https://ajeya95-researchcopilot.hf.space/)
 - Config: [frontend/vercel.json](frontend/vercel.json)
 - Behavior: static SPA fallback, security headers, and `/api/*` / `/health/*` rewrites to the backend host.
 
@@ -419,7 +421,7 @@ Latest local verification on **2026-09-19**:
 | Frontend unit tests | `npm test -- --run` passed: 64 files, 302 tests. |
 | Frontend lint | `npm run lint` passed. |
 | Frontend production build | `npm run build` passed with Vite chunk-size warnings only. |
-| Live frontend link | `https://speakeasy-asd.vercel.app/` returned HTTP 200. |
+| Live frontend link | `https://ajeya95-researchcopilot.hf.space/` returned HTTP 200. |
 | Demo video link | Google Drive demo URL returned HTTP 200. |
 | Public backend health | Not verified: Render URL returned `502 Bad Gateway` / `x-render-routing: no-deploy` during verification. |
 | Production E2E | Not proven: blocked until public backend health is restored. |
@@ -464,7 +466,7 @@ Implemented security/privacy mechanisms visible in the codebase:
 
 ## Evaluate in 3 Minutes
 
-1. Open the [live frontend](https://speakeasy-asd.vercel.app/) to see the product shell.
+1. Open the [live frontend](https://ajeya95-researchcopilot.hf.space/) to see the product shell.
 2. Watch the [demo video](https://drive.google.com/file/d/197BPWe0lJUPVj7FZEGVJoeGsAxcJABX7/view?usp=sharing).
 3. Review the [architecture diagram](#architecture) and [AI / ML pipeline](#ai--ml-pipeline).
 4. Inspect the core code:
