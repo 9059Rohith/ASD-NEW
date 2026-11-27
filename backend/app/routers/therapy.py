@@ -10,16 +10,15 @@ router = APIRouter(prefix="/api/therapy", tags=["therapy"])
 
 AVATAR_COACH_DEFAULTS = {
     "enabled": True,
-    "engine": "livetalk-unity",
+    "engine": "web-fallback",
     "renderer": "web-fallback",
     "name": "Mitra",
     "voice": "en-IN",
-    "package_path": "LiveTalk-Unity",
 }
 
 
 def _with_avatar_coach(lesson: Dict) -> Dict:
-    """Attach the child-friendly LiveTalk coach contract to a lesson."""
+    """Attach the child-friendly browser coach contract to a lesson."""
     english = lesson.get("english", "this sound")
     return {
         **lesson,

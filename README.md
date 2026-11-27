@@ -336,7 +336,7 @@ Progress aggregates update and the learner receives gentle feedback
 
 The current product runtime is centered on `frontend/`, `backend/`, `SpeakEasyAndroid/`, `docs/`, and `scripts/`.
 
-Reference/imported projects such as `Talky-full-app-main/`, `TalkingPet/`, `aacesstalk-monorepo-main/`, `cboard-master/`, `LiveTalk-Unity/`, and `gandeeva/` are present in the repository, but they are not required to run the primary browser application. Their current role, submodule status, and submission cleanup guidance are documented in [Reference And Imported Project Scope](docs/REFERENCE_PROJECTS.md).
+Unused imported projects, optional reference submodules, design scratch folders, and generated frontend build files have been removed. The browser avatar coach runs within the frontend and requires no Unity checkout. See [Repository Scope](docs/REFERENCE_PROJECTS.md) for the retained application folders and upstream reference links.
 
 ## Run Locally
 
@@ -447,7 +447,7 @@ Implemented security/privacy mechanisms visible in the codebase:
 - Word and sentence phoneme scoring uses broad IPA alignment; it is not a full clinical pronunciation assessment.
 - Duration scoring estimates voiced vowel duration and cannot prove every articulation detail of a held sound.
 - Optional services such as Cloudinary, SMTP, WhatsApp, Azure Speech, IndicConformer, and OpenAI transcription require server-side credentials and configuration.
-- Some repository folders are reference/imported projects and are not part of the primary browser runtime.
+- Imported reference projects are linked in the scope document instead of bundled with the application.
 - A root `LICENSE` notice is present as all-rights-reserved. Replace it with a team-approved open-source license only if public reuse is intended.
 
 ## Roadmap

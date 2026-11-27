@@ -66,3 +66,7 @@ backend/models/diphthong-classifier/*
 !backend/models/diphthong-classifier/ATTRIBUTION.md
 !backend/models/diphthong-classifier/references/
 !backend/models/diphthong-classifier/heldout/
+
+# Dependencies and generated outputs in any package
+node_modules/
+**/dist/

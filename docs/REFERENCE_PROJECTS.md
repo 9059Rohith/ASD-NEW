@@ -1,45 +1,21 @@
-# Reference And Imported Project Scope
+# Repository Scope
 
-The final SpeakEasy ASD product is centered on:
+The application retains:
 
-- `frontend/` - React/Vite browser application
-- `backend/` - FastAPI API, MongoDB persistence, and speech-analysis services
-- `SpeakEasyAndroid/` - Kotlin Android client
-- `docs/` - architecture, model reports, audits, and QA evidence
-- `scripts/` - local setup, smoke, and capture helpers
+- `frontend/`: React/Vite browser application and tests.
+- `backend/`: FastAPI API, MongoDB persistence, speech models and tests.
+- `SpeakEasyAndroid/`: Kotlin Android client.
+- `docs/`: architecture, model provenance, operating instructions and QA evidence.
+- `scripts/`: setup, smoke checks and maintenance tools.
+- `images_final_ui_demo/`: screenshots linked from the README.
 
-Several other folders are present for historical reference, comparison, imported experiments, or submodule context. They are not required to run the primary browser application unless a maintainer explicitly says otherwise.
+The browser avatar coach uses the existing frontend renderer and image asset. No Unity package or submodule initialization is required.
 
-| Path | Current role | Runtime dependency for final web app? | Notes |
-|---|---|---:|---|
-| `Talky-full-app-main/` | Reference speech-practice implementation | No | Useful for historical feature comparison only. |
-| `TalkingPet/` | Reference pet/companion prototype | No | Not part of current React/FastAPI runtime. |
-| `aacesstalk-monorepo-main/` | Reference AAC/assistive-tech monorepo | No | Not required by current startup commands. |
-| `cboard-master/` | Reference AAC board project | No | Large imported reference tree; check upstream license before reuse. |
-| `LiveTalk-Unity/` | Git submodule reference for Unity talking-head work | No | Optional submodule; not required for browser or API startup. |
-| `gandeeva/` | Git submodule/reference voice project | No | Optional submodule; not required for browser or API startup. |
+Unused imported projects (`Talky-full-app-main`, `TalkingPet`, `aacesstalk-monorepo-main`, `cboard-master`) and optional reference submodules (`LiveTalk-Unity`, `gandeeva`) were removed in the repository cleanup. Background design scratch folders, development plans, and generated `frontend/dist` output were removed as well. Production assets under `frontend/public`, speech-model files, tests and attribution notices remain tracked.
 
-## Submodules
+Upstream references remain available separately:
 
-The repository contains `.gitmodules` entries for `LiveTalk-Unity/` and `gandeeva/`. For the final browser product, a normal clone is sufficient:
+- [LiveTalk Unity](https://github.com/arghyasur1991/LiveTalk-Unity)
+- [Gandeeva Voice](https://github.com/9059Rohith/Gandeeva-voice)
 
-```bash
-git clone https://github.com/9059Rohith/ASD-NEW.git
-```
-
-Only initialize submodules if you specifically need to inspect those references:
-
-```bash
-git submodule update --init --recursive
-```
-
-## Submission Guidance
-
-Before a final hackathon or portfolio submission, either:
-
-1. Keep these folders and link this document from the README so reviewers understand scope, or
-2. Move/remove unused references in a dedicated cleanup branch after confirming licensing and provenance.
-
-Do not present reference/imported projects as original runtime code for SpeakEasy ASD.
-
-For a strict final-submission repository, option 2 is cleaner, but it should be done as an explicit cleanup commit because more than 5,000 tracked files are involved and the backend currently exposes `LiveTalk-Unity` as avatar-coach metadata. If those folders are removed, update that metadata and re-run the backend/frontend tests before submission.
+A normal clone is sufficient. Install dependencies and build from source using the README instructions.

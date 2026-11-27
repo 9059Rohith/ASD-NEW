@@ -1,6 +1,6 @@
 # Vowel Studio audit and execution record
 
-Plan: docs/superpowers/plans/2026-09-06-vowel-studio.md
+Historical implementation plan: 2026-09-06 vowel studio (removed after implementation).
 
 ## Findings before changes
 - Existing browser recorder captures real audio and releases tracks, but its 18-second timeout and boolean state do not satisfy the requested seven-second flow.

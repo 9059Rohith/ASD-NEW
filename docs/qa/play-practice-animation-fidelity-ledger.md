@@ -1,6 +1,6 @@
 # Play & Practice animation fidelity ledger
 
-Reviewed on 2026-08-05 against the approved text design in `docs/superpowers/specs/2026-08-05-play-practice-animation-upgrade-design.md`, the generated production art, and real Chromium renders at 1440 x 1000 and 390 x 844.
+Reviewed on 2026-08-05 against the approved design at the time, the generated production art, and real Chromium renders at 1440 x 1000 and 390 x 844.
 
 ## Review method
 
